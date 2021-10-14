@@ -44,7 +44,7 @@ Duration 10/18/2021 - 12/10/2021
 |  2    | Wed, Oct 20 | [Collecting Data]       | Assignment 1 <br>- [challenges-2.js] | - |
 |  3    | Fri, Oct 22 | [Making data visible]   | Assignment 2 <br>- [Visualize Titanic data] | - |
 |  4    | Mon, Oct 25 | [Sorting and Filtering] | - | [Assignment 1] - [GradeScope] |
-|  5    | Wed, Oct 27 | -                       | Lab         | - |
+|  5    | Wed, Oct 27 | -                       | Lab | - |
 |  6    | Fri, Oct 29 | [Real Time Data]        | [Assignment 3] <br>- Audio Vidualizer | [Assignment 2] - [GradeScope] |
 |  7    | Mon, Nov  1 | [Drawing Data]          | - | - |
 |  8    | Wed, Nov  3 | [D3 Intro]              | Assignment 4 <br>- [D3 Tutorial] | [Assignment 3] - [GradeScope] |
@@ -57,13 +57,13 @@ Duration 10/18/2021 - 12/10/2021
 | 15    | Fri, Nov 19 | Final Assessment        | - | - |
 | 16    | Mon, Nov 22 | Final Assessment        | - | - |
 | 17    | Wed, Nov 24 | Final Assessment        | - | - |
-| 18    | Fri, Nov 26 | Final Assessment        | - | - |
-| 19    | Mon, Nov 29 | Final Assessment        | - | - |
-| 20    | Wed, Dec  1 | Final Assessment        | - | - |
-| 21    | Fri, Dec  3 | Final Assessment        | - | - |
-| 22    | Mon, Dec  6 | Final Assessment        | - | - |
-| 23    | Wed, Nov  8 | Final Assessment        | - | - |
-| 24    | Fri, Nov 10 | Final Assessment        | - | - |
+| -     | Fri, Nov 26 | Thanksgiving No class  | - | - |
+| 18    | Mon, Nov 29 | Final Assessment        | - | - |
+| 19    | Wed, Dec  1 | Final Assessment        | - | - |
+| 20    | Fri, Dec  3 | Final Assessment        | - | - |
+| 21    | Mon, Dec  6 | Final Assessment        | - | - |
+| 22    | Wed, Nov  8 | Final Assessment        | - | - |
+| 23    | Fri, Nov 10 | Final Assessment        | - | - |
 
 <!-- Lessons -->
 [Intro to Data Viz]: lessons/lesson-01.md
