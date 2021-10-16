@@ -129,10 +129,11 @@ When writing JS you'll callbacks everywhere. Here are a few JS examples:
 `setTimeout` takes a callback and invokes it a number of milliseconds in the future. This callback takes no parameters. 
 
 ```JS
-// Set time out takes a callback it will 
+// Set time out takes a callback as it's first parameter
 setTimeout(<callback>, <time>)
-// execute in the future. 
-setTimeout(() => console.log('1 sec later (8)'), 1000)
+// It executes the callback in the future. 
+// In this example the callback is run 1 sec later.
+setTimeout(() => console.log('1 sec later'), 1000)
 // Notice the arrow function used here! 
 ```
 
@@ -141,17 +142,53 @@ The previous example could have been written in a longer form like this:
 ```JS
 // Written across more lines
 setTimeout(() => {
-  console.log('1 sec later (8)')
+  console.log('1 sec later')
 }, 1000)
 ```
 
+You can also pass a named function as a callback. 
+
+```JS
+// Define a function
+const remindMeLater = () => {
+  console.log('Do the dishes...')
+}
+// Use a function stored in a variable
+setTimeout(remindMeLater, 1000)
+```
+
+What other functions take callbacks? Can you name any? 
+
+- `setInterval(callback, time)`
+- `forEach(callback)`
+- `map()`
+- `filter`
+- `reduce`
+
+### foreach()
+
 `forEach` takes a callback and invokes the callback once for each item in the array. It also passes each item in the array to the calback as the first parameter of the callback.
+
+```JS
+// forEach is a method of Array
+arr.forEach(callback)
+```
+
+Imagine `forEach` is going to run the callback once for each item in `arr`. With each iteration it passes each item in the array to the callback as the first parameter. 
 
 ```JS
 // Array forEach takes a function and executes 
 // it once for each item in an Array
 const arr = [11,22,33,44]
 arr.forEach(item => console.log(item * 3))
+```
+
+This works for "stored" functions also: 
+
+```JS
+const arr = [11,22,33,44]
+const double = n => console.log(n * 2)
+arr.forEach(double) // prints each value * 2
 ```
 
 `forEach` has a couple more optional parameters it provides to the callback. 
@@ -169,8 +206,8 @@ Call backs are functions that we pass as arguments to other functions.
 
 NOTE! 
 
-- argument is a value passed to a function
-- parameter is the name of a variable storing a value passed to a function
+- **argument** is a value passed to a function
+- **parameter** is the name of a variable storing a value passed to a function
 
 For example: 
 
@@ -183,6 +220,10 @@ hello('Francois')
 ```
 
 In the example above "Francois" is the argument, it's a string value, and `name` is the parameter.
+
+### Callback Exercise
+
+Try these practice exercises with callbacks: https://github.com/Tech-at-DU/ACS-4310-Working-with-Data/blob/master/02-callback-practice.js
 
 <!-- .slide: data-background="#087CB8" -->
 ## [**10m**] BREAK
