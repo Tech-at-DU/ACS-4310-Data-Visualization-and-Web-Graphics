@@ -19,9 +19,9 @@ The first step in the process is asking questions of the data you're working wit
 
 ## Why you should know this or industry application
 
-To make data visible you need to measure and quantify the data. While many programs have function built in that handle these operations it goof to know how they work and how to implement them yourself. 
+To make data visible you need to measure and quantify the data. While many programs have function built in that handle these operations it good to know how they work and how to implement them yourself. 
 
-The tools you will use for this are some of the most important tools to have in your tool box. 
+The tools you will use for this are some of the most important tools to have in your coding tool box. 
 
 <!-- > -->
 
@@ -44,11 +44,11 @@ What do you picture when you think of data visualization?
 
 ## Overview
 
-The goal today is to look at the Titanic dataset and use JavaScript to extract relevant data from it.
+The goal today is to look at the Titanic dataset and use JavaScript to extract relevant data from it using JavaScript.
 
 ## Arrow functions 
 
-Arrow functions are great to use when passing a function as a parameter. Understanding the syntax used by arrow functions can make your shorter and easier to read, taht is if you understand the syntax. 
+Arrow functions are great to use when passing a function as a parameters. Understanding the syntax used by arrow functions can make your shorter and easier to read. 
 
 Take a look at a map example: 
 
@@ -57,7 +57,7 @@ Take a look at a map example:
 
 function world() {
   console.log('World')
-} 
+}
 
 world() // invoke this function
 
@@ -94,7 +94,7 @@ const apples = (x) => { return x * 2 }
 const oranges = x => x * 2 // Value is returned!
 
 console.log( oranges(3) ) // 6
-console.log( apples(3) ) // 6
+console.log( apples(3) )  // 6
 
 
 // If there are no parameters you need to include
@@ -109,6 +109,10 @@ console.log( euler() ) // 2.7182
 ```
 
 Study up! Here's an article on Arraow functions: https://www.freecodecamp.org/news/when-and-why-you-should-use-es6-arrow-functions-and-when-you-shouldnt-3d851d7f0b26/
+
+### Arrow function Practice
+
+You'll be working with the problems [here](https://github.com/Tech-at-DU/ACS-4310-Working-with-Data) copy this repo and start with the [01-arrow-function-practice.js](https://github.com/Tech-at-DU/ACS-4310-Working-with-Data/blob/master/01-arrow-function-practice.js).
 
 Where do Arrow function work best? 
 
@@ -126,10 +130,9 @@ When writing JS you'll callbacks everywhere. Here are a few JS examples:
 
 ```JS
 // Set time out takes a callback it will 
-setTimeout(callback, time)
+setTimeout(<callback>, <time>)
 // execute in the future. 
 setTimeout(() => console.log('1 sec later (8)'), 1000)
-
 // Notice the arrow function used here! 
 ```
 
@@ -141,7 +144,6 @@ setTimeout(() => {
   console.log('1 sec later (8)')
 }, 1000)
 ```
-
 
 `forEach` takes a callback and invokes the callback once for each item in the array. It also passes each item in the array to the calback as the first parameter of the callback.
 
@@ -155,7 +157,6 @@ arr.forEach(item => console.log(item * 3))
 `forEach` has a couple more optional parameters it provides to the callback. 
 
 ```JS
-console.log('9 ------------------------------')
 // forEach has a couple optional parameters
 const numbers = [11,22,33,44]
 numbers.forEach((item, index, arr) => {
@@ -164,11 +165,24 @@ numbers.forEach((item, index, arr) => {
 })
 ```
 
-### Arrow function challenges
+Call backs are functions that we pass as arguments to other functions. 
 
-Try these challenges:
+NOTE! 
 
-https://repl.it/join/hmsbpizt-mitchellhudson
+- argument is a value passed to a function
+- parameter is the name of a variable storing a value passed to a function
+
+For example: 
+
+```JS
+const hello = (name) => {
+  return `hello ${name}`
+}
+
+hello('Francois')
+```
+
+In the example above "Francois" is the argument, it's a string value, and `name` is the parameter.
 
 <!-- .slide: data-background="#087CB8" -->
 ## [**10m**] BREAK

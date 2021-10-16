@@ -42,28 +42,28 @@ Duration 10/18/2021 - 12/10/2021
 |:-----:|:-----------:|:-----------------------:|:-----------:|:--------------:|
 |  1    | Mon, Oct 18 | [Intro to Data Viz]     | Assignment 1 <br>- [challenges-1.js] | - |
 |  2    | Wed, Oct 20 | [Collecting Data]       | Assignment 1 <br>- [challenges-2.js] | - |
-|  3    | Fri, Oct 22 | [Making data visible]   | Assignment 2 <br>- [Visualize Titanic data] | - |
-|  4    | Mon, Oct 25 | [Sorting and Filtering] | - | [Assignment 1] - [GradeScope] |
-|  5    | Wed, Oct 27 | -                       | Lab | - |
-|  6    | Fri, Oct 29 | [Real Time Data]        | [Assignment 3] <br>- Audio Vidualizer | [Assignment 2] - [GradeScope] |
-|  7    | Mon, Nov  1 | [Drawing Data]          | - | - |
-|  8    | Wed, Nov  3 | [D3 Intro]              | Assignment 4 <br>- [D3 Tutorial] | [Assignment 3] - [GradeScope] |
-|  9    | Fri, Nov  5 | [D3 Scales]             | Assignment 5 <br>- [D3 Final Project] | [D3 Tutorial] - [GradeScope] |
-| 10    | Mon, Nov  8 | [D3 Examples]           | - | - |
-| 11    | Wed, Nov 10 | [D3 Maps]               | - | - |
-| 12    | Fri, Nov 12 | Final Assessment        | - | - |
-| 13    | Mon, Nov 15 | Final Presentations     | Final Data Visualization | [D3 Final Project] - [GradeScope] |
-| 14    | Wed, Nov 17 | Final Assessment        | - | - |
-| 15    | Fri, Nov 19 | Final Assessment        | - | - |
-| 16    | Mon, Nov 22 | Final Assessment        | - | - |
-| 17    | Wed, Nov 24 | Final Assessment        | - | - |
-| -     | Fri, Nov 26 | Thanksgiving No class  | - | - |
-| 18    | Mon, Nov 29 | Final Assessment        | - | - |
-| 19    | Wed, Dec  1 | Final Assessment        | - | - |
-| 20    | Fri, Dec  3 | Final Assessment        | - | - |
-| 21    | Mon, Dec  6 | Final Assessment        | - | - |
-| 22    | Wed, Nov  8 | Final Assessment        | - | - |
-| 23    | Fri, Nov 10 | Final Assessment        | - | - |
+|  3    | Fri, Oct 22 | Lab                     | - | - |
+|  4    | Mon, Oct 25 | [Making data visible]   | Assignment 2 <br>- [Visualize Titanic data] | [Assignment 1] - [GradeScope] |
+|  5    | Wed, Oct 27 | [Sorting and Filtering] | Lab | - |
+|  6    | Fri, Oct 29 | Lab                     | - | - |
+|  7    | Mon, Nov  1 | [Real Time Data]        | - | - |
+|  8    | Wed, Nov  3 | [Drawing Data]          | [Assignment 3] <br>- Audio Vidualizer | [Assignment 2] - [GradeScope] |
+|  9    | Fri, Nov  5 | Lab                     | - | - |
+| 10    | Mon, Nov  8 | [D3 Intro]              | Assignment 4 <br>- [D3 Tutorial] | [Assignment 3] - [GradeScope] | - |
+| 11    | Wed, Nov 10 | TBD | - | - |
+| 12    | Fri, Nov 12 | Lab                     | - | - |
+| 13    | Mon, Nov 15 | [D3 Scales]             | Assignment 5 <br>- [D3 Final Project] | [D3 Tutorial] - [GradeScope] | - |
+| 14    | Wed, Nov 17 | TBD | - | - |
+| 15    | Fri, Nov 19 | Lab                     | - | - |
+| 16    | Mon, Nov 22 | [D3 Examples]           | - | - |
+| 17    | Wed, Nov 24 | TBD | - | - |
+| -     | Fri, Nov 26 | Thanksgiving            | No class | - |
+| 18    | Mon, Nov 29 | [D3 Maps]               | - | - |
+| 19    | Wed, Dec  1 | TBD | - | - |
+| 20    | Fri, Dec  3 | Lab                     | - | - |
+| 21    | Mon, Dec  6 | TBD | - | - |
+| 22    | Wed, Nov  8 | TBD | - | - |
+| 23    | Fri, Nov 10 | Final Assessment        | Final Data Visualization | [D3 Final Project] - [GradeScope] | - |
 
 <!-- Lessons -->
 [Intro to Data Viz]: lessons/lesson-01.md
@@ -80,8 +80,8 @@ Duration 10/18/2021 - 12/10/2021
 <!-- Assignments -->
 [GradeScope]:https://www.gradescope.com/courses/218919
 
-[challenges-1.js]: https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data
-[challenges-2.js]: https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data
+[challenges-1.js]: https://github.com/Tech-at-DU/ACS-4310-Working-with-Data
+[challenges-2.js]: https://github.com/Tech-at-DU/ACS-4310-Working-with-Data
 [Visualize Titanic data]: https://github.com/Make-School-Labs/FEW-2-5-Titanic-Visualization
 [Assignment 1]: https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data
 [Real Time Data]: https://github.com/Make-School-Labs/FEW-2-5-Data-Visualization-Real-Time-Data
