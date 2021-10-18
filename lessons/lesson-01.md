@@ -110,6 +110,11 @@ Where do Arrow function work best?
 
 Arrow functions work best for callbacks and situations where a function doesn't need identity. 
 
+<!-- .slide: data-background="#087CB8" -->
+## [**10m**] BREAK
+
+Take a ten minute break.
+
 ## Callbacks
 
 What's a callback? 
@@ -212,11 +217,6 @@ hello('Francois')
 ```
 
 In the example above "Francois" is the argument, it's a string value, and `name` is the parameter.
-
-<!-- .slide: data-background="#087CB8" -->
-## [**10m**] BREAK
-
-Take a ten minute break.
 
 ### Callback Exercise
 

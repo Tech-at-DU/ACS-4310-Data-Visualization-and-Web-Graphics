@@ -1,5 +1,5 @@
 
-# ACS 4310 - Lesson 5
+# ACS 4310 - Sorting and Filtering
 
 Sorting data. 
 

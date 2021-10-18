@@ -40,55 +40,59 @@ Duration 10/18/2021 - 12/10/2021
 
 | Class | Date | Topics | Assignments |
 |:-----:|:----:|:------:|:-----------:|
-|  1 | Mon, Oct 18 | [Lesson 1]                | - |  present typical problems
-|  2 | Wed, Oct 20 | [Map, Filter, and Reduce] | - |  map filter reduce practice 
-|  3 | Fri, Oct 22 | Lab                       | - |  map filter reduce and callbacks lab
-|  4 | Mon, Oct 25 | [Intro to Data Viz]       | - |  titanic data challenges 
-|  5 | Wed, Oct 27 | [Collecting Data]         | - |   "
-|  6 | Fri, Oct 29 | Lab                       | - |   interview question
-|  7 | Mon, Nov  1 | [Making data visible]     | [challenges-2.js] [challenges-1.js] | mapping to HTML elements
-|  8 | Wed, Nov  3 | [Sorting and Filtering]   | - |   Using array sort 
-|  9 | Fri, Nov  5 | Lab                       | - |  Interview question
-| 10 | Mon, Nov  8 | [Real Time Data]          | [Visualize Titanic data] | Using canvas 
-| 11 | Wed, Nov 10 | [Drawing Data]            | - |  drawing with data
-| 12 | Fri, Nov 12 | Lab                       | - |  canvas lab
-| 13 | Mon, Nov 15 |                           | Audio Vidualizer |
-| 14 | Wed, Nov 17 | [D3 Intro]                | - |  D3 intro
-| 15 | Fri, Nov 19 | Lab                       | - |  D3 Lab
-| 16 | Mon, Nov 22 | [D3 Scales]               | [D3 Tutorial] | 
-| 17 | Wed, Nov 24 | [D3 Examples]             | - |  
-| -  | Fri, Nov 26 | Thanksgiving              | No class |
-| 18 | Mon, Nov 29 |                           | - |
-| 19 | Wed, Dec  1 | [D3 Maps]                 | - |
-| 20 | Fri, Dec  3 | Lab                       | - |
-| 21 | Mon, Dec  6 | TBD                       | - |
-| 22 | Wed, Nov  8 | TBD                       | - |
-| 23 | Fri, Nov 10 | Final Assessment          | Final Data Visualization |
+|  1 | Mon, Oct 18 | [Lesson 1]  | - |  present typical problems
+|  2 | Wed, Oct 20 | [Lesson 2]  | - |  map filter reduce practice 
+|  3 | Fri, Oct 22 | Lab         | - |  map filter reduce and callbacks lab
+|  4 | Mon, Oct 25 | [Lesson 3]  | [Arrow functions] |  titanic data challenges 
+|  5 | Wed, Oct 27 | [Lesson 4]  | - |   "
+|  6 | Fri, Oct 29 | Lab         | - |   interview question
+|  7 | Mon, Nov  1 | [Lesson 5]  | [Titanic challenges] | mapping to HTML elements
+|  8 | Wed, Nov  3 | [Lesson 6]  | - |   Using array sort 
+|  9 | Fri, Nov  5 | Lab         | - |  Interview question
+| 10 | Mon, Nov  8 | [Lesson 7]  | [Visualize Titanic data] | Using canvas 
+| 11 | Wed, Nov 10 | [Lesson 8]  | - |  drawing with data
+| 12 | Fri, Nov 12 | Lab         | - |  canvas lab
+| 13 | Mon, Nov 15 | [Lesson 9]  | Audio Vidualizer |
+| 14 | Wed, Nov 17 | [Lesson 10] | - |  D3 intro
+| 15 | Fri, Nov 19 | Lab         | - |  D3 Lab
+| 16 | Mon, Nov 22 | [Lesson 11] | [D3 Tutorial] | 
+| 17 | Wed, Nov 24 | [Lesson 12] | - |  
+| -  | Fri, Nov 26 | Thanksgiving | No class |
+| 18 | Mon, Nov 29 | [Lesson 13] | - |
+| 19 | Wed, Dec  1 | [Lesson 14] | - |
+| 20 | Fri, Dec  3 | [Lesson 15] | - |
+| 21 | Mon, Dec  6 | [Lesson 16] | - |
+| 22 | Wed, Nov  8 | Final Presentation | - |
+| 23 | Fri, Nov 10 | Final Assessment   | Final Data Visualization |
 
 <!-- Lessons -->
 [Functions and Callbacks]: https://github.com/Tech-at-DU/ACS-4310-Working-with-Data
 [Lesson 1]: lessons/lesson-01.md
-[Collecting Data]: lessons/lesson-02.md
-[Making data visible]: lessons/lesson-03.md
-[Sorting and Filtering]: lessons/lesson-04.md
-[Real Time Data]: lessons/lesson-06.md
-[Drawing Data]: lessons/lesson-07.md
-[D3 Intro]: lessons/lesson-08.md
-[D3 Scales]: lessons/lesson-09.md
-[D3 Examples]: lessons/lesson-10.md
-[D3 Maps]: lessons/lesson-11.md
+[Lesson 2]: lessons/lesson-02.md
+[Lesson 3]: lessons/lesson-03.md
+[Lesson 4]: lessons/lesson-04.md
+[Lesson 5]: lessons/lesson-05.md
+[Lesson 6]: lessons/lesson-06.md
+[Lesson 7]: lessons/lesson-07.md
+[Lesson 8]: lessons/lesson-08.md
+[Lesson 9]: lessons/lesson-09.md
+[Lesson 10]: lessons/lesson-10.md
+[Lesson 11]: lessons/lesson-11.md
+[Lesson 12]: lessons/lesson-12.md
+[Lesson 13]: lessons/lesson-13.md
+[Lesson 14]: lessons/lesson-14.md
+[Lesson 15]: lessons/lesson-15.md
+[Lesson 16]: lessons/lesson-16.md
 
 <!-- Assignments -->
 [GradeScope]:https://www.gradescope.com/courses/218919
 
-[challenges-1.js]: https://github.com/Tech-at-DU/ACS-4310-Working-with-Data
-[challenges-2.js]: https://github.com/Tech-at-DU/ACS-4310-Working-with-Data
-[Visualize Titanic data]: https://github.com/Make-School-Labs/FEW-2-5-Titanic-Visualization
-[Assignment 1]: https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data
-[Real Time Data]: https://github.com/Make-School-Labs/FEW-2-5-Data-Visualization-Real-Time-Data
-[Assignment 2]: https://github.com/Make-School-Labs/FEW-2-5-Titanic-Visualization
-[Assignment 3]: https://github.com/Make-School-Labs/FEW-2-5-Data-Visualization-Real-Time-Data
-[D3 Tutorial]: https://github.com/Make-School-Labs/D3.js-Mini-Challenges
+[Arrow functions and Callback challenges]: https://github.com/Tech-at-DU/arrow-functions-and-callback-challenges
+[Map, filter, and reduce challenges]: https://github.com/Tech-at-DU/map-filter-reduce-challenges
+[Titanic data challenges]: https://github.com/Tech-at-DU/titanic-data-challenges
+[Visualize Titanic data]: https://github.com/Tech-at-DU/Visualize-Titanic
+[Real Time Data]: https://github.com/Tech-at-DU/Visualizing-Real-Time-Data
+[D3 Tutorial]: https://github.com/Tech-at-DU/D3.js-Mini-Challenges
 [D3 Final Project]: assignments/assignment-4.md
 
 ## Evaluation

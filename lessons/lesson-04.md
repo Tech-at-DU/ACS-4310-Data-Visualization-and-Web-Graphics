@@ -1,4 +1,4 @@
-# ACS 4310 - Lesson 4
+# ACS 4310 - Making data visible
 
 Making data visible with HTML, CSS, JavaScript. 
 
