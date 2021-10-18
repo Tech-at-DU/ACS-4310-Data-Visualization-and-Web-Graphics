@@ -52,7 +52,7 @@ Duration 10/18/2021 - 12/10/2021
 | 10 | Mon, Nov  8 | [Lesson 7]  | [Visualize Titanic data] | Using canvas 
 | 11 | Wed, Nov 10 | [Lesson 8]  | - |  drawing with data
 | 12 | Fri, Nov 12 | Lab         | - |  canvas lab
-| 13 | Mon, Nov 15 | [Lesson 9]  | Audio Vidualizer |
+| 13 | Mon, Nov 15 | [Lesson 9]  | [Real Time Data] |
 | 14 | Wed, Nov 17 | [Lesson 10] | - |  D3 intro
 | 15 | Fri, Nov 19 | Lab         | - |  D3 Lab
 | 16 | Mon, Nov 22 | [Lesson 11] | [D3 Tutorial] | 
