@@ -66,7 +66,6 @@ Duration 10/18/2021 - 12/10/2021
 | 23 | Fri, Nov 10 | Final Assessment   | Final Data Visualization |
 
 <!-- Lessons -->
-[Functions and Callbacks]: https://github.com/Tech-at-DU/ACS-4310-Working-with-Data
 [Lesson 1]: lessons/lesson-01.md
 [Lesson 2]: lessons/lesson-02.md
 [Lesson 3]: lessons/lesson-03.md
