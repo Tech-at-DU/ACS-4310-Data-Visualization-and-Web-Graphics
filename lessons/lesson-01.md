@@ -236,7 +236,7 @@ JSON is a common format for storing structured data for use with JavaScript. JSO
 
 JSON is not code. JSON is a plain text format. The JSON format looks like standard JavaScript Objects and can easily be converted to and from JavaScript Objects. This often happens automatically. JSON itself is not JavaScript. 
 
-Here are a few rules for JSON. JSON supports the following data types: 
+Here are a few rules for JSON. JSON supports the following data types:
 
 - Number
 - String - Must be quoted with double quotes
@@ -247,10 +247,10 @@ Here are a few rules for JSON. JSON supports the following data types:
 
 What are the differences between JSON and JavaScript Objects? 
 
-- functions - JavaScript objects can have functions as properties not so with JSON
-- comments - JSON text does not allow comments
-- All properties must be quoted with double quotes - JavaScript object properties as strings or as unquoted identifiers/symbols 
-- Strings must quoted with double quotes - JavaScript allows either single or double quote
+- **functions** - JavaScript objects can have functions as properties not so with JSON
+- **comments** - JSON text does not allow comments
+- **All property names must be quoted with double quotes** - JavaScript object properties as strings or as unquoted identifiers/symbols 
+- **Strings must quoted with double quotes** - JavaScript allows either single or double quote
 
 JSON files should always have the .json file extension. 
 
@@ -385,8 +385,7 @@ Using the Titanic dataset, you will be practicing the following techniques using
 
 Complete the Challenges from lab: [Challenges](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data/)
 
-- Complete the challenges above and submit your solutions to gradescope. 
-- Due Jan 27
+- Complete the challenges above and submit your solutions to gradescope.
 
 Video Lessons: 
 - https://youtu.be/hRhXWI2IpI0

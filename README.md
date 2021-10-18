@@ -38,32 +38,32 @@ Duration 10/18/2021 - 12/10/2021
 
 **Class Times:** Monday, Wednesday at 9:30am–12:15pm (13 class sessions)
 
-| Class | Date        | Topics                  | Assignments | Assignment Due |
-|:-----:|:-----------:|:-----------------------:|:-----------:|:--------------:|
-|  1    | Mon, Oct 18 | [Intro to Data Viz]     | Assignment 1 <br>- [challenges-1.js] | - |
-|  2    | Wed, Oct 20 | [Collecting Data]       | Assignment 1 <br>- [challenges-2.js] | - |
-|  3    | Fri, Oct 22 | Lab                     | - | - |
-|  4    | Mon, Oct 25 | [Making data visible]   | Assignment 2 <br>- [Visualize Titanic data] | [Assignment 1] - [GradeScope] |
-|  5    | Wed, Oct 27 | [Sorting and Filtering] | Lab | - |
-|  6    | Fri, Oct 29 | Lab                     | - | - |
-|  7    | Mon, Nov  1 | [Real Time Data]        | - | - |
-|  8    | Wed, Nov  3 | [Drawing Data]          | [Assignment 3] <br>- Audio Vidualizer | [Assignment 2] - [GradeScope] |
-|  9    | Fri, Nov  5 | Lab                     | - | - |
-| 10    | Mon, Nov  8 | [D3 Intro]              | Assignment 4 <br>- [D3 Tutorial] | [Assignment 3] - [GradeScope] | - |
-| 11    | Wed, Nov 10 | TBD | - | - |
-| 12    | Fri, Nov 12 | Lab                     | - | - |
-| 13    | Mon, Nov 15 | [D3 Scales]             | Assignment 5 <br>- [D3 Final Project] | [D3 Tutorial] - [GradeScope] | - |
-| 14    | Wed, Nov 17 | TBD | - | - |
-| 15    | Fri, Nov 19 | Lab                     | - | - |
-| 16    | Mon, Nov 22 | [D3 Examples]           | - | - |
-| 17    | Wed, Nov 24 | TBD | - | - |
-| -     | Fri, Nov 26 | Thanksgiving            | No class | - |
-| 18    | Mon, Nov 29 | [D3 Maps]               | - | - |
-| 19    | Wed, Dec  1 | TBD | - | - |
-| 20    | Fri, Dec  3 | Lab                     | - | - |
-| 21    | Mon, Dec  6 | TBD | - | - |
-| 22    | Wed, Nov  8 | TBD | - | - |
-| 23    | Fri, Nov 10 | Final Assessment        | Final Data Visualization | [D3 Final Project] - [GradeScope] | - |
+| Class | Date | Topics | Assignments |
+|:-----:|:----:|:------:|:-----------:|
+|  1 | Mon, Oct 18 | [Functions and Callbacks]| - |  present typical problems
+|  2 | Wed, Oct 20 | [Map, Filter, and Reduce]| - |  map filter reduce practice 
+|  3 | Fri, Oct 22 | Lab                      | - |  map filter reduce lab
+|  4 | Mon, Oct 25 | [Intro to Data Viz]      | - |  titanic data challenges 
+|  5 | Wed, Oct 27 | [Collecting Data]        | - |   "
+|  6 | Fri, Oct 29 | Lab                      | - |   interview question
+|  7 | Mon, Nov  1 | [Making data visible]    | [challenges-2.js] [challenges-1.js] | mapping to HTML elements
+|  8 | Wed, Nov  3 | [Sorting and Filtering]  | - |   Using array sort 
+|  9 | Fri, Nov  5 | Lab                      | - |  Interview question
+| 10 | Mon, Nov  8 | [Real Time Data]         | [Visualize Titanic data] | Using canvas 
+| 11 | Wed, Nov 10 | [Drawing Data]           | - |  drawing with data
+| 12 | Fri, Nov 12 | Lab                      | - |  canvas lab
+| 13 | Mon, Nov 15 |                          | Audio Vidualizer |
+| 14 | Wed, Nov 17 | [D3 Intro]               | - |  D3 intro
+| 15 | Fri, Nov 19 | Lab                      | - |  D3 Lab
+| 16 | Mon, Nov 22 | [D3 Scales]              | [D3 Tutorial] | 
+| 17 | Wed, Nov 24 | [D3 Examples]            | - |  
+| -  | Fri, Nov 26 | Thanksgiving             | No class |
+| 18 | Mon, Nov 29 |                          | - |
+| 19 | Wed, Dec  1 | [D3 Maps]                | - |
+| 20 | Fri, Dec  3 | Lab                      | - |
+| 21 | Mon, Dec  6 | TBD                      | - |
+| 22 | Wed, Nov  8 | TBD                      | - |
+| 23 | Fri, Nov 10 | Final Assessment         | Final Data Visualization |
 
 <!-- Lessons -->
 [Intro to Data Viz]: lessons/lesson-01.md
