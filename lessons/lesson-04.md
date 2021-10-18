@@ -1,300 +1,245 @@
+# ACS 4310 - Lesson 4
 
-# FEW 2.5 - Lesson 4 
-
-Sorting data. 
+Making data visible with HTML, CSS, JavaScript. 
 
 <!-- Put a link to the slides so that students can find them -->
 
-<!-- ➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-3.html ':ignore') -->
-
-## Video 
-
-- https://youtu.be/m8K1LxEemG4
-- https://youtu.be/CswNWqXgnrE
+<!-- ➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-4.html ':ignore') -->
 
 <!-- > -->
 
 ## Overview
 
-Arranging data to make the facts and meanings more visible. 
+In the last lesson you organized and extracted values from a dataset. The next step is to make this data visible. The goal now is take all of the values and tunr them into something that can be displayed. 
 
-## Why do you need to know this?
+<!-- > -->
 
-Managing data in arrays is an important skill. The way data is ordered can also reveal hidden meaning. 
+## Why is this important?
+
+Turning data into something that people can easily understand is why we make websites! 
+
+<!-- > -->
 
 ## Learning Objectives
 
-- Use Array sort
-- Use Array filter
-- Apply sort and filter to your visualizations
+- Create HTML elements with JavaScript 
+- Use JavaScript to style elements
+- Use Map to transform data into HTML elements
 
-## Array.sort()
+## Infographic vs Data Visualization
 
-Take a quick look at the documentastion: 
+Your goal is to make a **data visualization**. This is an or visual representation of data. It's not an info graphic or generative art though all three are related. Take a look at the two articles below for examples of info graphics and data visualizations. 
 
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+Take a look at these examples:
 
-<!-- > -->
+- [Info Graphic](https://venngage.com/blog/what-is-an-infographic/)
+- [Tableau Best Data viz examples](https://www.tableau.com/learn/articles/best-beautiful-data-visualization-examples)
 
-- Sorts values in place (doesn't make a copy)
-- Sorts values based on String value
-- Optional Compare function
-    - Takes two params a, b
-    - Return value determines how a and b are indexed
-    - less than 0 a is indexed lower than b
-    - greater than 0 b is indexed lower than a
-    - 0 and the index of a and b is unchanged
+More Examples: 
 
-<!-- > -->
+- Data visualizations Examples
+  - [What is data visualization](https://www.tableau.com/learn/articles/data-visualization)
+  - [Best Data Visualizations 2018](https://visme.co/blog/best-data-visualizations/)
+  - [James Round](https://www.jamesrounddesign.com)
+  - [Data visualization](https://datavizcatalogue.com)
+  - [Examples](https://www.maptive.com/17-impressive-data-visualization-examples-need-see/)
+- Generative art and Data: 
+	- https://www.ted.com/playlists/201/art_from_data
+	- https://joshuadavis.com
+	- https://www.theatlantic.com/entertainment/archive/2015/05/the-rise-of-the-data-artist/392399/
+	- https://techcrunch.com/2016/05/08/the-digital-age-of-data-art/
 
-Sort values less than 10 
+## Modules
 
-```JS 
-const a = [4,3,1,7,6,2]
-a.sort() // [1,2,3,4,6,7]
+Whats' a module?
+
+A module is a block of code that defiens it's own scope. 
+
+What's scope? 
+
+Scope defines where a varaible is visible to the rest of the program. 
+
+How to use a module in a browser project? 
+
+In the browser you'll use the script tag and the type attribute to define a module. 
+
+```HTML
+<!-- This script is a module -->
+<script type="module"></script>
+<!-- This script is not a module -->
+<script></script>
 ```
 
-<!-- > -->
+Why use a module?
 
-Sorting larger numbers
+Code in the browser in past has always been global. Variables defined in any script were seen all other scripts. This creates bugs and errors. It also led to a lot of strange looking constructs to avoid global variables while still allowing code to be shared across scopes. 
 
-```JS 
-const a = [4,13,1,7,6,12]
-a.sort() // [1, 12, 13, 4, 6, 7]
+Here is an example of a problem. Imagine there were two different scripts in your project. These could in different files. Imagine that one or more of your files was imported from somewhere else and you don't know what's in it. 
+
+```HTML
+<!-- Imagine there are two different scripts in your project -->
+<script>
+	var data = [...]
+	function getData() { ... }
+</script>
+<!-- Imagine this second file you are writing and you happen to use 
+the names that have already been defined in another script! -->
+<script>
+	var data = { ... }
+	function getData() { ... }
+</script>
 ```
 
-<!-- > -->
+In a module code would not "escape" it's module. Take a quick read about modules here: 
 
-Use a compare function
+https://javascript.info/modules-intro
 
-```JS 
-const a = [4,13,1,7,6,12]
-a.sort((a, b) => {
-  return a - b
-}) // [1, 4, 6, 7, 12, 13]
-```
+Challenge: Fix the code here by making some modules: 
 
-<!-- > -->
+https://repl.it/join/xmpbhmez-mitchellhudson
 
-What about non numeric data?
+Hint: add `type="module"`
+
+### import, export, and default 
+
+Separating code into separaste files is good but sometimes you need to share code across files. Modules allow this with the keywords: `import`, `export`, and `default`
+
+- `import` - imports an export from another module
+- `export` - exports a value from a module
+- `default` - declare a single export as the "default" export for easier importing
+
+## Making Data Visible
+
+The goal of this section it display the Titanic data with HTML, CSS and JS. You'll do everything with the code you write. Later we will use code libraries to to more. Writing the code yourself is important to understand programming, problem solving, and a step along the way to writing you writing your own libraries.
+
+These examples can be applied and tested in this Repl.it:  
+
+https://repl.it/join/gnjigkyl-mitchellhudson
+
+## Creating HTML elements
+
+You cna generate HTML elements with code! 
 
 ```JS
-const months = ['March', 'Jan', 'Feb', 'Dec'];
-months.sort(); // ["Dec", "Feb", "Jan", "March"]
+// Creates a new <div>
+const el = document.createElement('div')
 ```
 
-<!-- > -->
+An element is not displayed unless it is added to the DOM
 
-What about Titanic data?
-
-```js
-fields.sort((a, b) => {
-    return a.survived === 'Yes' ? -1 : 1
-})
+```JS 
+// Add the element to the body
+document.body.appendChild(el)
 ```
 
-Sorts survivors first. This example may not make sense without some background. 
+## Styling HTML Elements 
 
-Array.sort looks at the two values, `a` and `b` in the example code snippet, and does one of three things: 
+All CSS styles can be applied in via code. All CSS style properties are available through JavaScript. 
 
-- places `a` before `b`
-- places `a` after `b`
-- does not change the order
+Set any property on an elements style property. All CSS property names convert to camel for their JS name. 
 
-If you're sorting something more complex than an array of strings you'll probably need to include a sorting function. Here are a few examples: 
-
-Sort titnaic data on fares. These are numbers so `a - b` is will work: 
+Since CSS values usually include a unit you'll always use a string when setting the value in JS. 
 
 ```JS
-fields.sort((a, b) => {
-    return a.fare - b.fare // 
+// set the width and height
+el.style.width = '100px'
+el.style.height = '200px'
+// Set the background-color
+el.style.backgroundColor = '#f0f'
+// Make an element display as a grid
+el.style.display = 'grid'
+el.style.gridTemplateColumns = 'repeat(6, 100px)'
+el.style.gridGap = '2px'
+```
+
+### What types of styles?
+
+- `backgroundColor` 
+- `opacity`
+- size: `width` and `height`
+- `border`, width, color, style, radius
+
+What can you draw with these properties? It seems limitted but there are lots of possiblities. You can use different properties to represent different aspects of the data.
+
+## Turning data into HTML elements
+
+HTML elements are objects native to the browser that can be displayed. This is a transformation. Use Map! 
+
+You can do this with a loop for an array of data: 
+
+```JS 
+// Imagine we have an array of objects
+const data = [{}, {}, ... ]
+
+// Imagine there is an element in the DOM with this id name
+const titanic = document.querySelector('#titanic')
+
+// Loop over your data and make an array of passenger elements 
+const passengers = data.map(passenger => {
+	return document.createElement('div')
+})
+
+// Let's loop over the passengers appeand them to the DOM and add some styles
+passengers.forEach((p, i) => {
+	// Append each to the titanic element
+	titanic.appendChild(p)
+
+	// Set some styles
+	p.style.width = '10px'
+	p.style.height = '10px'
+
+	// We can match each element to some data by it's index data[i]
+	if (data[i].embarked === 'S') {
+		p.style.backgroundColor = 'cornflowerblue'
+	} else if (data[i].embarked === 'C') {
+		p.style.backgroundColor = 'orange'
+	} else if (data[i].embarked === 'Q') {
+		p.style.backgroundColor = 'limegreen'
+	} else {
+		p.style.backgroundColor = 'black'
+	}
+
+	// Use a ternary to set a property to one of two values 
+	p.style.borderRadius = data[i].sex === 'male' ? '0' : '50%'
 })
 ```
 
-This would work for other numeric values like age and pclass. 
+## Break 
 
-Without a callback the values are compared numerically. Every character has a numeric value. You can see a few of the value in the list below. The numbers 0 - 9 have values 48 to 57. These come before the uppercase letters A to Z (65 - 96), later are lowercase letters a to z (97 to 122). 
+Take a 10 minute break.
 
-Without a callback Array sort compares these numeric values. This is why 111 and would come before 99. Looking at the first character, 1 has a value of 49 and 9 has a value of 57.
+## Lab 
 
-Character codes: 
+Use this Repl.it as a starting place to test the ideas from earlier. 
 
-- `0` : 48 Digits 0 to 9
-- `1` : 49
-- `2` : 50
-- `3` : 51
-- `4` : 52
-- `5` : 53
-- `6` : 54
-- `7` : 55
-- `8` : 56
-- `9` : 57
-- ...
-- `A` : 65 Uppercase letters A - Z
-- `B` : 66
-- `C` : 67
-- `D` : 68
-- ...
-- `Z` : 90
-- ... 
-- `a` : 97 Lowercase letters a - z
-- `b` : 98
-- `c` : 99
-- ...
-- `z` : 122
-
-Check the whole list here: https://www.w3schools.com/charsets/ref_html_ascii.asp
-
-What about names? These are all strings but they are on a property. Since uppercase letters have a lower numeric value than lowercase character they will sort first.
-
-```JS 
-fields.sort((a, b) => {
-  if (a.name < b.name) {
-    return -1
-  } else if (a.name > b.name) {
-    return 1
-  }
-  return 0
-})
-```
-
-To make this case insensitive convert the stringds you're comparing to upper or lowercase before comparing them. 
-
-```JS 
-fields.sort((a, b) => {
-  const aName = a.name.toLowerCase()
-  const bName = b.name.toLowerCase()
-  if (aName < bName) {
-    return -1
-  } else if (aName > bName) {
-    return 1
-  }
-  return 0
-})
-```
-
-Sort is really just comparing each character agains it's number in the list to determine how it is sorted. Numbers are sorted much like you would sort a word by starting with the first character. 
-
-Sort also takes a callback function to determine the sorting order. This callback receives two of the elements from the array. Let's call these a and b. You don't know where in the array they came from. Sort expects the callback to return a number less than 0 if a should come before b, a number greater than 0 if b should be sorted before a, and return 0 if the place of the two elements should not change. 
-
-Try this out in the Repl.it: https://repl.it/join/mnsudqlm-mitchellhudson
-
-<!-- > -->
-
-### Challenges - Array.sort()
-
-- Sort fields on sex
-- Sort fields on survived
-- Sort fields on embarked
-
-Using this Repl.it: https://repl.it/join/gnjigkyl-mitchellhudson Sort the passenger data. 
-
-Challenges: 
-
-- Set the color of each square based on gender. Then sort the data based on sex. 
-- use two colors one for survivors and the other for casualities. Sort on survived. 
-- Use three colors one for each of the embarked values. Sort on embarked. 
-
-<!-- .slide: data-background="#087CB8" -->
-## BREAK
-
-Take a ten minute break
-
-<!-- > -->
-
-## Array.filter()
-
-Take a look at the doce for array.filter(). 
-
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
-
-<!-- > -->
-
-Array.filter() is similar to map() and reduce() it returns a new array. 
-
-Array.filter() takes a filter function. This function receives the element as a parameter and returns true if the element is included or false if not. 
-
-<!-- > -->
-
-```JS 
-const a = [4,13,1,7,6,12]
-const b = a.filter((val) => val < 5)
-// [4,1]
-```
-
-<!-- > -->
-
-Using the Titanic data
-
-```JS
-const fieldsMen = fields.filter((p) => p.sex === 'male')
-const fieldsWomen = fields.filter((p) =>  p.sex === 'female')
-```
-
-<!-- > -->
-
-### Array.filter() challenges 
-
-- display only women
-- display only men
-- display only pclass 1, 2, or 3
-- display only the passengers whos embarkation is undefined
-
-<!-- > -->
-
-## Color
-
-Color can be represented in a few ways in JS:
-
-- hex colors: `#0f0` or `#00ff00`
-- keyword colors: `red` or `blue`
-- rgb: `rgb(0, 255, 0)`
-- rgba: `rgba(0, 255, 0, 0.5)`
-- hsl: `hsl(120, 50%, 77%)`
-- hsla: `hsla(120, 50%, 77%, 0.6)`
-
-In all cases, it comes down to string manipulation. For any color you want to generate, you'll need to generate a string similar to one of the strings above and assign that to a style property.
-
-If you're generating colors in sequence, HSL has the advantage that the hue is separate from the other color components. Hue has a range of 360 degrees.
-
-```JavaScript
-// This generates 12 colors equally spaced around the color wheel:
-const numberOfColors = 12
-const step = 360 / numberOfColors
-for (let i = 0; i < numberOfColors; i += 1) {
-    const hue = step * i
-    const colorString = `hsl(${hue}, 70%, 50%)`
-    ...
-}
-```
-
-Use RGBA or HSLA when you need to transparent colors. The last value is the alpha (transparency) of the color.
-
-<!-- > -->
-
-## Color Activity
-
-For the same Titanic dataset, create a bar graph that shows the number of passengers from each of the 3 `embarked` cities (C = Cherbourg, Q = Queenstown, S = Southampton). Make sure each bar is a different color
-
-<!-- > -->
+https://repl.it/join/gnjigkyl-mitchellhudson
 
 ## After Class
 
-Continue working on the current assignment. 
+- https://github.com/Make-School-Labs/FEW-2-5-Titanic-Visualization
 
-<!-- 
+
+## Video lessons
+
+- https://youtu.be/BgCRqcwZ4TA
+- https://youtu.be/iwYmA0HISSQ
+- https://youtu.be/SxNpz23yaKs
+- https://youtu.be/lNPbtl0K860
+
+<!--
 
 ## Minute-by-Minute
 
 | **Elapsed** | **Time**  | **Activity**              |
 | ----------- | --------- | ------------------------- |
-| 0:00        | 0:05      | Overview + Learning Outcomes |
-| 0:05        | 0:30      | Buttons |
-| 0:35        | 0:20      | Colors |
-| 0:55        | 0:20      | Motion |
-| 1:15        | 0:10      | BREAK |
-| 1:25        | 1:15      | Lab |
-| 2:40        | 0:05      | Wrap up + Homework Overview |
-| TOTAL       | 2:45      | - |
+| 0:00        | 0:05      | Overview and Learning Outcomes                |
+| 0:05        | 0:15      | Distributions                  |
+| 0:20        | 0:10      | Sorting       |
+| 0:30        | 0:10      | Filtering                     |
+| 0:40        | 0:15      | Holding Elements      |
+| 0:55        | 0:15      | Animations      |
+| 1:10        | 0:15      | CSS Transforms      |
+| 1:25        | 0:10      | Closures      |
+| 1:35        | 0:10      | BREAK      |
 
 -->

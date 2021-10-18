@@ -40,9 +40,9 @@ Duration 10/18/2021 - 12/10/2021
 
 | Class | Date | Topics | Assignments |
 |:-----:|:----:|:------:|:-----------:|
-|  1 | Mon, Oct 18 | [Lesson 1] | [Functions and Callbacks] |  present typical problems
+|  1 | Mon, Oct 18 | [Lesson 1]                | - |  present typical problems
 |  2 | Wed, Oct 20 | [Map, Filter, and Reduce] | - |  map filter reduce practice 
-|  3 | Fri, Oct 22 | Lab                       | - |  map filter reduce lab
+|  3 | Fri, Oct 22 | Lab                       | - |  map filter reduce and callbacks lab
 |  4 | Mon, Oct 25 | [Intro to Data Viz]       | - |  titanic data challenges 
 |  5 | Wed, Oct 27 | [Collecting Data]         | - |   "
 |  6 | Fri, Oct 29 | Lab                       | - |   interview question

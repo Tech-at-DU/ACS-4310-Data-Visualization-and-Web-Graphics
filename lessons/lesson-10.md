@@ -1,5 +1,5 @@
 
-# FEW 2.5 - D3 Examples
+# ACS 4310 - Lesson 10
 
 <!-- Put a link to the slides so that students can find them -->
 
@@ -8,107 +8,124 @@
 
 ## Lab
 
-Todays goal is to start your final project. It's important for you to identify a dataset you will use for the project, identify the values you will display and in what axis, color, shape etc. and to get started coding. 
+Choose an example or tutorial from the D3 site and recreate that example with your own dataset.
+
+**Stretch Challenge:** Recreate a second example. The goal here is to get familiar with D3 to use later in your projects.
 
 <!-- > -->
 
 ## Overview
 
-- Look at data visualization types 
-  - What type of data works best for each type?
-- Look at data
-  - Look for the value and how you will display them?
-- Look at the examples and find a starting point for your project!
+D3 Scales provide a system for normalizing and scaling values for display on the screen.
 
 <!-- > -->
 
 ## Why you should know this
 
-D3 is the data visualization library it does most everything. Besides working with D3 you will also need to work with your chosen dataset sorting, filtering, and aggregating data. Besides being job skills solving these challenges will make you better at your craft. 
+Scaling and normalizing data is an important task you'll do it all the time. D3's scale tools provide great functionality.
 
 <!-- > -->
 
 ## Learning Objectives
 
-1. Identify data visualization types 
-1. Identify values and connect them to visuals
-1. Form a strategy to complete the final 
+1. Identify scales and uses for normalizing
+1. Define a scale for each axis
+1. Use the d3.scaleLinear() and
+1. Differentiate between scaleLinear and scaleOrdinal
 
 <!-- > -->
 
-## Visualization Types 
+## Scale and normalization
 
-Quick study this: https://www.data-to-viz.com
+Scaling and normalizing allows us to convert values of any range into values that can be displayed on the screen.
 
-Question: How many values can you display in chart/graph/visualization?
-
-Question: Which charts show ordered data? 
-
-Question: What's the difference between a histogram and density plot?
-
-Question: What's the difference between line and area charts/graphs?
+Scaling and normalizing works best when working with numbers. Sometimes you'll have values that don't normalize easily. For example names of countries and key words don't translate easily to numbers. Also there are situations where you want to categorize values into buckets. [D3 scaleOrdinal](https://observablehq.com/@d3/d3-scaleordinal) does this for you.
 
 <!-- > -->
 
-## Datasets 
+Use scaleOrdinal for:
 
-You need to find a dataset for the final project. Take a look at https://www.kaggle.com
+- Converting values to colors
+- Converting values into key words
+- Converting keywords into a values, colors, or other things
 
-Look for a dataset you want to work with. When considering a dataset ask yourself what values does it provide? How will display these values? What will you have to do to arrange, sort, or filter the data to display it?
+<!-- > -->
 
-## D3 Examples
+## Get Started with scaleOrdinal
 
-Take a look at these D3 examples: 
+Go through and review the following links on your own:
 
-- https://github.com/soggybag/d3-examples
-- https://github.com/soggybag/FEW-2-5-Data-Visualization-D3
+- [Documentation](https://d3-wiki.readthedocs.io/zh_CN/master/Ordinal-Scales/)
+- [Scales functions in D3](https://d3indepth.com/scales/)
 
+<!-- > -->
+
+### Ordinal Scale Example
+
+Looking at the Titanic Dataset emabrked is expressed as a letter. D3 has a ordinal scale that allows mapping aribitrary values. 
+
+```JS
+// Creates an array of unique values 
+const embarked = Array.from(new Set(data.map((p) => p.embarked === undefined ? '?' : p.embarked)))
+// Create an  ordinal scale
+const embarkedScale = d3.scaleOrdinal()
+  .domain(embarked)
+  .range(['#ff00ff66', '#ffff0066', '#00ffff66', 'black'])
+```
+
+Use the ordinal scale 
+
+```JS
+d3.select('#svg')
+  .selectAll('circle')
+  .data(data)
+  .enter()
+  .append('circle')
+  .attr('cx', (d, i) => i * 600 / data.length)
+  .attr('cy', (d, i) => {
+    const n = 500 - d.age
+    return isNaN(n) ? 500 : n
+  })
+  .attr('r', (d) => 5)
+  // Apply the ordinal scale to embarked for each 
+  .attr('fill', (d) => embarkedScale(d.embarked))
+```
+
+<!-- > -->
+
+<!-- .slide: data-background="#087CB8" -->
 ## [**10m**] BREAK
 
 <!-- > -->
 
 ## Lab - Part 1
 
-Strategize your project plan:
-
-- Find a dataset
-- Identify the values you will display
-- Decide what graph/chart style you will use to display them
+Go to [make.sc/d3-challenges](https://make.sc/d3-challenges). Clone the repo, and work through the challenges in the `D3Scales` folder. You will find the challenges as comments in the corresponding HTML and JS files
 
 <!-- > -->
 
 ## Lab Part 2
 
-Start coding: 
-
-- Find an example to work from
-- Organize your data
-  - filter values 
-  - map values 
-  - reduce values
-  - sort 
-- Plan the svg structure of the project
-  - Investigate your example 
-  - Plan the element structure/hierarchy of the svg document
+Choose one of the D3 example/tutorials to recreate. Look for the scale in use. 
 
 <!-- > -->
 
 ## After class
 
-
+- Finish the `D3Scales` challenges
+- Continue working on your [Final Visualization 3](Assignments/Data-Visualization-3.md), due 3/4 9:30am
 
 <!-- > -->
 
 ## Additional Resources
 
-- https://www.d3indepth.com
-- https://www.data-to-viz.com
-- https://github.com/soggybag/d3-examples
+- https://d3-wiki.readthedocs.io/zh_CN/master/Ordinal-Scales/
+- https://bl.ocks.org/d3indepth/fabe4d1adbf658c0b73c74d3ea36d465
+- https://d3indepth.com/scales/
 - https://github.com/soggybag/FEW-2-5-Data-Visualization-D3
 
 <!-- > -->
 
-<!-- 
 ## Minute-by-Minute
 
 | **Elapsed** | **Time**  | **Activity**              |
@@ -121,4 +138,4 @@ Start coding:
 | 1:40        | 1:00      | Lab |
 | 2:40        | 0:05      | Wrap up |
 | TOTAL       | 2:45      | - |
- -->
+

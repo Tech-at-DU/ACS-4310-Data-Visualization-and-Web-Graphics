@@ -1,369 +1,435 @@
 
-# FEW 2.5 - Lesson 2
+# ACS 4310 - Lesson 2
 
-Higher order functions and callbacks. 
+Telling stories with data. 
 
 <!-- Put a link to the slides so that students can find them -->
 
-<!-- ➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-2.html ':ignore') -->
+<!-- ➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-1.html ':ignore') -->
 
 <!-- > -->
 
-## Overview
+## Welcome to Data Visualization!
 
-In the last class we examined data to find some relevant values. Today we will continue with this idea but go further. This time around we'll look at abstracting our methods of data collection, collecting data that has more than one association, and build data structures that express the data.
+The goal of this lesson is to get started with data visualization. You will look at needed to make information visible.
+
+The first step in the process is asking questions of the data you're working with. The code you'll write in this assignment will answer those questions. 
 
 <!-- > -->
 
-## Why you should know this?
+## Why you should know this or industry application
 
-The problems in the challenges for today will help you develop your coding skills by offering more involved problems. 
+To make data visible you need to measure and quantify the data. While many programs have function built in that handle these operations it good to know how they work and how to implement them yourself. 
+
+The tools you will use for this are some of the most important tools to have in your coding tool box. 
 
 <!-- > -->
 
 ## Learning Objectives
 
-- Abstract methods to expand their functionality
-- Build histograms
-- Use map, filter, and reduce
+- Write with arrow functions 
+- Use callbacks
+- Identify values in the Titanic dataset
+- Extract data and derive relevant values
 
-## Looping over Arrays
+<!-- > -->
 
-Looping over each element in an array is a common operation. Expect to do this often. 
+## What is Data visualization? 
 
-Imagine you have an array and need to log each number to the console. 
+What do you picture when you think of data visualization? 
 
-Loop over an array with a for loop:
+- Pair up and look for examples of data visualzation. 
+- Share with your partner
+- Share with the class
 
-```JS
-const arr = [1,2,3,4]
-for (let i = 0; i < arr.length; i += 1) {
-	console.log(arr[i])
-}
-```
+## Overview
 
-Running code for each element in an array is so common Array provides a method for this: `forEach`. Foreach takes a callback function as a parameter and calls that function once for each element in the array and passes the element and the index to the callback.
+The goal today is to look at the Titanic dataset and use JavaScript to extract relevant data from it using JavaScript.
 
-```JS
-const arr = [1,2,3,4]
-arr.forEach((item, index) => {
-	console.log(`${index}: ${item}`)
-})
-```
+## Arrow functions 
 
-For each takes a callback. The callback is a function. You can use anything that references a function here. 
+Arrow functions are great to use when passing a function as a parameters. Understanding the syntax used by arrow functions can make your shorter and easier to read. 
 
-```JS
-const arr = [1,2,3,4]
-const timesTwo = n => n * 2
-arr.forEach(timesTwo)
-```
-
-How does forEach work? Its a function that takes another function as a parameter! 
-
-```JS
-function thrice(callback) {
-	callback(1)
-	callback(2)
-	callback(3)
-}
-
-thrice(() => console.log('hello world'))
-thrice(i => `${12}px`) // 12px 24px 36px
-```
-
-The function above executes the callback three times, and passes the number of iteration as a parameter.
-
-
-Challenge: Write a function that works like forEach.
-
-```JS
-function forEvery(arr, callBack) {
-	...
-}
-
-const numbers = [1,2,3,4,5]
-forEvery(numbers, (item, i) => {
-	console.log(item, i) 
-})
-```
-
-Take a look at this Repl.it and try the challenges here: https://repl.it/join/qvbkyifb-mitchellhudson
-
-## Map, Filter, and Reduce
-
-Running code on each element in an array is common. Often you'll want to perform one of three other common tasks. 
-
-- Map - Transform each element in the source array and add it to a new Array
-- Filter - Create a new array that contains a subset of the source array 
-- Reduce - Create a single value aggregated from the source array
-
-> Map/filter/reduce in a tweet:
->
-> `[🌽, 🐮, 🐔].map(cook)` -> `[🍿, 🍔, 🍳]`
->
-> `[🍿, 🍔, 🍳].filter(isVegetarian)` -> `[🍿, 🍳]`
->
-> `[🍿, 🍳].reduce(eat)` -> `💩`
-
-Some examples: 
-
-### Map
-
-What is transforming an array and why would you do this? When you map an array you take each item from the original array and transform it in some way. Here are a few examples: 
-
-- React - transform an array of objects or values into an array of components. 
-- Objects to Strings - It's not uncommon to have an array of objects that you want to display. You might want to combine one or more fields on the object into a string that will be displayed. 
-- Array date objects to an array date strings
-- An array of numbers into formatted numbers
-- An array of objects into an array of simple values like numbers or strings
-- Turn an array of strings into an array of objects like Date objects
-
-**Facts about map**
-
-- Map returns a new array (it does not mutate the source array)
-- The returned array has the same number of items as the source array
-
-**Examples of map**
-
-Abstract example. 
-
-```JS
-// map takes one parameter a callback function
-const newArray = array.map(callbackFunction)
-
-// The callback receives each item of the array as a parameter
-const newArray = array.map((item) => { ... })
-
-// Optionally map also provides the index of the item and the array itself
-const newArray = array.map((item, index, arr) => { ... }) 
-
-// The callback is responsible for transforming the item and returning the transformed value
-// Here all items are formatted and returned. 
-const newArray = array.map((item) => item.toFixed(2))
-```
-
-Here's a practical example: 
+Take a look at a map example: 
 
 ```JS 
-// Imagine you had some date strings 
-const dateStrings = ['9/26/1965', '2/6/1971', '10/27/2005']
-// Turn these into date objects because reasons 
-const dates = dateStrings.map( str => new Date(str) )
-// Turn these Date objects into formatted dates
-const datesFormatted = dates.map( date => date.toDateString() )
-// The new array: ['Sun Sep 26 1965', 'Sat Feb 06 1971', 'Thu Oct 27 2005']
-// Maybe you just need the years for some reason: 
-const years = dates.map( date => date.getFullYear() )
-// years: [1965, 1971, 2005]
+// A regular function 
+
+function world() {
+  console.log('World')
+}
+
+world() // invoke this function
+
+
+// An arrow function
+
+const hello = () => {
+  console.log('Hello')
+}
+
+hello()
+
+// Parameters go in the ()
+
+const foo = (x, y) => {
+  console.log(x * y)
+}
+
+foo(4, 3)
+
+
+// If the function is on a single line the 
+// {} can be omitted
+
+const bar = (x, y) => console.log(x / y)
+
+bar(3, 4)
+
+
+// If there is only a single parameter the 
+// () can be omitted
+
+const apples = (x) => { return x * 2 }
+const oranges = x => x * 2 // Value is returned!
+
+console.log( oranges(3) ) // 6
+console.log( apples(3) )  // 6
+
+
+// If there are no parameters you need to include
+// () or a _
+
+const pi = () => 3.14
+
+console.log( pi() ) // -> 3.14
+
+const euler = _ => 2.7182
+console.log( euler() ) // 2.7182
 ```
 
-Keep in mind that in each example a new array was created at each step! 
+Study up! Here's an article on Arraow functions: https://www.freecodecamp.org/news/when-and-why-you-should-use-es6-arrow-functions-and-when-you-shouldnt-3d851d7f0b26/
 
-To go from the first step to the formatted dates required two steps: making a date object from a string and then making a formatted date from the date object. Since map returns an array you can do that by chaining the calls to map together. 
+### Arrow function Practice
+
+You'll be working with the problems [here](https://github.com/Tech-at-DU/ACS-4310-Working-with-Data) copy this repo and start with the [01-arrow-function-practice.js](https://github.com/Tech-at-DU/ACS-4310-Working-with-Data/blob/master/01-arrow-function-practice.js).
+
+Where do Arrow function work best? 
+
+Arrow functions work best for callbacks and situations where a function doesn't need identity. 
+
+## Callbacks
+
+What's a callback? 
+
+A callback is a function that is passed to another function as a parameter. Arrow functions are good here since these functions are often written inline and the Arrow function's compact syntax works well.
+
+When writing JS you'll callbacks everywhere. Here are a few JS examples: 
+
+`setTimeout` takes a callback and invokes it a number of milliseconds in the future. This callback takes no parameters. 
 
 ```JS
-// Chain calls to map together to work through several steps
-const datesFormatted = dateStrings.map(str => new Date(str)).map(date => date.toDateString())
-
-// Maybe it's easier to break this up onto separate lines
-const datesFormatted = dateStrings
-	.map(str => new Date(str))
-	.map(date => date.toDateString())
+// Set time out takes a callback as it's first parameter
+setTimeout(<callback>, <time>)
+// It executes the callback in the future. 
+// In this example the callback is run 1 sec later.
+setTimeout(() => console.log('1 sec later'), 1000)
+// Notice the arrow function used here! 
 ```
 
-The callback provided to `map` can be any function that takes in a value and returns a value. 
+The previous example could have been written in a longer form like this: 
 
 ```JS
-// Consider these functions: 
-const timesTwo = n => n * 2
-const squared = n => n * n
-const moneyFormat = n => `$${n.toFixed(2)}`
-
-// An array of numbers
-const arr = [5, 3, 6, 9]
-const wth = arr.map(timesTwo)
-	.map(squared)
-	.map(moneyFormat)
+// Written across more lines
+setTimeout(() => {
+  console.log('1 sec later')
+}, 1000)
 ```
 
-This starts to show the ideas behind functional programming. Above the first three functions all take a value and return a value. The map function takes a function as a parameter and returns an array. Combining theee together we create a system of functions that all work together. 
-
-Take a look at the Repl.it here and try the challenges: https://repl.it/join/zcutdjnu-mitchellhudson
-
-### Filter 
-
-Use filter to create a new array containing a subset of the elements from the original array. 
-
-- Filter takes a callback that it expects to return a boolean
-- Filter calls the callback once for each element in the source array
-- If callback returns true the element is inlcuded in the output array
-
-**Facts about filter**
-
-- Filter returns a new array
-- The ouput array may have some, all or, none of the elements from the original array
-- The callback shouls only return true or false 
-
-**Examples of Filter**
-
-Abstract example:
+You can also pass a named function as a callback. 
 
 ```JS
-// Start with an array, make a new array, use a callback function
-const newArray = array.filter(callbackFunction)
-
-// The callback receives each item of the array and asks should we keep it? 
-const newArray = array.filter( (item) => { ... } )
-
-// Optionally the callback gest the index, and array also
-const newArray = array.filter( (item, index, arr) => { ... } )
+// Define a function
+const remindMeLater = () => {
+  console.log('Do the dishes...')
+}
+// Use a function stored in a variable
+setTimeout(remindMeLater, 1000)
 ```
 
-Practical example:
+What other functions take callbacks? Can you name any? 
+
+- `setInterval(callback, time)`
+- `forEach(callback)`
+- `map()`
+- `filter`
+- `reduce`
+
+### foreach()
+
+`forEach` takes a callback and invokes the callback once for each item in the array. It also passes each item in the array to the calback as the first parameter of the callback.
 
 ```JS
-// Imagine you have an array of numbers 
-const numbers = [11,32,45,66,76,78,36]
-// No you want only the even numbers
-// If n % 2 === 0 is true that number is included in evenNumbers
-const evenNumbers = numbers.filter(n => n % 2 === 0)
+// forEach is a method of Array
+arr.forEach(callback)
 ```
 
-Write your own filter function: https://repl.it/join/ffdybxac-mitchellhudson
-
-### Reduce 
-
-Reduce takes an array and reduces it to a single value. A value can be anything including arrays an objects. 
-
-Reduce always passes the running total or accumulated value to the callback.
-
-Unlike map and filter reduce takes a second optional parameter which is the starting value for the accumulator.
-
-**The facts about reduce:**
-
-- Reduce returns a new array
-- The callback receives the accumulator and an item from the source array
-- The call back returns the accumulator
-- If you don't supply the starting value reduce uses the first value from the source array as accumulator.
-
-Abstract example: 
+Imagine `forEach` is going to run the callback once for each item in `arr`. With each iteration it passes each item in the array to the callback as the first parameter. 
 
 ```JS
-// Reduce takes a callback
-const newValue = array.reduce(callback)
-
-// The callback takes the accumulator and the item
-const newValue = array.reduce((acc, item) => {...})
-
-// Set the starting value as the second  parameter
-const newValue = array.reduce((acc, item) => {...}, startingAccumulator)
+// Array forEach takes a function and executes 
+// it once for each item in an Array
+const arr = [11,22,33,44]
+arr.forEach(item => console.log(item * 3))
 ```
 
-Practical example: 
+This works for "stored" functions also: 
 
 ```JS
-// An array of values
-const values = [49,28,67,1,73]
-// Add up all values
-const total = values.reduce((acc, n)=> acc + n)
-// No need for the second parameter here
+const arr = [11,22,33,44]
+const double = n => console.log(n * 2)
+arr.forEach(double) // prints each value * 2
+```
 
-// What if you had an array objects? 
-const items = [
-	{name: 'Goo', price: 2.99},
-	{name: 'Foo', price: 1.99},
-	{name: 'Bar', price: 5.99},
+`forEach` has a couple more optional parameters it provides to the callback. 
+
+```JS
+// forEach has a couple optional parameters
+const numbers = [11,22,33,44]
+numbers.forEach((item, index, arr) => {
+  // Use the index if needed
+  console.log(item * index)
+})
+```
+
+Call backs are functions that we pass as arguments to other functions. 
+
+NOTE! 
+
+- **argument** is a value passed to a function
+- **parameter** is the name of a variable storing a value passed to a function
+
+For example: 
+
+```JS
+const hello = (name) => {
+  return `hello ${name}`
+}
+
+hello('Francois')
+```
+
+In the example above "Francois" is the argument, it's a string value, and `name` is the parameter.
+
+### Callback Exercise
+
+Try these practice exercises with callbacks: https://github.com/Tech-at-DU/ACS-4310-Working-with-Data/blob/master/02-callback-practice.js
+
+<!-- .slide: data-background="#087CB8" -->
+## [**10m**] BREAK
+
+Take a ten minute break.
+
+## JSON
+
+JSON is a common format for storing structured data for use with JavaScript. JSON stands for JavaScript Object Notation. 
+
+JSON is not code. JSON is a plain text format. The JSON format looks like standard JavaScript Objects and can easily be converted to and from JavaScript Objects. This often happens automatically. JSON itself is not JavaScript. 
+
+Here are a few rules for JSON. JSON supports the following data types:
+
+- Number
+- String - Must be quoted with double quotes
+- Boolean - Either of the vlaues `true` or `false`
+- Array - A list of values
+- Object - Property names must appear in the double quotes
+- null - Represents a lack of a value
+
+What are the differences between JSON and JavaScript Objects? 
+
+- **functions** - JavaScript objects can have functions as properties not so with JSON
+- **comments** - JSON text does not allow comments
+- **All property names must be quoted with double quotes** - JavaScript object properties as strings or as unquoted identifiers/symbols 
+- **Strings must quoted with double quotes** - JavaScript allows either single or double quote
+
+JSON files should always have the .json file extension. 
+
+```JSON
+[{
+  "id": 1,
+  "name": "Hadleigh",
+  "says": "Pre-emptive didactic forecast"
+}, {
+  "id": 2,
+  "name": "Hersh",
+  "says": "Compatible secondary methodology"
+}, {
+  "id": 3,
+  "name": "Shelly",
+  "says": "Robust mission-critical strategy"
+}, {
+  "id": 4,
+  "name": "Erina",
+  "says": "Reactive next generation customer loyalty"
+}]
+```
+
+## CSV
+
+CSV or Comma Separated Values, is a text format for managing organized information. So it's information with each value separated by a comma.
+
+In a CSV file each line is one row of data with each value separated by a comma. The first line is special as it holds a list of keys each separated by a comma. 
+
+Below is the same data we looked at in JSON format above but in CSV format this time. 
+
+```CSV
+id,name,says
+1,Hadleigh,Pre-emptive didactic forecast
+2,Hersh,Compatible secondary methodology
+3,Shelly,Robust mission-critical strategy
+4,Erina,Reactive next generation customer loyalty 
+```
+
+## CSV vs JSON
+
+JSON more human readable and works seemlessly with JavaScript because of built in support. 
+
+CSV is notably smaller in file size. It takes fewer characters to express data in CSV format. The JSON sample above is 314 characters, the same data in CSV is only 183 characters. 
+
+JSON has the ability to express structured data. For example a JSON file can express objects and arrays nested within other objects and arrays. CSV has a flat structure and only represents a single level, imagine an array of values (numbers and strings.)
+
+Why use JSON? Use JSON when you need structure beyond a simple array or object. Use JSON when you need seemlessly exchange data with JavaScript programs. 
+
+Why use CSV? Use CSV when you have lots of data and that data is organized in a flat file structure. 
+
+<!-- > -->
+
+## The Titanic Dataset
+
+Take a look at the [Titanic Dataset](https://www.kaggle.com/c/titanic/data). This link points to the Titanic dataset on Kaggle. Kaggle is a web site that shares dtaasets for data science and other studies. 
+
+The Titanic dataset is the starting point for studying dtaascience. It's sort of the Hello World of datsets. It's large enough to provide meaningful information, but also small enough to be managable. 
+
+The Titanic data on Kaggle is in CSV format which makes it harder to work with. You can download the Titanic dataset in JSON here: https://public.opendatasoft.com/explore/dataset/titanic-passengers/export/
+
+Take a look at the data, ask yourself what you see?
+
+- There is a record for each passenger
+- Each passenger has fields for a range of data points
+ - age, fare, pclass, sex, etc.
+
+What types of values can you find here? 
+
+What could this data tell you? 
+
+Pair and discuss. Come up with a list of things you find interesting. **Write the list on the board.**
+
+<!-- v -->
+
+## Exercise: Finding meaning in Data
+
+The Titanic dataset is an array of objects each of which describes a single passenger. 
+
+What can the array tell you about the Titanic and it's passengers? 
+
+```JS
+[{
+  "datasetid": "titanic-passengers", 
+  "recordid": "398286223e6c4c16377d2b81d5335ac6dcc2cafb", 
+  "record_timestamp": "2016-09-20T15:34:51-07:00",
+  "fields": {
+    "fare": 7.3125, 
+    "name": "Olsen, Mr. Ole Martin", 
+    "age": 40.0,
+    "embarked": "S", 
+    "parch": 0, 
+    "pclass": 3, 
+    "sex": "male", 
+    "survived": "No", 
+    "ticket": "Fa 265302", 
+    "passengerid": 155, 
+    "sibsp": 0,
+    "cabin": "F4"
+  }
+},
+  {
+    ...
+  }
 ]
-
-// Add up all of the prices
-const total = items.reduce((acc, item) => acc + item.price, 0)
-// MUST include the second parameter here! 0
-
-// Note the example above could also have been mapped first 
-// to get all of the prices before reducing
-const total = items.map(item => item.price).reduce((acc, price) => acc + price)
 ```
 
-Reduce examples: https://repl.it/join/svmjizdu-mitchellhudson
+Above is a single passenger what does this tell us about this passenger? 
 
-### Use Reduce to create a histogram
+Name three things you can say about this passenger? 
 
-A histogram is a distribution of values. Think of a historgram as a list of buckes or bins and the value in each bin is how many times value or range of values appears in your dataset. Here are a few examples from the Titanic data: 
+- ? 
+- ? 
+- ? 
 
-- `sex` - buckets would be male and female and the number passengers would be the value. This would have two buckets and each passenger would be put into one or the other.
-- `pclass` - Each passenger travelled in one of three classes: 1, 2, or 3. There would three buckets and the value of each would be the number of passengers who travelled in that class. 
-- `age` - If we made a bucket for each age we'd have almost as many buckets as passengers. Here you use a range. Imagine buckets being ages of: 0-10, 10-20, 20-30, 30-40, 40-50, 50-60 etc. 
+If we had an array of paessenger what questions could you ask the data? Pair up and make a list of at least 3 questions: 
 
-What would a histogram look like in code? An object would work well. Imagine something like: `{ apples: 23, oranges: 57 }`. 
+- ? 
+- ? 
+- ?
 
-How would you make a histogram? Use reduce!
+Using the Titanic dataset, you will be practicing the following techniques using JS:
 
-```JS 
-const passengersByClass = data.reduce((acc, p) => {
-	// Check if this property exists
-	if (acc[p.fields.pclass] === undefined) {
-		// If not add the property and give it a value of 1
-		acc[p.fields.pclass] = 1
-	} else {
-		// Otherwise add 1 to the current value
-		acc[p.fields.pclass] = acc[p.fields.pclass] + 1
-	}
-	return acc
-}, {}) // Be sure to set the default value to an object!
-```
+- Counting values - this asks: how many?
+- Find the min, max, and median values - this asks: what is the range? 
+- Filtering - Looks at subsets of the data
+- Aggregate values - Asks how much? and what is the average? 
 
-## Break
-
-Take a 10 minute break!
-
-## The Titanic data
-
-Time to apply map, filter, and reduce to the Titanic data. Let's start with this Repl.it: https://repl.it/join/wrtihkha-mitchellhudson
-
-## Lab
-
-Continue working on the Assignment 1. Think about refactoring your solutions to take advantage of map filter and reduce.
+<!-- > -->
 
 ## After Class
 
-Continue working on assignment 1. You should be finishing up challenges 1 and starting on challenges 2. 
+Complete the Challenges from lab: [Challenges](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data/)
 
-## Resources
+- Complete the challenges above and submit your solutions to gradescope.
 
-Video Lectures: 
-
-- https://youtu.be/sWcW9iNkMgw
-- https://youtu.be/qrHO0kKWOBc
-- https://youtu.be/rLxgeN1OhP8
-- https://youtu.be/VAvaMeSBeLs
-- https://youtu.be/WERvwbQ98dY
-- https://youtu.be/hGpQ7kQVafg
-
-
-- [Array.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-- [Array.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
-- [Array.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+Video Lessons: 
+- https://youtu.be/hRhXWI2IpI0
+- https://youtu.be/F3c5tnvODyI
+- https://youtu.be/vDIPl9sPeDY
+- https://youtu.be/r43ugP5EmtI
+- https://youtu.be/xsvLslDQCls
+- https://youtu.be/2R_pVXGwApg
+- https://youtu.be/cBbcVQm2PK8
+- https://youtu.be/RcS51jl-LBg
 
 
-<!-- 
+JavaScript, data visualization, titanic, titanic data, array, map, filter, reduce, callbacks, arrow functions
 
+
+<!-- > -->
+
+## Additional Resources
+
+- Arrow functions - https://javascript.info/arrow-functions-basics
+- Arrays - https://javascript.info/array-methods
+- forEach - https://javascript.info/array-methods#iterate-foreach
+- Math.max() - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max
+- Math.min() - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min
+
+<!--
 ## Minute-by-Minute
 
-| **Elapsed** | **Time**  | **Activity**              |
+| **Elapsed** | **Time** | **Activity** |
 | ----------- | --------- | ------------------------- |
-| 0:00        | 0:10      | [Overview](#overview) |
-| 0:10        | 0:05      | [Why you should know this?](#why-you-should-know-this) |
-| 0:15        | 0:05      | [Learning Objectives](#learning-objectives) |
-| 0:20        | 0:05      | [Looping over Arrays](#looping-over-arrays) |
-| 0:25        | 0:10      | [Map, Filter, and Reduce](#map-filter-and-reduce) |
-| 0:35        | 0:05      | [Map](#map) |
-| 0:35        | 0:05      | [Filter](#filter) |
-| 0:35        | 0:05      | [Reduce](#reduce) |
-| 0:40        | 0:10      | [Break](#break) |
-| 0:40        | 0:10      | [The Titanic data](#the-titanic-data) |
-| 0:50        | 0:40      | [Lab](#lab) |
-| 1:30        | 0:10      | [After Class](#after-class) |
-
- -->
- 
+| 0:00 | 0:05 | [Welcome to Data Visualization!](#welcome-to-data-visualization) |
+| 0:05 | 0:10 | [Why you should know this or industry application](#why-you-should-know-this-or-industry-application) |
+| 0:10 | 0:15 | [Learning Objectives](#learning-objectives) |
+| 0:15 | 0:20 | [Overview](#overview) |
+| 0:00 | 0:00 | [Arrow Functions](#arrow-functions) |
+| 0:00 | 0:00 | [Callbacks](#callbacks) |
+| 0:00 | 0:00 | [Arrow function challenges](#arrow-function-challenges) |
+| 0:50 | 1:00 | Break |
+| 0:20 | 0:25 | [JSON](#json) |
+| 0:25 | 0:30 | [CSV](#csv) | 
+| 0:30 | 0:40 | [CSV vs JSON](#csv-vs-json) |  
+| 0:40 | 0:50 | [The Titanic Dataset](#the-titanic-dataset) | 
+| 1:00 | 1:10 | [Exercise: Finding meaning in Data](#exercise-finding-meaning-in-data) |
+| 1:10 | 2:00 | [Lab Activity](#lab-activity) |
+| 2:00 | 2:10 | [After Class](#after-class) |
+| TOTAL | 2:45 | - | 
+-->
