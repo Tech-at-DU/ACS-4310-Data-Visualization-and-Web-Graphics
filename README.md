@@ -40,32 +40,33 @@ Duration 10/18/2021 - 12/10/2021
 
 | Class | Date | Topics | Assignments |
 |:-----:|:----:|:------:|:-----------:|
-|  1 | Mon, Oct 18 | [Functions and Callbacks]| - |  present typical problems
-|  2 | Wed, Oct 20 | [Map, Filter, and Reduce]| - |  map filter reduce practice 
-|  3 | Fri, Oct 22 | Lab                      | - |  map filter reduce lab
-|  4 | Mon, Oct 25 | [Intro to Data Viz]      | - |  titanic data challenges 
-|  5 | Wed, Oct 27 | [Collecting Data]        | - |   "
-|  6 | Fri, Oct 29 | Lab                      | - |   interview question
-|  7 | Mon, Nov  1 | [Making data visible]    | [challenges-2.js] [challenges-1.js] | mapping to HTML elements
-|  8 | Wed, Nov  3 | [Sorting and Filtering]  | - |   Using array sort 
-|  9 | Fri, Nov  5 | Lab                      | - |  Interview question
-| 10 | Mon, Nov  8 | [Real Time Data]         | [Visualize Titanic data] | Using canvas 
-| 11 | Wed, Nov 10 | [Drawing Data]           | - |  drawing with data
-| 12 | Fri, Nov 12 | Lab                      | - |  canvas lab
-| 13 | Mon, Nov 15 |                          | Audio Vidualizer |
-| 14 | Wed, Nov 17 | [D3 Intro]               | - |  D3 intro
-| 15 | Fri, Nov 19 | Lab                      | - |  D3 Lab
-| 16 | Mon, Nov 22 | [D3 Scales]              | [D3 Tutorial] | 
-| 17 | Wed, Nov 24 | [D3 Examples]            | - |  
-| -  | Fri, Nov 26 | Thanksgiving             | No class |
-| 18 | Mon, Nov 29 |                          | - |
-| 19 | Wed, Dec  1 | [D3 Maps]                | - |
-| 20 | Fri, Dec  3 | Lab                      | - |
-| 21 | Mon, Dec  6 | TBD                      | - |
-| 22 | Wed, Nov  8 | TBD                      | - |
-| 23 | Fri, Nov 10 | Final Assessment         | Final Data Visualization |
+|  1 | Mon, Oct 18 | [Functions and Callbacks] | - |  present typical problems
+|  2 | Wed, Oct 20 | [Map, Filter, and Reduce] | - |  map filter reduce practice 
+|  3 | Fri, Oct 22 | Lab                       | - |  map filter reduce lab
+|  4 | Mon, Oct 25 | [Intro to Data Viz]       | - |  titanic data challenges 
+|  5 | Wed, Oct 27 | [Collecting Data]         | - |   "
+|  6 | Fri, Oct 29 | Lab                       | - |   interview question
+|  7 | Mon, Nov  1 | [Making data visible]     | [challenges-2.js] [challenges-1.js] | mapping to HTML elements
+|  8 | Wed, Nov  3 | [Sorting and Filtering]   | - |   Using array sort 
+|  9 | Fri, Nov  5 | Lab                       | - |  Interview question
+| 10 | Mon, Nov  8 | [Real Time Data]          | [Visualize Titanic data] | Using canvas 
+| 11 | Wed, Nov 10 | [Drawing Data]            | - |  drawing with data
+| 12 | Fri, Nov 12 | Lab                       | - |  canvas lab
+| 13 | Mon, Nov 15 |                           | Audio Vidualizer |
+| 14 | Wed, Nov 17 | [D3 Intro]                | - |  D3 intro
+| 15 | Fri, Nov 19 | Lab                       | - |  D3 Lab
+| 16 | Mon, Nov 22 | [D3 Scales]               | [D3 Tutorial] | 
+| 17 | Wed, Nov 24 | [D3 Examples]             | - |  
+| -  | Fri, Nov 26 | Thanksgiving              | No class |
+| 18 | Mon, Nov 29 |                           | - |
+| 19 | Wed, Dec  1 | [D3 Maps]                 | - |
+| 20 | Fri, Dec  3 | Lab                       | - |
+| 21 | Mon, Dec  6 | TBD                       | - |
+| 22 | Wed, Nov  8 | TBD                       | - |
+| 23 | Fri, Nov 10 | Final Assessment          | Final Data Visualization |
 
 <!-- Lessons -->
+[Functions and Callbacks]: https://github.com/Tech-at-DU/ACS-4310-Working-with-Data
 [Intro to Data Viz]: lessons/lesson-01.md
 [Collecting Data]: lessons/lesson-02.md
 [Making data visible]: lessons/lesson-03.md
