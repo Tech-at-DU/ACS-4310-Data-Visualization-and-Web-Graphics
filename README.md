@@ -40,7 +40,7 @@ Duration 10/18/2021 - 12/10/2021
 
 | Class | Date | Topics | Assignments |
 |:-----:|:----:|:------:|:-----------:|
-|  1 | Mon, Oct 18 | [Functions and Callbacks] | - |  present typical problems
+|  1 | Mon, Oct 18 | [Lesson 1] | [Functions and Callbacks] |  present typical problems
 |  2 | Wed, Oct 20 | [Map, Filter, and Reduce] | - |  map filter reduce practice 
 |  3 | Fri, Oct 22 | Lab                       | - |  map filter reduce lab
 |  4 | Mon, Oct 25 | [Intro to Data Viz]       | - |  titanic data challenges 
@@ -67,7 +67,7 @@ Duration 10/18/2021 - 12/10/2021
 
 <!-- Lessons -->
 [Functions and Callbacks]: https://github.com/Tech-at-DU/ACS-4310-Working-with-Data
-[Intro to Data Viz]: lessons/lesson-01.md
+[Lesson 1]: lessons/lesson-01.md
 [Collecting Data]: lessons/lesson-02.md
 [Making data visible]: lessons/lesson-03.md
 [Sorting and Filtering]: lessons/lesson-04.md
