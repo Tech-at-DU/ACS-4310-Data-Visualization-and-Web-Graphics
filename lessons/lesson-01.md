@@ -104,7 +104,7 @@ Study up! Here's an article on Arraow functions: https://www.freecodecamp.org/ne
 
 ### Arrow function Practice
 
-You'll be working with the problems [here](https://github.com/Tech-at-DU/ACS-4310-Working-with-Data) copy this repo and start with the [01-arrow-function-practice.js](https://github.com/Tech-at-DU/ACS-4310-Working-with-Data/blob/master/01-arrow-function-practice.js).
+Copy this repo and start with the [01-arrow-function-practice.js](https://github.com/Tech-at-DU/arrow-functions-and-callback-challenges).
 
 Where do Arrow function work best? 
 
