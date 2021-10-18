@@ -220,4 +220,4 @@ In the example above "Francois" is the argument, it's a string value, and `name`
 
 ### Callback Exercise
 
-Try these practice exercises with callbacks: https://github.com/Tech-at-DU/ACS-4310-Working-with-Data/blob/master/02-callback-practice.js
+Try these practice exercises with callbacks: [02-callback-practice.js](https://github.com/Tech-at-DU/arrow-functions-and-callback-challenges)
