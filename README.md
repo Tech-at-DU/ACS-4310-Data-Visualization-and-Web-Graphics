@@ -1,4 +1,4 @@
-# FEW 2.5
+# ACS 4310 - Data Visualizationsw with Web Graphics
 
 ## Course Description
 
@@ -12,7 +12,7 @@ If you want to practice the craft of making web applications with HTML, CSS, and
 
 ## Prerequisites:
 
-- [FEW 1.2](https://github.com/Make-School-Courses/FEW-1.2-JavaScript-Foundations) Due Feb. 17
+- [ACS 1320](https://github.com/Tech-at-DU/ACS-1320-JavaScript-Foundations)
 
 ## Course Specifics
 
@@ -40,13 +40,13 @@ Duration 10/18/2021 - 12/10/2021
 
 | Class | Date | Topics | Assignments |
 |:-----:|:----:|:------:|:-----------:|
-|  1 | Mon, Oct 18 | [Lesson 1]  | - |  present typical problems
-|  2 | Wed, Oct 20 | [Lesson 2]  | - |  map filter reduce practice 
+|  1 | Mon, Oct 18 | [Lesson 1]  | - | present typical problems
+|  2 | Wed, Oct 20 | [Lesson 2]  | [Arrow functions and Callback challenges] |  map filter reduce practice 
 |  3 | Fri, Oct 22 | Lab         | - |  map filter reduce and callbacks lab
-|  4 | Mon, Oct 25 | [Lesson 3]  | [Arrow functions] |  titanic data challenges 
+|  4 | Mon, Oct 25 | [Lesson 3]  | [Map, filter, and reduce challenges] |  titanic data challenges 
 |  5 | Wed, Oct 27 | [Lesson 4]  | - |   "
 |  6 | Fri, Oct 29 | Lab         | - |   interview question
-|  7 | Mon, Nov  1 | [Lesson 5]  | [Titanic challenges] | mapping to HTML elements
+|  7 | Mon, Nov  1 | [Lesson 5]  | [Titanic data challenges] | mapping to HTML elements
 |  8 | Wed, Nov  3 | [Lesson 6]  | - |   Using array sort 
 |  9 | Fri, Nov  5 | Lab         | - |  Interview question
 | 10 | Mon, Nov  8 | [Lesson 7]  | [Visualize Titanic data] | Using canvas 
