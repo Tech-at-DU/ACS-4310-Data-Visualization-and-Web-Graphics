@@ -1,294 +1,132 @@
 
-# ACS 4310 - Lesson 2
+# ACS 4310 - Historgrams
 
 Telling stories with data. 
 
-<!-- Put a link to the slides so that students can find them -->
-
-<!-- ➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-1.html ':ignore') -->
-
 <!-- > -->
 
-## Welcome to Data Visualization!
+## Historgrams 
 
-The goal of this lesson is to get started with data visualization. You will look at needed to make information visible.
+A histogram represents the distribution of data. A histogram divises values into bins or buckets. The idea is to count how many values are in each bin. 
 
-The first step in the process is asking questions of the data you're working with. The code you'll write in this assignment will answer those questions. 
+This can tell you how many, how much, or how frequently values appear. 
 
-<!-- > -->
+For example. If we were curious about how money people were willing to spend on lunch a histogram might be a good way to look at the problem. This might be useful for our new lunch delivery app. 
 
-## Why you should know this or industry application
+Imagine a list of numbers that represent the amount our subject group spends on lunch. 
 
-To make data visible you need to measure and quantify the data. While many programs have function built in that handle these operations it good to know how they work and how to implement them yourself. 
+```JS
+[14.54, 8.54, 10.00, 12.30, 9,76, 5.65, 7.85, 5.50, 23.50]
+```
 
-The tools you will use for this are some of the most important tools to have in your coding tool box. 
+We could divide this group into buckets of $5. 
 
-<!-- > -->
+- 0.00 - 4.99 - 0
+- 5.00 - 9.99 - 5
+- 10.00 - 14.99 - 3
+- 15.00 - 19.99 - 0
+- 20.00 - 24.99 - 1
 
-## Learning Objectives
+With a histogram we can clearly see most people are spending $5 to $15. If we target below $5 or above $15 we aren't going to have many customers! 
 
-- Write with arrow functions 
-- Use callbacks
-- Identify values in the Titanic dataset
-- Extract data and derive relevant values
+Here is a good explanation of historgrams: https://chartio.com/learn/charts/histogram-complete-guide/
 
-<!-- > -->
+## Making a histogram in code
 
-## What is Data visualization? 
+This is a pretty open ended question. There are many ways to solve this. 
 
-What do you picture when you think of data visualization? 
+An easy starting point for creating a historgram is an array. Imagine the example above.
 
-- Pair up and look for examples of data visualzation. 
-- Share with your partner
-- Share with the class
+```JS
+const prices = [14.54, 8.54, 10.00, 12.30, 9.76, 5.65, 7.85, 5.50, 23.50]
 
-## Overview
+/* Imagine we need the output should look like this: 
+- 0.00 - 4.99 - 0
+- 5.00 - 9.99 - 5
+- 10.00 - 14.99 - 3
+- 15.00 - 19.99 - 0
+- 20.00 - 24.99 - 1
+*/
 
-The goal today is to look at the Titanic dataset and use JavaScript to extract relevant data from it using JavaScript.
+const pricesByBucket = makeHisto(prices, 5)
 
-## Arrow functions 
+// [0, 5, 3, 0, 1]
+```
 
-Arrow functions are great to use when passing a function as a parameters. Understanding the syntax used by arrow functions can make your shorter and easier to read. 
+To do this the `makeHisto()` needs to look at each value and place it at the correct position in the array. 
 
-Take a look at a map example: 
-
-```JS 
-// A regular function 
-
-function world() {
-  console.log('World')
+```JS
+const prices = [14.54, 8.54, 10.00, 12.30, 9.76, 5.65, 7.85, 5.50, 23.50]
+// First attempt
+const histogram = []
+// Loop over the values
+for (let i = 0; i < prices.length; i += 1) {
+  // get a price
+  const price = prices[i] 
+  // divide by the step and round down. The tells which bucket
+  const index = Math.floor(price / 5) 
+	// add one to the bucket
+	histogram[index] = histogram[index] !== undefined ? histogram[index] + 1 : 1
 }
+// Check the results
+console.log(histogram) // [ <1 empty item>, 5, 3, <1 empty item>, 1 ]
+```
 
-world() // invoke this function
+The empty slots represent array indexes that were never assigned a value. If we set a value at index 1
 
+The above example works on the idea that taking a value and dividing it by our step will provide the index which tells which bucket to place it in the array! For example: 
 
-// An arrow function
+$14.54 / 5 = 2.908 round that down to 2 and we count 1 for bucket 2. The array would look like this: 
 
-const hello = () => {
-  console.log('Hello')
+```JS
+const buckets = []
+buckets[2] = 1
+console.log(buckets) // [ <2 empty items>, 1 ] 
+// The array might look like this: [,,1]
+```
+
+After creatng the histogram you'll probably need to fill in the empty slots with 0. JavaScript has some interesting behavior around these empty slots. 
+
+```JS
+const buckets = []
+buckets[2] = 1
+console.log(buckets) // [ <2 empty items>, 1 ] 
+// The array might look like this: [,,1]
+for (let i = 0; i < buckets.length; i +=1 ) {
+	console.log(buckets[i])
 }
-
-hello()
-
-// Parameters go in the ()
-
-const foo = (x, y) => {
-  console.log(x * y)
-}
-
-foo(4, 3)
-
-
-// If the function is on a single line the 
-// {} can be omitted
-
-const bar = (x, y) => console.log(x / y)
-
-bar(3, 4)
-
-
-// If there is only a single parameter the 
-// () can be omitted
-
-const apples = (x) => { return x * 2 }
-const oranges = x => x * 2 // Value is returned!
-
-console.log( oranges(3) ) // 6
-console.log( apples(3) )  // 6
-
-
-// If there are no parameters you need to include
-// () or a _
-
-const pi = () => 3.14
-
-console.log( pi() ) // -> 3.14
-
-const euler = _ => 2.7182
-console.log( euler() ) // 2.7182
+// Prints:
+// undefined
+// undeifined
+// 1
 ```
 
-Study up! Here's an article on Arraow functions: https://www.freecodecamp.org/news/when-and-why-you-should-use-es6-arrow-functions-and-when-you-shouldnt-3d851d7f0b26/
-
-### Arrow function Practice
-
-You'll be working with the problems [here](https://github.com/Tech-at-DU/ACS-4310-Working-with-Data) copy this repo and start with the [01-arrow-function-practice.js](https://github.com/Tech-at-DU/ACS-4310-Working-with-Data/blob/master/01-arrow-function-practice.js).
-
-Where do Arrow function work best? 
-
-Arrow functions work best for callbacks and situations where a function doesn't need identity. 
-
-## Callbacks
-
-What's a callback? 
-
-A callback is a function that is passed to another function as a parameter. Arrow functions are good here since these functions are often written inline and the Arrow function's compact syntax works well.
-
-When writing JS you'll callbacks everywhere. Here are a few JS examples: 
-
-`setTimeout` takes a callback and invokes it a number of milliseconds in the future. This callback takes no parameters. 
+That makes sense. What about `forEach()`?
 
 ```JS
-// Set time out takes a callback as it's first parameter
-setTimeout(<callback>, <time>)
-// It executes the callback in the future. 
-// In this example the callback is run 1 sec later.
-setTimeout(() => console.log('1 sec later'), 1000)
-// Notice the arrow function used here! 
+buckets.forEach(item => console.log(item))
+// Prints:
+// 1
 ```
 
-The previous example could have been written in a longer form like this: 
+What happened to the empty slots? `forEach` seems to skip over empty slots in an Array. The same is true for `map`, `filter`, and `reduce`!
+
+They mention it in the docs here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach#no_operation_for_uninitialized_values_sparse_arrays
+
+How to fill these empty slots? You can use a for loop like I did above checking each value for `undefined`. Another option is: `Array.from()`. `Array.from()` is a method that creates an array from an array-like object. You can use it to copy an array and fill in empty slots along the way. 
 
 ```JS
-// Written across more lines
-setTimeout(() => {
-  console.log('1 sec later')
-}, 1000)
+const filledBuckets = Array.from(buckets, a => a || 0)
+// [ 0, 5, 3, 0, 1 ]
 ```
 
-You can also pass a named function as a callback. 
+The second parameter is a callback that allows you to map all values. For each value in the source array the callback is run and the value is passed as an argument. The returned value is added to the output array. Just like map! In this case all of the values are iterated even the empty slots! 
 
-```JS
-// Define a function
-const remindMeLater = () => {
-  console.log('Do the dishes...')
-}
-// Use a function stored in a variable
-setTimeout(remindMeLater, 1000)
-```
+Let's go over that again. A histogram divides a list of values into ranges and counts how many values fall into each range. We can think of range as a bucket. 
 
-What other functions take callbacks? Can you name any? 
+One way to make a histogram is to divide values by a step and round down this will give you the index where that value should be counted. 
 
-- `setInterval(callback, time)`
-- `forEach(callback)`
-- `map()`
-- `filter`
-- `reduce`
-
-### foreach()
-
-`forEach` takes a callback and invokes the callback once for each item in the array. It also passes each item in the array to the calback as the first parameter of the callback.
-
-```JS
-// forEach is a method of Array
-arr.forEach(callback)
-```
-
-Imagine `forEach` is going to run the callback once for each item in `arr`. With each iteration it passes each item in the array to the callback as the first parameter. 
-
-```JS
-// Array forEach takes a function and executes 
-// it once for each item in an Array
-const arr = [11,22,33,44]
-arr.forEach(item => console.log(item * 3))
-```
-
-This works for "stored" functions also: 
-
-```JS
-const arr = [11,22,33,44]
-const double = n => console.log(n * 2)
-arr.forEach(double) // prints each value * 2
-```
-
-`forEach` has a couple more optional parameters it provides to the callback. 
-
-```JS
-// forEach has a couple optional parameters
-const numbers = [11,22,33,44]
-numbers.forEach((item, index, arr) => {
-  // Use the index if needed
-  console.log(item * index)
-})
-```
-
-Call backs are functions that we pass as arguments to other functions. 
-
-NOTE! 
-
-- **argument** is a value passed to a function
-- **parameter** is the name of a variable storing a value passed to a function
-
-For example: 
-
-```JS
-const hello = (name) => {
-  return `hello ${name}`
-}
-
-hello('Francois')
-```
-
-In the example above "Francois" is the argument, it's a string value, and `name` is the parameter.
-
-### Callback Exercise
-
-Try these practice exercises with callbacks: https://github.com/Tech-at-DU/ACS-4310-Working-with-Data/blob/master/02-callback-practice.js
-
-<!-- .slide: data-background="#087CB8" -->
-## [**10m**] BREAK
-
-Take a ten minute break.
-
-## JSON
-
-JSON is a common format for storing structured data for use with JavaScript. JSON stands for JavaScript Object Notation. 
-
-JSON is not code. JSON is a plain text format. The JSON format looks like standard JavaScript Objects and can easily be converted to and from JavaScript Objects. This often happens automatically. JSON itself is not JavaScript. 
-
-Here are a few rules for JSON. JSON supports the following data types:
-
-- Number
-- String - Must be quoted with double quotes
-- Boolean - Either of the vlaues `true` or `false`
-- Array - A list of values
-- Object - Property names must appear in the double quotes
-- null - Represents a lack of a value
-
-What are the differences between JSON and JavaScript Objects? 
-
-- **functions** - JavaScript objects can have functions as properties not so with JSON
-- **comments** - JSON text does not allow comments
-- **All property names must be quoted with double quotes** - JavaScript object properties as strings or as unquoted identifiers/symbols 
-- **Strings must quoted with double quotes** - JavaScript allows either single or double quote
-
-JSON files should always have the .json file extension. 
-
-```JSON
-[{
-  "id": 1,
-  "name": "Hadleigh",
-  "says": "Pre-emptive didactic forecast"
-}, {
-  "id": 2,
-  "name": "Hersh",
-  "says": "Compatible secondary methodology"
-}, {
-  "id": 3,
-  "name": "Shelly",
-  "says": "Robust mission-critical strategy"
-}, {
-  "id": 4,
-  "name": "Erina",
-  "says": "Reactive next generation customer loyalty"
-}]
-```
-
-## CSV
-
-CSV or Comma Separated Values, is a text format for managing organized information. So it's information with each value separated by a comma.
-
-In a CSV file each line is one row of data with each value separated by a comma. The first line is special as it holds a list of keys each separated by a comma. 
-
-Below is the same data we looked at in JSON format above but in CSV format this time. 
-
-```CSV
-id,name,says
-1,Hadleigh,Pre-emptive didactic forecast
-2,Hersh,Compatible secondary methodology
-3,Shelly,Robust mission-critical strategy
-4,Erina,Reactive next generation customer loyalty 
-```
+It is possible that we might end up with empty buckets, or empty slots in our array. In this case we need to fill these with 0 since there were zero values for that bucket. 
 
 ## CSV vs JSON
 

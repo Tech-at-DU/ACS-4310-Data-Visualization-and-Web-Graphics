@@ -90,7 +90,11 @@ the names that have already been defined in another script! -->
 </script>
 ```
 
-In a module code would not "escape" it's module. Take a quick read about modules here: 
+Modules solve this problem. Code in a module is encapsulated. Variables and functions defined in a module are scoped to the module and not visible to code outside the module.  
+
+A module can share variables and functions by importing and exporting them.
+
+Take a quick read about modules here: 
 
 https://javascript.info/modules-intro
 
