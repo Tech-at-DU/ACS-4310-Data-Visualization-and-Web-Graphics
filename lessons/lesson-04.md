@@ -220,7 +220,7 @@ https://repl.it/join/gnjigkyl-mitchellhudson
 
 ## After Class
 
-- https://github.com/Make-School-Labs/FEW-2-5-Titanic-Visualization
+- https://github.com/Tech-at-DU/FEW-2.5-Visualizing-Titanic
 
 
 ## Video lessons

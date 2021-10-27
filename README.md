@@ -34,27 +34,27 @@ Students by the end of the course will be able to ...
 MWF 3:40 PM - 5:30 PM; Dominican University, Virtual, ONLINE
 Duration 10/18/2021 - 12/10/2021
 
-**Course Dates:** Wednesday, January 20 – Wednesday, March 3, 2021
+**Course Dates:** Wednesday, October 18, 2021
 
-**Class Times:** Monday, Wednesday at 9:30am–12:15pm (13 class sessions)
+**Class Times:** Monday, Wednesday, Friday at 3:40 AM - 5:30 PM
 
 | Class | Date | Topics | Assignments |
 |:-----:|:----:|:------:|:-----------:|
-|  1 | Mon, Oct 18 | [Lesson 1]  | - | present typical problems
-|  2 | Wed, Oct 20 | [Lesson 2]  | [Arrow functions and Callback challenges] |  map filter reduce practice 
-|  3 | Fri, Oct 22 | Lab         | - |  map filter reduce and callbacks lab
-|  4 | Mon, Oct 25 | [Lesson 3]  | [Map, filter, and reduce challenges] |  titanic data challenges 
-|  5 | Wed, Oct 27 | [Lesson 4]  | - |   "
-|  6 | Fri, Oct 29 | Lab         | - |   interview question
-|  7 | Mon, Nov  1 | [Lesson 5]  | [Titanic data challenges] | mapping to HTML elements
-|  8 | Wed, Nov  3 | [Lesson 6]  | - |   Using array sort 
-|  9 | Fri, Nov  5 | Lab         | - |  Interview question
-| 10 | Mon, Nov  8 | [Lesson 7]  | [Visualize Titanic data] | Using canvas 
-| 11 | Wed, Nov 10 | [Lesson 8]  | - |  drawing with data
-| 12 | Fri, Nov 12 | Lab         | - |  canvas lab
-| 13 | Mon, Nov 15 | [Lesson 9]  | [Real Time Data] |
-| 14 | Wed, Nov 17 | [Lesson 10] | - |  D3 intro
-| 15 | Fri, Nov 19 | Lab         | - |  D3 Lab
+|  1 | Mon, Oct 18 | [Lesson 1]  | Solve data collection problems |
+|  2 | Wed, Oct 20 | [Lesson 2]  | [Arrow functions and Callback challenges] | 
+|  3 | Fri, Oct 22 | Lab         | Solve problems with map, filter, and reduce |
+|  4 | Mon, Oct 25 | [Lesson 3]  | [Map, filter, and reduce challenges] | 
+|  5 | Wed, Oct 27 | [Lesson 4]  | Work on map filter and reduce problems |
+|  6 | Fri, Oct 29 | Lab         | Continue Titanic data problems |
+|  7 | Mon, Nov  1 | [Lesson 5]  | [Titanic data challenges] |
+|  8 | Wed, Nov  3 | [Lesson 6]  | Using sort |
+|  9 | Fri, Nov  5 | Lab         | Titanic visualization lab |
+| 10 | Mon, Nov  8 | [Lesson 7]  | Real Time visualization - [Visualize Titanic data] | 
+| 11 | Wed, Nov 10 | [Lesson 8]  | Drawing data on canvas |  
+| 12 | Fri, Nov 12 | Lab         | Real time lab |
+| 13 | Mon, Nov 15 | [Lesson 9]  | D3 Intro - [Real Time Data] |
+| 14 | Wed, Nov 17 | [Lesson 10] | Working with D3 |
+| 15 | Fri, Nov 19 | Lab         | D3 Lab |
 | 16 | Mon, Nov 22 | [Lesson 11] | [D3 Tutorial] | 
 | 17 | Wed, Nov 24 | [Lesson 12] | - |  
 | -  | Fri, Nov 26 | Thanksgiving | No class |
@@ -62,7 +62,7 @@ Duration 10/18/2021 - 12/10/2021
 | 19 | Wed, Dec  1 | [Lesson 14] | - |
 | 20 | Fri, Dec  3 | [Lesson 15] | - |
 | 21 | Mon, Dec  6 | [Lesson 16] | - |
-| 22 | Wed, Nov  8 | Final Presentation | - |
+| 22 | Wed, Nov  8 | Final Presentation | Final Project |
 | 23 | Fri, Nov 10 | Final Assessment   | Final Data Visualization |
 
 <!-- Lessons -->
