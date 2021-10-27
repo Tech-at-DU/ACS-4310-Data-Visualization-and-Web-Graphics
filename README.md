@@ -39,7 +39,7 @@ Duration 10/18/2021 - 12/10/2021
 **Class Times:** Monday, Wednesday, Friday at 3:40 AM - 5:30 PM
 
 | Class | Date | Topics | Assignments |
-|:-----:|:----:|:------:|:-----------:|
+|:-----:|:-----|:-------|:------------|
 |  1 | Mon, Oct 18 | [Lesson 1]  | Solve data collection problems |
 |  2 | Wed, Oct 20 | [Lesson 2]  | [Arrow functions and Callback challenges] | 
 |  3 | Fri, Oct 22 | Lab         | Solve problems with map, filter, and reduce |
