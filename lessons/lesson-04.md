@@ -153,13 +153,9 @@ What can you draw with these properties? It seems limited but there are lots of 
 
 The possibilities open up when you combine elements. Imagine that each of the divs in the passengers array also had another div inside. 
 
-## Lab
+## After Class
 
-- https://github.com/Tech-at-DU/FEW-2.5-Visualizing-Titanic
-
-## After Class 
-
-
+- https://github.com/Tech-at-DU/Visualize-Titanic
 
 ## Video lessons
 
