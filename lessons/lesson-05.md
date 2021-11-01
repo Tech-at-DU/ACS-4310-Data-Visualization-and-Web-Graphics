@@ -47,25 +47,46 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 
 <!-- > -->
 
-Sort values less than 10 
+Important! The docs say: 
+
+> The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.
+
+Sort doesn't sort numerically. Instead it sorts alphabetically. (technically it's using the unicode value)
+
+<!-- > -->
+
+Important! The also say this: 
+
+> The sorted array. Note that the array is sorted in place, and no copy is made.
+
+Sort mutates the original array! Unlike map, filter, and reduce it doesn't not return a copy! If you sort an array stop and think about how that might affect the rest of your program that might be usinfg that array. 🤔 If you think this might cause problems, consider making a copy of the array first and sorting the copy! 👯‍♂️
+
+<!-- > -->
+
+Sort values less than 10:
 
 ```JS 
 const a = [4,3,1,7,6,2]
 a.sort() // [1,2,3,4,6,7]
 ```
+Everything is as expected.
 
 <!-- > -->
 
-Sorting larger numbers
+Sorting larger numbers:
 
 ```JS 
 const a = [4,13,1,7,6,12]
 a.sort() // [1, 12, 13, 4, 6, 7]
 ```
 
+Here the results are not what we expect. Though this would be corrct if we were sorting alphabetically. 
+
 <!-- > -->
 
-Use a compare function
+Sort give us the option to include a compare function. Use this to sort things that not sorted alphabetically. 
+
+Use a compare function.
 
 ```JS 
 const a = [4,13,1,7,6,12]
@@ -73,6 +94,8 @@ a.sort((a, b) => {
   return a - b
 }) // [1, 4, 6, 7, 12, 13]
 ```
+
+The compare funcion expects you to return a number. The compare function receives two elements, `a` and `b`, from the array and asks you to sort them. You return a value less than 0 if `a` should be sorted before `b`. Return a value greater than 0 if `b` should be sorted before `a`. Or, return 0 if the two values should not change order.
 
 <!-- > -->
 
@@ -82,6 +105,8 @@ What about non numeric data?
 const months = ['March', 'Jan', 'Feb', 'Dec'];
 months.sort(); // ["Dec", "Feb", "Jan", "March"]
 ```
+
+Strings are sorted as expected. 
 
 <!-- > -->
 
@@ -93,15 +118,7 @@ fields.sort((a, b) => {
 })
 ```
 
-Sorts survivors first. This example may not make sense without some background. 
-
-Array.sort looks at the two values, `a` and `b` in the example code snippet, and does one of three things: 
-
-- places `a` before `b`
-- places `a` after `b`
-- does not change the order
-
-If you're sorting something more complex than an array of strings you'll probably need to include a sorting function. Here are a few examples: 
+<!-- > -->
 
 Sort titnaic data on fares. These are numbers so `a - b` is will work: 
 
@@ -113,7 +130,13 @@ fields.sort((a, b) => {
 
 This would work for other numeric values like age and pclass. 
 
-Without a callback the values are compared numerically. Every character has a numeric value. You can see a few of the value in the list below. The numbers 0 - 9 have values 48 to 57. These come before the uppercase letters A to Z (65 - 96), later are lowercase letters a to z (97 to 122). 
+<!-- > -->
+
+Without a callback the values are converted to strings and compared numerically on their unicode value. 
+
+Every character has a numeric value. You can see a few of the value in the list below. The numbers 0 - 9 have values 48 to 57. These come before the uppercase letters A to Z (65 - 96), later are lowercase letters a to z (97 to 122). 
+
+<!-- > -->
 
 Without a callback Array sort compares these numeric values. This is why 111 and would come before 99. Looking at the first character, 1 has a value of 49 and 9 has a value of 57.
 
@@ -145,7 +168,9 @@ Character codes:
 
 Check the whole list here: https://www.w3schools.com/charsets/ref_html_ascii.asp
 
-What about names? These are all strings but they are on a property. Since uppercase letters have a lower numeric value than lowercase character they will sort first.
+<!-- > -->
+
+What about names? Since uppercase letters have a lower numeric value than lowercase character they will sort first.
 
 ```JS 
 fields.sort((a, b) => {
@@ -157,6 +182,8 @@ fields.sort((a, b) => {
   return 0
 })
 ```
+
+<!-- > -->
 
 To make this case insensitive convert the stringds you're comparing to upper or lowercase before comparing them. 
 
@@ -173,9 +200,9 @@ fields.sort((a, b) => {
 })
 ```
 
-Sort is really just comparing each character agains it's number in the list to determine how it is sorted. Numbers are sorted much like you would sort a word by starting with the first character. 
+<!-- > -->
 
-Sort also takes a callback function to determine the sorting order. This callback receives two of the elements from the array. Let's call these a and b. You don't know where in the array they came from. Sort expects the callback to return a number less than 0 if a should come before b, a number greater than 0 if b should be sorted before a, and return 0 if the place of the two elements should not change. 
+Sort is really just comparing each character against it's number in the list to determine how it is sorted. Numbers are sorted much like you would sort a word by starting with the first character. 
 
 Try this out in the Repl.it: https://repl.it/join/mnsudqlm-mitchellhudson
 
@@ -233,7 +260,7 @@ const fieldsWomen = fields.filter((p) =>  p.sex === 'female')
 
 <!-- > -->
 
-### Array.filter() challenges 
+### Array.filter() challenges
 
 - display only women
 - display only men
