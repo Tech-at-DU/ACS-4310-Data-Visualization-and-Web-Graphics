@@ -22,301 +22,192 @@ Experimenting with real-time data is expands your skills into new areas. Trackin
 ## Learning Objectives
 
 - Use canvas to draw data
-- Use the audio object
 - draw real-time data
 
-<!-- > -->
+## canvas
 
-## Real-Time Data
+Canvas is a an HTML elment that allows you to draw with pixels. Think of it like an image but the image is generated with code. 
 
-Real-time data is data that changes from moment to moment, micro-second to micro-second even! 
+Canvas has the advantage that drawing pixels is a faster process than drawing objects. Objects have a lot of meta data and rules that come with them and need to be further processed before they can be turned into pixel data. 
 
-This can be stock prices, exchange rates, interstellar noise, tectonic motion, heart rates, and more. For this project you will work with audio data. 
+Canvas bypasses all of this process and provides you with tools for drawing pixel data directly to the page. 
 
-<!-- > -->
+### Why use canvas?
 
-## Getting started 
+Canvas isn't good for everyday processes where you have specialized elements. For example, you wouldn't want to use canvas to draw text or headings. Though canvas can draw text, it doesn't not allows us to select and copy the text or style it with CSS. Instead we have the `<p>`, `<h1>`, and other tags that supply this functionality. 
 
-Create a new folder for this project. Add an HTML file with two elements: 
+So why use canvas? Canvas is great when you need to draw raw pixels to the screen directly. This is good for things like games where performance is important. It's also good for real time process like drawing audio wave forms or other things that update quickly and need to be drawn fast. 
+
+Canvas is also good when you need to make custimized drawings. HTML elements are limited in what you can draw with them. With canvas you can draw just about anything! 
+
+## Using canvas 
+
+To use canvas follow these steps:
+
+- Create a canvas element, be sure to set it's width and height
+- Get a reference to the canvas element
+- Get the canvas context, this object cantains all of the drawing methods
+- Use the canvas methods and properties to draw on the canvas
+
+Here is how it would look in code. 
+
+Create a canvas element in your HTML document. 
 
 ```HTML
-<canvas id="canvas" width="300" height="300"></canvas>
-<button id="button-play">Play</button>
+<canvas width="600" height="400"></canvas>
 ```
 
-The canvas will display the visualization and the button will be used to start playing the audio.
-
-Canvas is a good choice for real time data since it allows us to draw to the screen faster than than updating the DOM. Drawing to canvas is a single step process. Where updating the DOM requires the browser to traverse the DOM tree and update all child nodes when a change is made. 
-
-## Audio
-
-The Audio Object loads audio data. The Audio object does many things. It can play and modify audio and generate new audio sources and process audio. You can make a whole audion workstation with JS! 
-
-It can also analyze audio and provide information about the audio source. This what you are are going to do with this project. 
-
-### Load Audio 
-
-The code snippet below uses the Audio object to load a sound file and play it.
+In your JS get a reference to the canvas and use that to get the context. 
 
 ```JS
-function startAudio() {
-  // Create an Audio instance 
-  const audio = new Audio()
-  // Make a new Audio Context
-  const audioContext = new (window.AudioContext || window.webkitAudioContext)()
-  // Set the src to a sound file
-  audio.src = 'bird-whistling-a.wav'
-  // Play the audio
-  audio.play()
-}
-```
-
-Call the function above with a button: 
-
-```JS
-const playButton = document.getElementById('button-play')
-
-playButton.addEventListener('click', (e) => {
-  startAudio()
-})
-```
-
-**You can't play audio without user interaction** Read this rationale https://developers.google.com/web/updates/2017/09/autoplay-policy-changes
-
-<!-- > -->
-
-### Analysing Audio
-
-The Audio object can do many things with an audio source. Think of the Audio object as processing plant for sound. It allows you to process audio by passing it through nodes. The nodes process the audio from the previous node.
-
-You can do things like: 
-
-- Filter sound (think equalizer)
-- Mix sounds
-- Split sound into stereo
-- Create effects like echo
-- Increase or decrease the gain of sounds
-- Create an oscillator (sound generator)
-- Pan sounds from left to right
-- Analyze audio
-- and more...
-
-Seriously you can make your own digital audio workstation with JavaScript in the browser. Take a look at BandLab.com it like GarageBand meets GitHub in the browser. 
-
-For your visualization, you need to create an analyzer. An analyzer looks at a snapshot of audio and provides an array of numbers that represent how loud the sound is at that moment in 1024 frequency bands.
-
-Add two variables to hold a reference to the analyzer and 
-
-```JS
-let analyzer
-let frequencyArray
-
-function startAudio() {
-  ...
-}
-```
-
-Add a couple of lines of code to your 
-
-```JS
-function startAudio() {
-  const audio = new Audio()
-  const audioContext = new (window.AudioContext || window.webkitAudioContext)()
-
-  audio.src = 'bird-whistling-a.wav'
-
-  // --------------------------------------------------------
-  // Create an audio analyser
-  analyser = audioContext.createAnalyser()
-  // Create an audio source
-  const source = audioContext.createMediaElementSource(audio)
-  // Connect the source to the analyser
-  source.connect(analyser)
-  // Connect the analyser to the audio context
-  analyser.connect(audioContext.destination)
-  // Get an array of audio data from the analyser
-  frequencyArray = new Uint8Array(analyser.frequencyBinCount)
-  // --------------------------------------------------------
-
-  audio.play()
-}
-```
-
-Here you created an analyser and a source. Then you connected the two and then connected the analyser to the audio context created earlier. Last you got an array of frquency data from the analyser. 
-
-Don't worry about fully understanding everything that is happening here. For what you are working on if everything else works the one line that is most important is the last one. This is the line supplies the data you will work with to visualize. 
-
-This last line generates an array of 1024 8 bit values. That is it's an array of 1024 numbers that all range from 0 to 255. The value of each represents how load the audio is in each of the 1024 frquecy bands. 
-
-You'll need to run this last line of code each time you want to update your visualization. At each moment the audio plays the frequency information changes. You'll need to refill the frequency array with new values each time you want to update the vidsualization. 
-
-## Audio Data 
-
-WHat is this audio data? It's array of numbers. There are 1024 values and each is a value from 0 to 255. 
-
-This gives you the follow information to work with: 
-
-- the index of the value in the array an integer from 0 to 1023
-- the value a number from 0 to 255
-
-The index of the value is important since it represents the frequency band the value represents. Low frequencies are lower numbers and the highest frequencies are at the end of the array.
-
-So you have two numbers to work with. 
-
-The index value is good for an x or y value. You can divide anything into 1024 slices. For example if you wanted to create a row of vertical lines, you would have 1024 lines. If your canvas was 600px wide each line would be positioned 600 / 1024 pixels apart. 
-
-You can use the same idea in another way. By normalizing values to a range of 0.0 to 1.0 you can scale them to any range. For example we're starting with valeus from 0 to 255. Taking one of these values and dividing by the maximum you get a normalized value. From here you can multiply by any other value to get a range of that value. 
-
-Let's take that last idea into a practical example. Imagine you have frquency data in the range of 0 to 255 and your canvas is 300 pixels tall. 
-
-```JS
-const f1 = 128
-const f2 = 0 
-const f3 = 255
-
-f1 / 255 * 300 // 150
-f2 / 255 * 300 // 0
-f3 / 255 * 300 // 300
-```
-
-What happened above? f1 is 128, divided by 255 is 0.5, multipplied by 300 is 150. The forumla tranlates the frquency range of 0 to 255 into a range of 0 to 300. Imagine that your canvas is 300 pixels tall, here you would translating the frequency to a range in pixels. 
-
-### Rendering Audio
-
-To draw the visualization in real time you need to update the screen periodically. For this you'll use: `requestAnimationFrame()`. This method will call a callback once just before the browser is ready to draw the screen. 
-
-On a new animation frame you'll get the audio frequency data, loop over the data and use it to draw something on a canvas. Then setup a new requestAnimationFrame callback that will start the process again in a fraction of a second. 
-
-The process of rendering audio will follow these steps: 
-
-- Clear the canvas 
-- Get an array of frequency values from the analyzer
-- For each frequency in the array
-  - Use each value to draw something on canvas
-
-All of the steps above will be repeated each time the browser redraws. 
-
-Add some references to the canvas and some variables we can use for drawing. 
-
-```JS
-const canvas = document.getElementById('canvas')
+const canvas = document.querySelector('canvas')
 const ctx = canvas.getContext('2d')
-
-const centerX = canvas.width / 2
-const centerY = canvas.height / 2
-const radius = canvas.width / 5
 ```
 
-Add a new function: 
+The canvas context `ctx` above, has many properties and methods that can draw things in many ways. You'll follow roughly these steps: 
 
 ```JS
-function render() {
-  // ...
-  requestAnimationFrame(render)
+// Draw a box
+ctx.beginPath()
+ctx.fillStyle = 'tomato'
+ctx.rect(20, 120, 200, 150)
+ctx.fill()
+ctx.closePath()
+```
+
+Here we follow these steps. 
+
+- Begin a new path. Think of a path as a line that you can later stroke and or fill with colors. 
+- Set the fill style. This can be any color written as a CSS color. 
+- Draw a rectangle path. Here we draw a rectangular path the four values are the x and y position of the upper left corner followed by the width and height. 
+- Fill the path. Here we fill the path with a color set by the fill style. 
+- Last close the path. This step allows you to start a new path and fill or stroke the new path with different colors. 
+
+Here are some examples: 
+
+```JS
+// Draw a circle witha fill and a stroke
+		ctx.beginPath()
+		ctx.fillStyle = 'cornflowerblue'
+		ctx.strokeStyle = 'brown'
+		ctx.lineWidth = 7
+		ctx.arc(300, 200, 75, 0, Math.PI * 2)
+		ctx.fill()
+		ctx.stroke()
+		ctx.closePath()
+
+		// Draw a line 
+		ctx.beginPath()
+		ctx.strokeStyle = 'lime'
+		ctx.lineWidth = 20
+		ctx.lineCap = 'round'
+		ctx.moveTo(30, 200)
+		ctx.lineTo(570, 30)
+		ctx.stroke()
+		ctx.closePath()
+```
+
+In the second example we draw a stright line. Notice here we used `ctx.moveTo()` to move the drawing context to a starting pposition for the line. This doesn't draw anything! Then we use to `ctx.lineTo()` to draw a line from that starting position. Both `moveTo(x, y)` and `lineTo(x, y)` take the x and y coordinates. 
+
+### Drawing a collection of data
+
+Often you'll have an array of values that you'll want to display. If you have an array of numbers you can work with both the value in the array and the index of that value! 
+
+In the example below I generated an array of 300 random numbers and draw a line connecting each. 
+
+```JS
+// make an array of 300 random values
+const noise = []
+// Generate 300 random values
+for (let i = 0; i < 300; i += 1) {
+  noise.push(Math.random() * 400)
 }
+
+// Move the drawing context to the position of the first value
+ctx.moveTo(0, noise[0])
+ctx.beginPath()
+ctx.strokeStyle = 'black'
+ctx.lineWidth = 1
+// Loop over the values and draw lines
+noise.forEach((y, i) => {
+  // calculate x with i
+  const x = i * 2
+  ctx.lineTo(x, y)
+})
+ctx.stroke()
+ctx.closePath()
 ```
 
-Add a few lines to clear the canvas and draw a circle in the center.
+### Normalizing data
+
+Most often the dat you get will not fit the range that is needed to draw it. In the example above the random numbers were in the range of 0 to 400.This fit perfectly to our canvas height of 400. 
+
+What if the range of values was in the range of 0 to 255 can your canvas was 400 pixels tall? In this case you need to scale the numbers to fit. 
+
+This is the process of normalizing. Divide all of the values by the largest value in the range: 255 in this case. That should convert each value into a range of 0.0 - 1.0. Then multiply by your target range 400 in this case. 
+
+Here is an example: 
 
 ```JS
-function render() {
-  // -----------------------------------------------
-  ctx.clearRect(0, 0, 300, 300)
+// make an array of 300 random values
+  const noise2 = []
+  for (let i = 0; i < 300; i += 1) {
+    // vall values should be 0 to 255
+    noise2.push(Math.random() * 255)
+  }
+
+  // Move the drawing context to the position of the first value
+  
   ctx.beginPath()
-  ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI)
+  ctx.moveTo(0, noise2[0])
   ctx.strokeStyle = 'red'
-  ctx.stroke()
-  // ----------------------------------------------
-
-  requestAnimationFrame(render)
-}
-```
-
-Define a couple of variables that will be used to draw the bars. 
-
-Get an array of frequencies from the analyzer. 
-
-```JS
-function render() {
-  ctx.clearRect(0, 0, 300, 300)
-  ctx.beginPath()
-  ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI)
-  ctx.strokeStyle = 'red'
-  ctx.stroke()
-
-  // -------------------------------------------------
-  const bars = 200
-  const step = Math.PI * 2 / bars
-
-  analyser.getByteFrequencyData(frequencyArray)
-  // --------------------------------------------
-
-
-
-  requestAnimationFrame(render)
-}
-```
-
-For each frequency, you'll draw a line. To do this we need to the starting point: x1 and y1, and the ending point x2, y2. Each line is drawn as a path the last step is to stroke the paths. 
-
-```JS
-function render() {
-  ctx.clearRect(0, 0, 300, 300)
-  ctx.beginPath()
-  ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI)
-  ctx.strokeStyle = 'red'
-  ctx.stroke()
-
-  const bars = 200
-  const step = Math.PI * 2 / bars
-
-  analyser.getByteFrequencyData(frequencyArray)
-
-  // --------------------------------------------
-  frequencyArray.forEach((f, i) => {
-    const barLength = frequencyArray[i] * 0.5
-    const x1 = (Math.cos(step * i) * radius) + centerX
-    const y1 = (Math.sin(step * i) * radius) + centerY
-    const x2 = (Math.cos(step * i) * (radius + barLength)) + centerX
-    const y2 = (Math.sin(step * i) * (radius + barLength)) + centerY
-
-    ctx.moveTo(x1, y1)
-    ctx.lineTo(x2, y2)
+  ctx.lineWidth = 3
+  // Loop over the values and draw lines
+  noise2.forEach((val, i) => {
+    const x = i * 2
+    // Since the source values range from 0 - 255
+    // and the canvas is 400 pixels tall we need to 
+    // normalize and offset the values.
+    const y = val / 255 * 400
+    ctx.lineTo(x, y)
   })
-
   ctx.stroke()
-  // -------------------------------------------------
-
-  requestAnimationFrame(render)
-}
+  ctx.closePath()
 ```
 
-### Challenges 
+### Offset values
 
-1. Follow the tutorial steps above and get this working.
-2. Customize the drawing code from the last step.
- - change the color.
- - change the color of each line. To do this you'll need to: 
- - set the `ctx.strokeStyle` inside the loop and call `ctx.stroke()` inside the loop.
- - Change the lines drawn. Currently they are mapped around the circle. Change the x1, y1, and x2, y2 values to something else.
- - Draw rectangles or circles. Draw one circle for each frequency. You could set the width, height, or radius based on the frequency value. 
+Some times you'll need to offset a value. Imagine the values you get are in the range of -1 to +1. If you normalize these some of the values will be negative. The x and y positions visible on the canvas are all in the positive numbers. 
 
-### Sample code 
+To offset just add value to bring you number into the positive region. The example below draws a sine wave. The source values are in the range of -1.0 to +1.0. I want to scale them to -100.0 to +100.0. 
 
-Take a look at the sample code here: 
+In this case half of the value would be off the top of the screen. To move the sine wave to the center of the screen I'll add half the height or 200. Now the range becomes +100.0 to +300.0.
 
-https://github.com/Tech-at-DU/ACS-4310-real-time-visualization
+```JS
+const sine = []
+for (let i = 0; i < 300; i += 1) {
+  // vall values should be -1.0 to +1.0
+  sine.push(Math.sin(i * 0.05))
+}
 
-<!-- .slide: data-background="#087CB8" -->
-## [**10m**] BREAK
+// Move the drawing context to the position of the first value
 
-Take a 10 minute break
-
-## After Class
-
-- [Audio Visualization](assignments/assignment-3.md)
-- Due Feb. 17 
-- Submit your GitHub Project via GradeScope
+ctx.beginPath()
+ctx.moveTo(0, sine[0])
+ctx.strokeStyle = 'gray'
+ctx.lineWidth = 15
+// Loop over the values and draw lines
+sine.forEach((val, i) => {
+  const x = i * 2
+  // Since the source values range from 0 - 255
+  // and the canvas is 400 pixels tall we need to 
+  // normalize and offset the values.
+  const y = (val * 100) + 200
+  ctx.lineTo(x, y)
+})
+ctx.stroke()
+ctx.closePath()
+```
 
 <!-- > -->
 
