@@ -47,7 +47,7 @@ Duration 10/18/2021 - 12/10/2021
 |  5 | Wed, Oct 27 | [Lesson 4]  | Work on map filter and reduce problems |
 |  6 | Fri, Oct 29 | Lab         | Continue Titanic data problems |
 |  7 | Mon, Nov  1 | [Lesson 5]  | [Titanic data challenges] |
-|  8 | Wed, Nov  3 | [Lesson 6]  | Using sort |
+|  8 | Wed, Nov  3 | [Lesson 6]  | Canvas |
 |  9 | Fri, Nov  5 | Lab         | Titanic visualization lab |
 | 10 | Mon, Nov  8 | [Lesson 7]  | Real Time visualization - [Visualize Titanic data] | 
 | 11 | Wed, Nov 10 | [Lesson 8]  | Drawing data on canvas |  

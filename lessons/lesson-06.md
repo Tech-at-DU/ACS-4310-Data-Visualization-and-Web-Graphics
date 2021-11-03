@@ -15,7 +15,7 @@ Sometimes data changes moment by moment. The goal of this nest assignment is to 
 
 ## Why you should know this?
 
-Experimenting with real-time data is expands your skills into new areas. Tracking frame updates and workign with canvas and large datasets. 
+Experimenting with real-time data is expands your skills into new areas. Tracking frame updates and working with canvas and large datasets. 
 
 <!-- > -->
 
