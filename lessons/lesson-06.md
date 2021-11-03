@@ -305,7 +305,7 @@ function render() {
 
 Take a look at the sample code here: 
 
-https://github.com/Make-School-Labs/FEW-2-5-Data-Visualization-Real-Ttime-Data
+https://github.com/Tech-at-DU/ACS-4310-real-time-visualization
 
 <!-- .slide: data-background="#087CB8" -->
 ## [**10m**] BREAK
@@ -322,7 +322,7 @@ Take a 10 minute break
 
 ## Additional Resources
 
-- https://github.com/Make-School-Labs/FEW-2-5-Data-Visualization-Real-Ttime-Data
+- https://github.com/Tech-at-DU/ACS-4310-real-time-visualization
 - https://www.kkhaydarov.com/audio-visualizer/
 - https://medium.com/@duraraxbaccano/computer-art-visualize-your-music-in-javascript-with-your-browser-part-2-fa1a3b73fdc6
 
