@@ -328,7 +328,7 @@ Take a 10 minute break
 
 <!-- > -->
 
-## Minute-by-Minute
+<!-- ## Minute-by-Minute
 
 | **Elapsed** | **Time** | **Activity** |
 | ----------- | --------- | ------------------------- |
@@ -339,4 +339,4 @@ Take a 10 minute break
 | 1:25 | 1:15 | Lab |
 | 2:40 | 0:05 | Wrap up and review homework |
 | TOTAL | 2:45 | - |
-
+ -->
