@@ -1,9 +1,6 @@
 
 # ACS 4310 - Canvas, math, and Audio
 
-
-# ACS 4310 - Canvas
-
 <!-- Put a link to the slides so that students can find them -->
 
 <!-- ➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-7.html ':ignore') -->
@@ -111,7 +108,7 @@ For your visualization, you need to create an analyzer. An analyzer looks at a s
 Add two variables to hold a reference to the analyzer and 
 
 ```JS
-let analyzer
+let analyser
 let frequencyArray
 
 function startAudio() {
