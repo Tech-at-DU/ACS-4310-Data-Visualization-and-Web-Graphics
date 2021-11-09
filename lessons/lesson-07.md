@@ -460,7 +460,7 @@ Use the lab to time complete the challenges and stretch challenges.
 
 ## After class
 
-- Continue working on - [Audio Visualization](Assignments/assignment-3.md) submit your completed work to GradeScope. 
+- Continue working on - [Audio Visualization](../Assignments/assignment-3.md) submit your completed work to GradeScope. 
 
 <!-- > -->
 
