@@ -450,13 +450,12 @@ Use the lab to time complete the challenges and stretch challenges.
 
 ## After class
 
-- Continue working on - [Audio Visualization](assignments/assignment-3.md) Due Feb. 17. Submit on GradeScope.
+- Continue working on - [Audio Visualization](Assignments/assignment-3.md) submit your completed work to GradeScope. 
 
 <!-- > -->
 
 ## Additional Resources
 
-- [Example code](../lesson-06.html)
 - [Sine/Cosine](https://en.wikipedia.org/wiki/Sine)
 
 <!-- > -->
