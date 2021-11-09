@@ -216,7 +216,17 @@ function render() {
 }
 ```
 
-Add a few lines to clear the canvas and draw a circle in the center.
+You need to call this `render()` function from `startAudio()` to begin rendering the visualization. 
+
+```JS
+function startAudio() {
+  ...
+
+  render()
+}
+```
+
+Back in the `render()` function add a few lines to clear the canvas and draw a circle in the center.
 
 ```JS
 function render() {
