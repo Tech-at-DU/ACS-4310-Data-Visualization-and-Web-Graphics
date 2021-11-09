@@ -305,8 +305,8 @@ function render() {
 
 1. Follow the tutorial steps above and get this working.
 2. Customize the drawing code from the last step.
- - change the color.
- - change the color of each line. To do this you'll need to: 
+ - Change the color.
+ - Change the color of each line. To do this you'll need to: 
  - set the `ctx.strokeStyle` inside the loop and call `ctx.stroke()` inside the loop.
  - Change the lines drawn. Currently they are mapped around the circle. Change the x1, y1, and x2, y2 values to something else.
  - Draw rectangles or circles. Draw one circle for each frequency. You could set the width, height, or radius based on the frequency value. 
