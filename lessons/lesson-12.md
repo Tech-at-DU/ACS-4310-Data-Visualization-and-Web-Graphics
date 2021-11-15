@@ -63,39 +63,6 @@ Take a look at these D3 examples:
 - https://github.com/soggybag/d3-examples
 - https://github.com/soggybag/FEW-2-5-Data-Visualization-D3
 
-## [**10m**] BREAK
-
-<!-- > -->
-
-## Lab - Part 1
-
-Strategize your project plan:
-
-- Find a dataset
-- Identify the values you will display
-- Decide what graph/chart style you will use to display them
-
-<!-- > -->
-
-## Lab Part 2
-
-Start coding: 
-
-- Find an example to work from
-- Organize your data
-  - filter values 
-  - map values 
-  - reduce values
-  - sort 
-- Plan the svg structure of the project
-  - Investigate your example 
-  - Plan the element structure/hierarchy of the svg document
-
-<!-- > -->
-
-## After class
-
-
 
 <!-- > -->
 

@@ -121,17 +121,4 @@ Work on your final project/presentations
 - https://observablehq.com/collection/@d3/d3-geo
 - https://d3indepth.com/geographic/
 
-<!-- > -->
 
-## Minute-by-Minute
-
-| **Elapsed** | **Time**  | **Activity**              |
-| ----------- | --------- | ------------------------- |
-| 0:00        | 0:05      | Overview + Learning Outcomes                |
-| 0:05        | 0:15      | How to measure the world                  |
-| 0:20        | 0:15      | Maps + Discussion       |
-| 0:35        | 0:45      | Mapping with D3 tutorial       |
-| 1:20        | 0:10      | BREAK                     |
-| 1:30        | 1:10      | Lab      |
-| 2:40        | 0:05      | Wrap up  |
-| TOTAL       | 2:45      | -                         |
