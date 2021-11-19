@@ -34,6 +34,18 @@ Think about what type of chart you want to create. Not all charts are good for a
 
 - https://www.data-to-viz.com
 
+## Requirements
+
+Your final project must be a visualization you create from a dataset of your choice. 
+
+You can create your visualization using any of the methods from class: HTML/CSS/JS, Canvas, or D3. 
+
+Your visualization should reveal the deeper meaning or a story from the data you have chosen. 
+
+Your visualization should display, compare and contrast at least three data points. For example in the Titanic dataset data points might be: age, fare, and embarkation. You can do this by using more than one chart/graph if you like. 
+
+## Notes
+
 Take a look at the examples here to get an idea of how to get started with D3:
 
 - https://github.com/soggybag/d3-examples
@@ -48,16 +60,6 @@ Take a look at the examples here to get an idea of how to get started with D3:
 	- Scales
 - https://github.com/soggybag/FEW-2-5-Data-Visualization-D3
 	- maps
-
-## Requirements
-
-Your final project must be a visualization you create from a dataset of your choice. 
-
-You can create your visualization using any of the methods from class: HTML/CSS/JS, Canvas, or D3. 
-
-Your visualization should reveal the deeper meaning or a story from the data you have chosen. 
-
-Your visualization should display, compare and contrast at least three data points. For example in the Titanic dataset data points might be: age, fare, and embarkation. You can do this by using more than one chart/graph if you like. 
 
 ## Deliverable
 
