@@ -18,6 +18,8 @@ You can choose any dataset you like. Choose something that it's interesting to y
 
 Keep in mind that you'll be loading data into the browser, datasets can be very large, take note of the file size of the data you want to work with. 
 
+Search [Kaggle.com](https://www.kaggle.com) for a data. Use the filters. You can filter on file size. This can remove any results that would be unreasonably large. Try search for datasets that are smaller than 100k. 
+
 Do your best to take this project as far as you can. 
 
 Also keep in mind that you'll need to display the data. This means you need to idenitify the values in your chosen dataset and decide how these will get translated into pixels on the screen. Think about this carefully before starting to code!
@@ -31,6 +33,18 @@ Your data may need some work before you will be able to display it. Some chart t
 Think about what type of chart you want to create. Not all charts are good for all data. Take a look at the charts here and read the notes: 
 
 - https://www.data-to-viz.com
+
+## Requirements
+
+Your final project must be a visualization you create from a dataset of your choice. 
+
+You can create your visualization using any of the methods from class: HTML/CSS/JS, Canvas, or D3. 
+
+Your visualization should reveal the deeper meaning or a story from the data you have chosen. 
+
+Your visualization should display, compare and contrast at least three data points. For example in the Titanic dataset data points might be: age, fare, and embarkation. You can do this by using more than one chart/graph if you like. 
+
+## Notes
 
 Take a look at the examples here to get an idea of how to get started with D3:
 
@@ -46,10 +60,6 @@ Take a look at the examples here to get an idea of how to get started with D3:
 	- Scales
 - https://github.com/soggybag/FEW-2-5-Data-Visualization-D3
 	- maps
-
-## Starting to code
-
-
 
 ## Deliverable
 
