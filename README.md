@@ -91,7 +91,7 @@ Duration 10/18/2021 - 12/10/2021
 [Titanic data challenges]: https://github.com/Tech-at-DU/titanic-data-challenges
 [Visualize Titanic data]: https://github.com/Tech-at-DU/Visualize-Titanic
 [Real Time Data]: https://github.com/Tech-at-DU/Visualizing-Real-Time-Data
-[D3 Tutorial]: https://github.com/Tech-at-DU/D3.js-Mini-Challenges
+[D3 Tutorial]: https://github.com/Tech-at-DU/d3-tutorial
 [D3 Final Project]: assignments/assignment-4.md
 
 ## Evaluation
