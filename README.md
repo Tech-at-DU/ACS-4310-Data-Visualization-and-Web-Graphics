@@ -62,8 +62,8 @@ Duration 10/18/2021 - 12/10/2021
 | 19 | Wed, Dec  1 | [Lesson 14] | - |
 | 20 | Fri, Dec  3 | [Lesson 15] | - |
 | 21 | Mon, Dec  6 | [Lesson 16] | - |
-| 22 | Wed, Nov  8 | Final Presentation | [D3 Final Project] |
-| 23 | Fri, Nov 10 | Final Assessment   | Final Data Visualization |
+| 22 | Wed, Dec  8 | Final Presentation | [D3 Final Project] |
+| 23 | Fri, Dec 10 | Final Assessment   | Final Data Visualization |
 
 <!-- Lessons -->
 [Lesson 1]: lessons/lesson-01.md
