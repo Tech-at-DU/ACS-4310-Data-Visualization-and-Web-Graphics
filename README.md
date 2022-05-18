@@ -41,55 +41,44 @@ Duration 10/18/2021 - 12/10/2021
 | Class | Date | Topics | Assignments |
 |:-----:|:-----|:-------|:------------|
 | - | Week 1 | First Data Visualization | What kind of stories can you tell with data?  |
-|  1 | Mon, May 23 | [Lesson 1]  | [Titanic data challenges] |
-|  2 | Wed, May 25 | [Lesson 2]  |  |
-| - | Week 2 | - | Turning data into images |
-|  3 | Mon, May 30 | [Lesson 3]  |  |
-|  4 | Wed, June 1 | [Lesson 4]  |  |
+|  1 | Mon, May 23 | Working with data | [Titanic data challenges] |
+|  2 | Wed, May 25 | - | [Titanic data challenges] |
+| - | Week 2 | - | Turning data into images D3 Tutorials |
+|  3 | Mon, May 30 | Learn D3 | [01 Intro to d3] - [02 Working SVG] |
+|  4 | Wed, June 1 | Loading Data | [03 Loading Data] - [04 Scales] |
 | - | Week 3 | Second Visualization | Using D3 |
-|  5 | Mon, June  6 | [Lesson 5]  |  |
-|  6 | Wed, June  8 | [Lesson 6]  | Canvas |
+|  5 | Mon, June  6 | Using groups | [05 Groups] - [06 Challenges] |
+|  6 | Wed, June  8 | Pathes and Axis | [07 Paths] - [08 Axis] |
 | - | Week 4 | - | Applying D3 to your dataset |
-|  7 | Mon, June 13 | [Lesson 7]  | Real Time visualization - [Visualize Titanic data] |
-|  8 | Wed, June 15 | [Lesson 8]  | Drawing data on canvas |
-| - | Week 5 | Third visualization | Finding a dataset |
-|  9 | Mon, June 20 | [Lesson 9]  | D3 Intro - [Real Time Data] |
-| 10 | Wed, June 22 | [Lesson 10] | Working with D3 |
+|  7 | Mon, June 13 | Drawing bars and scatterplots | [09 Bars] - [10 Scatterplots and color scales] |
+|  8 | Wed, June 15 | Areas and Interactions | [11 Areas] - [12 Interaction]|
+| - | Week 5 | Third visualization |  |
+|  9 | Mon, June 20 | Pie Charts and packs | [13 Pie Charts] - [14 Pack] |
+| 10 | Wed, June 22 | Hierarchy and React | [15 Hierarchy] - [16 D3 React] |
 | - | Week 6 | - | - |
 | 11 | Mon, July 4 | No class | - |
-| 12 | Wed, July 6 | [Lesson 11] | [D3 Tutorial] |
+| 12 | Wed, July 6 | - |  |
 | - | Week 7 | - | - |
 | 13 | Mon, July 11 | Final Presentation | [D3 Final Project] |
 | 14 | Wed, July 13 | Final Assessment   | Final Data Visualization |
 
-<!-- Lessons -->
-[Lesson 1]: lessons/lesson-01.md
-[Lesson 2]: lessons/lesson-02.md
-[Lesson 3]: lessons/lesson-03.md
-[Lesson 4]: lessons/lesson-04.md
-[Lesson 5]: lessons/lesson-05.md
-[Lesson 6]: lessons/lesson-06.md
-[Lesson 7]: lessons/lesson-07.md
-[Lesson 8]: lessons/lesson-08.md
-[Lesson 9]: lessons/lesson-09.md
-[Lesson 10]: lessons/lesson-10.md
-[Lesson 11]: lessons/lesson-11.md
-[Lesson 12]: lessons/lesson-12.md
-[Lesson 13]: lessons/lesson-13.md
-[Lesson 14]: lessons/lesson-14.md
-[Lesson 15]: lessons/lesson-15.md
-[Lesson 16]: lessons/lesson-16.md
-
-<!-- Assignments -->
-[GradeScope]:https://www.gradescope.com/courses/218919
-
-[Arrow functions and Callback challenges]: https://github.com/Tech-at-DU/arrow-functions-and-callback-challenges
-[Map, filter, and reduce challenges]: https://github.com/Tech-at-DU/map-filter-reduce-challenges
-[Titanic data challenges]: https://github.com/Tech-at-DU/titanic-data-challenges
-[Visualize Titanic data]: https://github.com/Tech-at-DU/Visualize-Titanic
-[Real Time Data]: https://github.com/Tech-at-DU/Visualizing-Real-Time-Data
-[D3 Tutorial]: https://github.com/Tech-at-DU/d3-tutorial
-[D3 Final Project]: assignments/assignment-4.md
+<!--  -->
+[01 Intro to d3]: https://github.com/Tech-at-DU/d3-tutorial/tree/main/01-intro-to-d3
+[02 Working SVG]: https://github.com/Tech-at-DU/d3-tutorial/tree/main/02-Working-svg
+[03 Loading Data]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/03-Loading-Data
+[04 Scales]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/04-scales
+[05 Groups]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/05-Groups
+[06 Challenges]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/06-challenges
+[07 Paths]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/07-Paths
+[08 Axis]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/08-axis
+[09 Bars]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/09-bars
+[10 Scatterplots and color scales]: https://github.com/Tech-at-DU/d3-tutorial/tree/main/10-Scatterplot-color-scales
+[11 Areas]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/10-Areas
+[12 Interaction]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/11-Interaction
+[13 Pie Charts]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/11-Pie-Charts
+[14 Pack]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/13-Pack
+[15 Hierarchy]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/14-Hierarchy
+[16 D3 React]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/15-D3-React
 
 ## Evaluation
 
