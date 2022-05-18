@@ -44,7 +44,7 @@ Duration 10/18/2021 - 12/10/2021
 |  1 | Mon, May 23 | Working with data | [Titanic data challenges] |
 |  2 | Wed, May 25 | - | [Titanic data challenges] |
 | - | Week 2 | - | Turning data into images D3 Tutorials |
-|  3 | Mon, May 30 | Learn D3 | [01 Intro to d3] - [02 Working SVG] |
+|  3 | Mon, May 30 | Holiday - Memorial day Learn D3 | [01 Intro to d3] - [02 Working SVG] |
 |  4 | Wed, June 1 | Loading Data | [03 Loading Data] - [04 Scales] |
 | - | Week 3 | Second Visualization | Using D3 |
 |  5 | Mon, June  6 | Using groups | [05 Groups] - [06 Challenges] |
@@ -53,14 +53,17 @@ Duration 10/18/2021 - 12/10/2021
 |  7 | Mon, June 13 | Drawing bars and scatterplots | [09 Bars] - [10 Scatterplots and color scales] |
 |  8 | Wed, June 15 | Areas and Interactions | [11 Areas] - [12 Interaction]|
 | - | Week 5 | Third visualization |  |
-|  9 | Mon, June 20 | Pie Charts and packs | [13 Pie Charts] - [14 Pack] |
-| 10 | Wed, June 22 | Hierarchy and React | [15 Hierarchy] - [16 D3 React] |
+|  9 | Mon, June 20 | Pie Charts | [13 Pie Charts] |
+| 10 | Wed, June 22 | Pack | [14 Pack] |
 | - | Week 6 | - | - |
-| 11 | Mon, July 4 | No class | - |
-| 12 | Wed, July 6 | - |  |
+| 11 | Mon, June 27 | Hierarchy | [15 Hierarchy] |
+| 12 | Wed, June 29 | D3 and React | [16 D3 React] |
+| - | Week 6 | - | - |
+| 13 | Mon, July 4 | No class | - |
+| 14 | Wed, July 6 | - |  |
 | - | Week 7 | - | - |
-| 13 | Mon, July 11 | Final Presentation | [D3 Final Project] |
-| 14 | Wed, July 13 | Final Assessment   | Final Data Visualization |
+| 15 | Mon, July 11 | Final Presentation | [D3 Final Project] |
+| 16 | Wed, July 13 | Final Assessment   | Final Data Visualization |
 
 <!--  -->
 [01 Intro to d3]: https://github.com/Tech-at-DU/d3-tutorial/tree/main/01-intro-to-d3
