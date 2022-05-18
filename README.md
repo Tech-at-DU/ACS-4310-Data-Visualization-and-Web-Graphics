@@ -40,30 +40,27 @@ Duration 10/18/2021 - 12/10/2021
 
 | Class | Date | Topics | Assignments |
 |:-----:|:-----|:-------|:------------|
-|  1 | Mon, Oct 18 | [Lesson 1]  | Solve data collection problems |
-|  2 | Wed, Oct 20 | [Lesson 2]  | [Arrow functions and Callback challenges] |
-|  3 | Fri, Oct 22 | Lab         | Solve problems with map, filter, and reduce |
-|  4 | Mon, Oct 25 | [Lesson 3]  | [Map, filter, and reduce challenges] |
-|  5 | Wed, Oct 27 | [Lesson 4]  | Work on map filter and reduce problems |
-|  6 | Fri, Oct 29 | Lab         | Continue Titanic data problems |
-|  7 | Mon, Nov  1 | [Lesson 5]  | [Titanic data challenges] |
-|  8 | Wed, Nov  3 | [Lesson 6]  | Canvas |
-|  9 | Fri, Nov  5 | Lab         | Titanic visualization lab |
-| 10 | Mon, Nov  8 | [Lesson 7]  | Real Time visualization - [Visualize Titanic data] |
-| 11 | Wed, Nov 10 | [Lesson 8]  | Drawing data on canvas |
-| 12 | Fri, Nov 12 | Lab         | Real time lab |
-| 13 | Mon, Nov 15 | [Lesson 9]  | D3 Intro - [Real Time Data] |
-| 14 | Wed, Nov 17 | [Lesson 10] | Working with D3 |
-| 15 | Fri, Nov 19 | Lab         | D3 Lab |
-| 16 | Mon, Nov 22 | [Lesson 11] | [D3 Tutorial] |
-| 17 | Wed, Nov 24 | [Lesson 12] | - |
-| -  | Fri, Nov 26 | Thanksgiving | No class |
-| 18 | Mon, Nov 29 | [Lesson 13] | - |
-| 19 | Wed, Dec  1 | [Lesson 14] | - |
-| 20 | Fri, Dec  3 | [Lesson 15] | - |
-| 21 | Mon, Dec  6 | [Lesson 16] | - |
-| 22 | Wed, Dec  8 | Final Presentation | [D3 Final Project] |
-| 23 | Fri, Dec 10 | Final Assessment   | Final Data Visualization |
+| - | Week 1 | First Data Visualization | What kind of stories can you tell with data?  |
+|  1 | Mon, May 23 | [Lesson 1]  | [Titanic data challenges] |
+|  2 | Wed, May 25 | [Lesson 2]  |  |
+| - | Week 2 | - | Turning data into images |
+|  3 | Mon, May 30 | [Lesson 3]  |  |
+|  4 | Wed, June 1 | [Lesson 4]  |  |
+| - | Week 3 | Second Visualization | Using D3 |
+|  5 | Mon, June  6 | [Lesson 5]  |  |
+|  6 | Wed, June  8 | [Lesson 6]  | Canvas |
+| - | Week 4 | - | Applying D3 to your dataset |
+|  7 | Mon, June 13 | [Lesson 7]  | Real Time visualization - [Visualize Titanic data] |
+|  8 | Wed, June 15 | [Lesson 8]  | Drawing data on canvas |
+| - | Week 5 | Third visualization | Finding a dataset |
+|  9 | Mon, June 20 | [Lesson 9]  | D3 Intro - [Real Time Data] |
+| 10 | Wed, June 22 | [Lesson 10] | Working with D3 |
+| - | Week 6 | - | - |
+| 11 | Mon, July 4 | No class | - |
+| 12 | Wed, July 6 | [Lesson 11] | [D3 Tutorial] |
+| - | Week 7 | - | - |
+| 13 | Mon, July 11 | Final Presentation | [D3 Final Project] |
+| 14 | Wed, July 13 | Final Assessment   | Final Data Visualization |
 
 <!-- Lessons -->
 [Lesson 1]: lessons/lesson-01.md
