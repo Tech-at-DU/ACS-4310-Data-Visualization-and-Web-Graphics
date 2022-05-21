@@ -62,7 +62,7 @@ Duration 10/18/2021 - 12/10/2021
 | 13 | Mon, July 4 | No class | - |
 | 14 | Wed, July 6 | - |  |
 | - | Week 7 | - | - |
-| 15 | Mon, July 11 | Final Presentation | [D3 Final Project] |
+| 15 | Mon, July 11 | Final Presentation | Show your work |
 | 16 | Wed, July 13 | Final Assessment   | Final Data Visualization |
 
 <!--  -->
@@ -84,31 +84,8 @@ Duration 10/18/2021 - 12/10/2021
 [15 Hierarchy]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/14-Hierarchy
 [16 D3 React]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/15-D3-React
 
-## Evaluation
+## Course Requirements
 
-To pass this course you must meet the following requirements:
+See the [Course Requirements page](course-requirements.md) for a full list of what's expected of you this term. 
 
-- Pass 70% projects according to the associated project rubric
-- Pass the final summative assessment according to the rubric as specified in this class
-    - This will be further explained in the [study guide](study-guide.md)
-- Actively participate in class and abide by the attendance policy
-- Make up all classwork from all absences
-
-##  Information Resources
-
-Any additional resources you may need (online books, etc.) can be found here. You can also find additional resources through the library linked below:
-
-- [make.sc/library](http://make.sc/library)
-
-## Make School Course Policies
-
-- [Program Learning Outcomes](https://make.sc/program-learning-outcomes) - What you will achieve after finishing Make School, all courses are designed around these outcomes.
-- [Grading System](https://make.sc/grading-system) - How grading is done at Make School
-- [Code of Conduct, Equity, and Inclusion](https://make.sc/code-of-conduct) - Learn about Diversity and Inclusion at Make School
-- [Academic Honesty](https://make.sc/academic-honesty-policy) - Our policies around plagerism, cheating, and other forms of academic misconduct
-- [Attendance Policy](https://make.sc/attendance-policy) - What we expect from you in terms of attendance for all classes at Make School
-- [Course Credit Policy](https://make.sc/course-credit-policy) - Our policy for how you obtain credit for your courses
-- [Disability Services (Academic Accommodations)](https://make.sc/disability-services) - Services and accommodations we provide for students
-- [Online Learning Tutorial](https://make.sc/online-learning-tutorial) - How to succeed in online learning at Make School
-- [Student Handbook](https://make.sc/student-handbook) - Guidelines, policies, and resources for all Make School students
 
