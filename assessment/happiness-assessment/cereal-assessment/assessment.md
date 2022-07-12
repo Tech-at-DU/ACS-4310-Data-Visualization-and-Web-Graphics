@@ -41,8 +41,8 @@ Create a graph that displays the relative amounts of sugars in each of the top 5
 
 - Use Scale band for your x scale
 	- Domain should be: name
-- Your y scale should measure sugars
-	- Domain is 0 to the max sugars value in the list
+- Your y scale should measure carbo
+	- Domain is 0 to the max carbo value in the list
 	- Range should be the height of your chart
 
 ## Challenge 3 
@@ -54,7 +54,7 @@ Display an axis at the bottom of the chart.
 
 ## Challenge 4 
 
-Display a left axis showing the sugars amount in grams. 
+Display a left axis showing the carbo amount in grams. 
 
 - Create a left axis using your y scale
 
