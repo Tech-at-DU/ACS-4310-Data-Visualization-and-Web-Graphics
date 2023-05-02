@@ -31,39 +31,36 @@ Students by the end of the course will be able to ...
 
 ## Schedule
 
-MWF 3:40 PM - 5:30 PM; Dominican University, Virtual, ONLINE
-Duration 10/18/2021 - 12/10/2021
+**Course Dates:** May 22, 2023
 
-**Course Dates:** Wednesday, October 18, 2021
+**Class Times:** Tuesday and Thursday at 1:00 PM - 3:45 PM
 
-**Class Times:** Monday, Wednesday, Friday at 3:40 AM - 5:30 PM
-
-| Class | Date | Topics | Assignments |
-|:-----:|:-----|:-------|:------------|
-| - | Week 1 | First Data Visualization | What kind of stories can you tell with data?  |
-|  1 | Mon, May 23 | Working with data | [Titanic data challenges] |
-|  2 | Wed, May 25 | - | [Titanic data challenges] |
-| - | Week 2 | - | Turning data into images D3 Tutorials |
-|  3 | Mon, May 30 | Holiday - Memorial day Learn D3 | [01 Intro to d3] - [02 Working SVG] |
-|  4 | Wed, June 1 | Loading Data | [03 Loading Data] - [04 Scales] |
-| - | Week 3 | Second Visualization | Using D3 |
-|  5 | Mon, June  6 | Using groups | [05 Groups] - [06 Challenges] |
-|  6 | Wed, June  8 | Pathes and Axis | [07 Paths] - [08 Axis] |
-| - | Week 4 | - | Applying D3 to your dataset |
-|  7 | Mon, June 13 | Drawing bars and scatterplots | [09 Bars] - [10 Scatterplots and color scales] |
-|  8 | Wed, June 15 | Areas and Interactions | [11 Areas] - [12 Interaction]|
-| - | Week 5 | Third visualization |  |
-|  9 | Mon, June 20 | Pie Charts | [13 Pie Charts] |
-| 10 | Wed, June 22 | Pack | [14 Pack] |
-| - | Week 6 | - | - |
-| 11 | Mon, June 27 | Hierarchy | [15 Hierarchy] |
-| 12 | Wed, June 29 | D3 and React | [16 D3 React] |
-| - | Week 6 | - | - |
-| 13 | Mon, July 4 | No class | - |
-| 14 | Wed, July 6 | - |  |
-| - | Week 7 | - | - |
-| 15 | Mon, July 11 | Final Presentation | Show your work |
-| 16 | Wed, July 13 | Final Assessment   | Final Data Visualization |
+| Class | Date        | Topics | Assignments |
+|:-----:|:------------|:-------|:------------|
+| -     | Week 1      | First Data Visualization | What kind of stories can you tell with data?  |
+|  1    | Mon, May 23 | Working with data | [Titanic data challenges] |
+|  2    | Wed, May 25 | - | [Titanic data challenges] |
+| -     | Week 2      | - | Turning data into images D3 Tutorials |
+|  3    | Mon, May 30 | Holiday - Memorial day Learn D3 | [01 Intro to d3] - [02 Working SVG] |
+|  4    | Wed, Jun  1 | Loading Data | [03 Loading Data] - [04 Scales] |
+| -     | Week 3      | Second Visualization | Using D3 |
+|  5    | Mon, Jun  6 | Using groups | [05 Groups] - [06 Challenges] |
+|  6    | Wed, Jun  8 | Pathes and Axis | [07 Paths] - [08 Axis] |
+| -     | Week 4      | - | Applying D3 to your dataset |
+|  7    | Mon, Jun 13 | Drawing bars and scatterplots | [09 Bars] - [10 Scatterplots and color scales] |
+|  8    | Wed, Jun 15 | Areas and Interactions | [11 Areas] - [12 Interaction]|
+| -     | Week 5      | Third visualization |  |
+|  9    | Mon, Jun 20 | Pie Charts | [13 Pie Charts] |
+| 10    | Wed, Jun 22 | Pack | [14 Pack] |
+| -     | Week 6      | - | - |
+| 11    | Mon, Jun 27 | Hierarchy | [15 Hierarchy] |
+| 12    | Wed, Jun 29 | D3 and React | [16 D3 React] |
+| -     | Week 6      | - | - |
+| 13    | Mon, Jul  4 | No class | - |
+| 14    | Wed, Jul  6 | - |  |
+| -     | Week 7      | - | - |
+| 15    | Mon, Jul 11 | Final Presentation | Show your work |
+| 16    | Wed, Jul 13 | Final Assessment   | Final Data Visualization |
 
 <!--  -->
 [Titanic data challenges]: https://github.com/Tech-at-DU/titanic-data-challenges
