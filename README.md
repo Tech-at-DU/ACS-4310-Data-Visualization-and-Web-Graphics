@@ -49,7 +49,7 @@ Students by the end of the course will be able to ...
 | -     | Week 4      | - | Applying D3 to your dataset |
 |  7    | Mon, Jun 13 | Drawing bars and scatterplots | [09 Bars] - [10 Scatterplots and color scales] |
 |  8    | Wed, Jun 15 | Areas and Interactions | [11 Areas] - [12 Interaction]|
-| -     | Week 5      | Third visualization |  |
+| -     | Week 5      | Third visualization | - |
 |  9    | Mon, Jun 20 | Pie Charts | [13 Pie Charts] |
 | 10    | Wed, Jun 22 | Pack | [14 Pack] |
 | -     | Week 6      | - | - |
@@ -57,7 +57,7 @@ Students by the end of the course will be able to ...
 | 12    | Wed, Jun 29 | D3 and React | [16 D3 React] |
 | -     | Week 6      | - | - |
 | 13    | Mon, Jul  4 | No class | - |
-| 14    | Wed, Jul  6 | - |  |
+| 14    | Wed, Jul  6 | - | - |
 | -     | Week 7      | - | - |
 | 15    | Mon, Jul 11 | Final Presentation | Show your work |
 | 16    | Wed, Jul 13 | Final Assessment   | Final Data Visualization |
