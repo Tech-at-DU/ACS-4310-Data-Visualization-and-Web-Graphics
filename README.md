@@ -65,7 +65,7 @@ Students by the end of the course will be able to ...
 <!--  -->
 [Titanic data challenges]: https://github.com/Tech-at-DU/titanic-data-challenges
 [01 Intro to d3]: https://github.com/Tech-at-DU/d3-tutorial/tree/main/01-intro-to-d3
-[02 Working SVG]: https://github.com/Tech-at-DU/d3-tutorial/tree/main/02-Working-svg
+[02 Working SVG]: https://github.com/Tech-at-DU/d3-tutorial/tree/main/02-Working-with-svg
 [03 Loading Data]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/03-Loading-Data
 [04 Scales]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/04-scales
 [05 Groups]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/05-Groups
