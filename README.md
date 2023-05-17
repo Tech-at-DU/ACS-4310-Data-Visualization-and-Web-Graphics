@@ -74,7 +74,7 @@ Students by the end of the course will be able to ...
 [08 Axis]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/08-axis
 [09 Bars]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/09-bars
 [10 Scatterplots and color scales]: https://github.com/Tech-at-DU/d3-tutorial/tree/main/10-Scatterplot-color-scales
-[11 Areas]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/10-Areas
+[11 Areas]: https://github.com/Tech-at-DU/d3-tutorial/tree/main/11-Areas
 [12 Interaction]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/11-Interaction
 [13 Pie Charts]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/11-Pie-Charts
 [14 Pack]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/13-Pack
