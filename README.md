@@ -75,11 +75,11 @@ Students by the end of the course will be able to ...
 [09 Bars]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/09-bars
 [10 Scatterplots and color scales]: https://github.com/Tech-at-DU/d3-tutorial/tree/main/10-Scatterplot-color-scales
 [11 Areas]: https://github.com/Tech-at-DU/d3-tutorial/tree/main/11-Areas
-[12 Interaction]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/11-Interaction
-[13 Pie Charts]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/11-Pie-Charts
-[14 Pack]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/13-Pack
-[15 Hierarchy]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/14-Hierarchy
-[16 D3 React]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/15-D3-React
+[12 Interaction]: https://github.com/Tech-at-DU/d3-tutorial/tree/main/12-Interaction
+[13 Pie Charts]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/13-Pie-Charts
+[14 Pack]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/14-Pack
+[15 Hierarchy]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/15-Hierarchy
+[16 D3 React]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/16-D3-React
 
 ## Course Requirements
 
