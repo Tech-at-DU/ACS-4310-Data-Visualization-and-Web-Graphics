@@ -40,7 +40,7 @@ Students by the end of the course will be able to ...
 | -     | Week 1      | First Data Visualization | What kind of stories can you tell with data?  |
 |  1    | Mon, May 23 | Working with data | [Titanic data challenges] |
 |  2    | Wed, May 25 | - | [Titanic data challenges] |
-| -     | Week 2      | - | Turning data into images D3 Tutorials |
+| -     | Week 2      | - | Turning data into images [D3 Tutorials] |
 |  3    | Mon, May 30 | Holiday - Memorial day Learn D3 | [01 Intro to d3] - [02 Working SVG] |
 |  4    | Wed, Jun  1 | Loading Data | [03 Loading Data] - [04 Scales] |
 | -     | Week 3      | Second Visualization | Using D3 |
@@ -64,6 +64,7 @@ Students by the end of the course will be able to ...
 
 <!--  -->
 [Titanic data challenges]: https://github.com/Tech-at-DU/titanic-data-challenges
+[D3 Tutorials]: https://github.com/Tech-at-DU/d3-tutorial
 [01 Intro to d3]: https://github.com/Tech-at-DU/d3-tutorial/tree/main/01-intro-to-d3
 [02 Working SVG]: https://github.com/Tech-at-DU/d3-tutorial/tree/main/02-Working-with-svg
 [03 Loading Data]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/03-Loading-Data
