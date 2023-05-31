@@ -54,6 +54,11 @@ Your visualizations can be any of the following:
 - Display real time data. This could be making an audio visualizer, or reading real time data from a web API. 
 - Create a dashboard for a website. This could display data from the a website you created or use a web API. 
 
+Examples of Data visualizations
+
+- https://www.nytimes.com/spotlight/graphics
+- https://terenceshin.medium.com/the-10-best-data-visualizations-of-2022-3e49d7ccb832
+
 ### Final assessment
 
 The final assessment will be similar to a practical interview question. You will create a visualization using a dataset provided, with the goal of answering the questions provided. 
@@ -74,7 +79,7 @@ Besides choosing something that is interesting to you you will want to choose a 
 
 _You can search Kaggle.com and filter on format and file size._
 
-### Visualizations 
+### Types of Visualizations 
 
 How many ways can you visualize data? What type visualization works best for type of data? These are great questions. Check these:
 
