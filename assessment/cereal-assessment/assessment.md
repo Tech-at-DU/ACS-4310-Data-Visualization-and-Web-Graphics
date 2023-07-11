@@ -29,7 +29,7 @@ It contains the top 80 cereal products with the following data fields:
 
 ## Challenge 1
 
-Get the 5 highest rated cereals. 
+Get the 5 highest rated cereals. Use the last value in the list above "rating".
 
 - Load the data
 - Sort the data on rating
@@ -41,8 +41,8 @@ Create a graph that displays the relative amounts of sugars in each of the top 5
 
 - Use Scale band for your x scale
 	- Domain should be: name
-- Your y scale should measure carbo
-	- Domain is 0 to the max carbo value in the list
+- Your y scale should measure sugars
+	- Domain is 0 to the max sugars value in the list
 	- Range should be the height of your chart
 
 ## Challenge 3 
@@ -54,7 +54,7 @@ Display an axis at the bottom of the chart.
 
 ## Challenge 4 
 
-Display a left axis showing the carbo amount in grams. 
+Display a left axis showing the sugars amount in grams. 
 
 - Create a left axis using your y scale
 
@@ -104,5 +104,3 @@ Next, create a new chart using the new array you created above.
 When you are complete your chart might look like this: 
 
 ![by-grams](./by-grams.png)
-
-

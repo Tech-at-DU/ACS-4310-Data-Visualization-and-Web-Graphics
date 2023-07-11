@@ -86,3 +86,27 @@ Students by the end of the course will be able to ...
 See the [Course Requirements page](course-requirements.md) for a full list of what's expected of you this term. 
 
 
+
+
+
+
+-------------
+
+
+- COVID-19 Data:
+	- Our World in Data COVID-19 Dataset: [Our World in Data COVID-19 Dataset](https://ourworldindata.org/covid-deaths)
+	- COVID-19 Data Repository by Johns Hopkins University: [COVID-19 Data Repository](https://github.com/CSSEGISandData/COVID-19)
+- Sports Statistics:
+	- Kaggle Datasets: [Kaggle Datasets](https://www.kaggle.com/datasets)
+	- ESPN API: [ESPN API](https://developer.espn.com/docs)
+- Government Open Data:
+	- data.gov (United States): [data.gov](https://www.data.gov/)
+	- data.gov.uk (United Kingdom): [data.gov.uk](https://data.gov.uk/)
+- Social Media Data:
+	- Twitter API: [Twitter API](https://developer.twitter.com/en/docs/twitter-api)
+	- Facebook Graph API: [Facebook Graph API](https://developers.facebook.com/docs/graph-api)
+	- Reddit API: [Reddit API](https://www.reddit.com/dev/api/)
+- Climate and Environmental Data:
+	- NASA Earth Observing System Data and Information System (EOSDIS): [EOSDIS](https://earthdata.nasa.gov/eosdis)
+	- Climate Data Online (CDO): [Climate Data Online](https://www.ncdc.noaa.gov/cdo-web/)
+	- World Bank Climate Change Knowledge Portal: [Climate Change Knowledge Portal](https://climateknowledgeportal.worldbank.org/)

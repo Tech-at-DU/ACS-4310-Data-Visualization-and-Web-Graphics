@@ -54,7 +54,7 @@ The range should be the width of your svg less the left and right margins.
 
 Set up a y-scale. This should use the `Score` field from the data. The `Score` shows the composite score that ranks and measure a countries happiness. 
 
-You need to find the extents, the minimum and maximum values. 
+You need to find the extent, the minimum and maximum values. 
 
 As an added step round the minimum value down and the max value up to the nearest whole number. 
 
