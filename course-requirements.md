@@ -4,33 +4,35 @@ This course will follow a self directed learning model. Think of this as working
 
 ## What you will learn
 
-In this course you will learn to create data visualizations by making three data visualizations.
+In this course you will learn to create data visualizations by making **three data visualizations.**
 
 ### What is a data visualization? 
 
-A data visualization takes data and turns it into one or more images. These images might even be intercative, be animated, or change in real time! 
+A data visualization takes data and turns it into one or more images. These images might even be intercative, animated, or change in real time! 
 
-Data visualizations ask a question and the image reveals a story. The goal is to reveal insight and understanding to what may have started an incomprehensible list of numbers and other values. 
+Data visualizations ask a question and the image reveals a story. The goal is to reveal insights to what may have started as an incomprehensible list of numbers and other values. 
 
 ### Why learn this? 
 
 It's fun, it's interesting, its a job skill. You'll practice your HTML, CSS, and JavaScript skills in new and interesting ways! 
 
+Companies like th New York Times create new visualizations dailing using tools like D3. Other companies are using these tools and concepts to create dashboards or their products, display data for internal facing web sites, and more. Being able to turn incomprehensible lists of data into easy to understand images is a skill that is in demand is also ways useful!
+
 ## Projects 
 
-You will be responsible for creating solving some practice warmup problems, tutorials, creating three data visualizations, and solving the final assessment problem. 
+You are responsible for creating solving some practice warmup problems, working through tutorials, creating three data visualizations, and solving the final assessment problem. 
 
-You can choose to visualize any three datasets you like. I have some datasets I can recommend if you're you're unsure of what to work with. 
+You can choose to visualize any three datasets you like. There are some  recommended datasets if you're you're unsure of what to work with. 
 
 ### Warmup problems
 
-The warm uo problems deal with the Titanic dataset. These problems deal strictly with extracting relevant values from the dataset. 
+The warm up problems deal with the Titanic dataset. These problems deal strictly with extracting relevant values from the dataset. 
 
 https://github.com/Tech-at-DU/titanic-data-challenges
 
 ### D3 Tutorials
 
-In order to create a visualizations you need to learn the tools and techniques. I have some tutorials you can work through. You can work on these until you feel you have the skills to create the visualization you want to create. 
+In order to create a visualizations you need to learn the tools and techniques. Start with teh D3 tutorials. You can work on these until you feel you have the skills to create the visualization you want to create. 
 
 Tutorials: 
 
@@ -38,14 +40,24 @@ Tutorials:
 
 ### Three Data Visualizations
 
-You will create three data visualizations, each which must meet the following criteria. 
+You will create three data visualizations, each of which must meet the following criteria. 
 
 - Asks three questions of the dataset with the goal of telling story or revealing meaning from the dataset. For example the Titanic dataset might ask: 
 	- How Many passengers lived and how many died by gender? 
 	- How many passengers lived and died by passenger class? 
-	- Sort passengers by number of siblings
-	- This might tell a story of: what factors affect survival for passengers on the Titanic. 
-- Answers the questions with one or more visualization. For the questions above you might create two bargraphs and a histogram. 
+	- Did having a sibling affect your chance of survival? 
+- You would answer these by creating visualization based on the question. For the questions above you might create two bargraphs and a histogram. 
+
+Your visualizations can be any of the following: 
+
+- Display your favorite dataset
+- Display real time data. This could be making an audio visualizer, or reading real time data from a web API. 
+- Create a dashboard for a website. This could display data from the a website you created or use a web API. 
+
+Examples of Data visualizations
+
+- https://www.nytimes.com/spotlight/graphics
+- https://terenceshin.medium.com/the-10-best-data-visualizations-of-2022-3e49d7ccb832
 
 ### Final assessment
 
@@ -67,13 +79,17 @@ Besides choosing something that is interesting to you you will want to choose a 
 
 _You can search Kaggle.com and filter on format and file size._
 
-### Visualizations 
+### Types of Visualizations 
 
 How many ways can you visualize data? What type visualization works best for type of data? These are great questions. Check these:
 
 - https://datavizproject.com
 - https://www.data-to-viz.com
 - https://coolinfographics.com/dataviz-guides
+
+Be sure to check out Observable. This site is like GitHub for Data Visualizations. There are lots of good examples here in D3. 
+
+- https://observablehq.com
 
 ### Datasets 
 
