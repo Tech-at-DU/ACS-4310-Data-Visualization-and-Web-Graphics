@@ -31,9 +31,9 @@ Students by the end of the course will be able to ...
 
 ## Schedule
 
-**Course Dates:** May 22, 2023
+**Course Dates:** May 20, 2024 to July 10, 2024
 
-**Class Times:** Tuesday and Thursday at 1:00 PM - 3:45 PM
+**Class Times:** Tuesday and Thursday at 9:30 AM - 12:15 PM
 
 | Class | Date        | Topics | Assignments |
 |:-----:|:------------|:-------|:------------|
