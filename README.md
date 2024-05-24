@@ -82,7 +82,7 @@ Students by the end of the course will be able to ...
 [15 Hierarchy]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/15-Hierarchy
 [16 D3 React]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/16-D3-React
 [17 D3 maps]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/17-Maps
-[18 D3 maps Part 2]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/17-Maps-Part-2
+[18 D3 maps Part 2]: https://github.com/Tech-at-DU/d3-tutorial/tree/main/18-Maps-Part-2
 
 ## Course Requirements
 
