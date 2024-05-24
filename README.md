@@ -50,11 +50,11 @@ Students by the end of the course will be able to ...
 |  7    | Mon, Jun 13 | Drawing bars and scatterplots | [09 Bars] - [10 Scatterplots and color scales] |
 |  8    | Wed, Jun 15 | Areas and Interactions | [11 Areas] - [12 Interaction]|
 | -     | Week 5      | Third visualization | - |
-|  9    | Mon, Jun 20 | Pie Charts | [13 Pie Charts] |
-| 10    | Wed, Jun 22 | Pack | [14 Pack] |
+|  9    | Mon, Jun 20 | Pie Charts | [13 Pie Charts] - [14 Pack] |
+| 10    | Wed, Jun 22 | Hierarchy | [15 Hierarchy] - [16 D3 React] |
 | -     | Week 6      | - | - |
-| 11    | Mon, Jun 27 | Hierarchy | [15 Hierarchy] |
-| 12    | Wed, Jun 29 | D3 and React | [16 D3 React] |
+| 11    | Mon, Jun 27 | Maps | [17 D3 maps] - [18 D3 maps Part 2] |
+| 12    | Wed, Jun 29 |  |  |
 | -     | Week 6      | - | - |
 | 13    | Mon, Jul  4 | No class | - |
 | 14    | Wed, Jul  6 | - | - |
@@ -81,6 +81,8 @@ Students by the end of the course will be able to ...
 [14 Pack]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/14-Pack
 [15 Hierarchy]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/15-Hierarchy
 [16 D3 React]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/16-D3-React
+[17 D3 maps]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/17-Maps
+[18 D3 maps Part 2]: https://github.com/Tech-at-DU/d3-tutorial/blob/main/17-Maps-Part-2
 
 ## Course Requirements
 
