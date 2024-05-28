@@ -38,29 +38,29 @@ Students by the end of the course will be able to ...
 | Class | Date        | Topics | Assignments |
 |:-----:|:------------|:-------|:------------|
 | -     | Week 1      | First Data Visualization | What kind of stories can you tell with data?  |
-|  1    | Mon, May 23 | Working with data | [Titanic data challenges] |
-|  2    | Wed, May 25 | - | [Titanic data challenges] |
+|  1    | Tue, May 21 | Working with data | [Titanic data challenges] |
+|  2    | Thr, May 23 | - | [Titanic data challenges] |
 | -     | Week 2      | - | Turning data into images [D3 Tutorials] |
-|  3    | Mon, May 30 | Holiday - Memorial day Learn D3 | [01 Intro to d3] - [02 Working with SVG] |
-|  4    | Wed, Jun  1 | Loading Data | [03 Loading Data] - [04 Scales] |
+|  3    | Tue, May 28 | Holiday - Memorial day Learn D3 | [01 Intro to d3] - [02 Working with SVG] |
+|  4    | Thr, May 30 | Loading Data | [03 Loading Data] - [04 Scales] |
 | -     | Week 3      | Second Visualization | Using D3 |
-|  5    | Mon, Jun  6 | Using groups | [05 Groups] - [06 Challenges] |
-|  6    | Wed, Jun  8 | Pathes and Axis | [07 Paths] - [08 Axis] |
+|  5    | Tue, Jun  4 | Using groups | [05 Groups] - [06 Challenges] |
+|  6    | Thr, Jun  6 | Pathes and Axis | [07 Paths] - [08 Axis] |
 | -     | Week 4      | - | Applying D3 to your dataset |
-|  7    | Mon, Jun 13 | Drawing bars and scatterplots | [09 Bars] - [10 Scatterplots and color scales] |
-|  8    | Wed, Jun 15 | Areas and Interactions | [11 Areas] - [12 Interaction]|
+|  7    | Tue, Jun 11 | Drawing bars and scatterplots | [09 Bars] - [10 Scatterplots and color scales] |
+|  8    | Thr, Jun 13 | Areas and Interactions | [11 Areas] - [12 Interaction]|
 | -     | Week 5      | Third visualization | - |
-|  9    | Mon, Jun 20 | Pie Charts | [13 Pie Charts] - [14 Pack] |
-| 10    | Wed, Jun 22 | Hierarchy | [15 Hierarchy] - [16 D3 React] |
+|  9    | Tue, Jun 18 | Pie Charts | [13 Pie Charts] - [14 Pack] |
+| 10    | Thr, Jun 20 | Hierarchy | [15 Hierarchy] - [16 D3 React] |
 | -     | Week 6      | - | - |
-| 11    | Mon, Jun 27 | Maps | [17 D3 maps] - [18 D3 maps Part 2] |
-| 12    | Wed, Jun 29 |  |  |
+| 11    | Tue, Jun 25 | Maps | [17 D3 maps] - [18 D3 maps Part 2] |
+| 12    | Thr, Jun 27 |  |  |
 | -     | Week 6      | - | - |
-| 13    | Mon, Jul  4 | No class | - |
-| 14    | Wed, Jul  6 | - | - |
+| 13    | Tue, Jul  2 | No class | - |
+| 14    | Thr, Jul  4 | Holiday July 4th | - |
 | -     | Week 7      | - | - |
-| 15    | Mon, Jul 11 | Final Presentation | Show your work |
-| 16    | Wed, Jul 13 | Final Assessment   | Final Data Visualization |
+| 15    | Tue, Jul  9 | Final Presentation | Show your work |
+| 16    | Thr, Jul 11 | Final Assessment   | Final Data Visualization |
 
 <!--  -->
 [Titanic data challenges]: https://github.com/Tech-at-DU/titanic-data-challenges
