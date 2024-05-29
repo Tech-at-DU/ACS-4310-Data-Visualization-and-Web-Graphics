@@ -42,7 +42,7 @@ Students by the end of the course will be able to ...
 |  2    | Thr, May 23 | - | [Titanic data challenges] |
 | -     | Week 2      | - | Turning data into images [D3 Tutorials] |
 |  3    | Tue, May 28 | Holiday - Memorial day Learn D3 | [01 Intro to d3] - [02 Working with SVG] |
-|  4    | Thr, May 30 | Loading Data | [03 Loading Data] - [04 Scales] |
+|  4    | Thr, May 30 | Loading Data - [Exploring Data] | [03 Loading Data] - [04 Scales] |
 | -     | Week 3      | Second Visualization | Using D3 |
 |  5    | Tue, Jun  4 | Using groups | [05 Groups] - [06 Challenges] |
 |  6    | Thr, Jun  6 | Pathes and Axis | [07 Paths] - [08 Axis] |
@@ -63,6 +63,8 @@ Students by the end of the course will be able to ...
 | 16    | Thr, Jul 11 | Final Assessment   | Final Data Visualization |
 
 <!--  -->
+[Exploring Data]: ./lessons/lesson-kaggle.md
+
 [Titanic data challenges]: https://github.com/Tech-at-DU/titanic-data-challenges
 [D3 Tutorials]: https://github.com/Tech-at-DU/d3-tutorial
 [01 Intro to d3]: https://github.com/Tech-at-DU/d3-tutorial/tree/main/01-intro-to-d3
