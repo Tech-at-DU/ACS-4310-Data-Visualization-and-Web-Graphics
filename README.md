@@ -45,7 +45,7 @@ Students by the end of the course will be able to ...
 |  4    | Thr, May 30 | Loading Data - [Exploring Data] | [03 Loading Data] - [04 Scales] |
 | -     | Week 3      | Second Visualization | Using D3 |
 |  5    | Tue, Jun  4 | Using groups | [05 Groups] - [06 Challenges] |
-|  6    | Thr, Jun  6 | Pathes and Axis | [07 Paths] - [08 Axis] |
+|  6    | Thr, Jun  6 | Paths and Axis | [07 Paths] - [08 Axis] |
 | -     | Week 4      | - | Applying D3 to your dataset |
 |  7    | Tue, Jun 11 | Drawing bars and scatterplots | [09 Bars] - [10 Scatterplots and color scales] |
 |  8    | Thr, Jun 13 | Areas and Interactions | [11 Areas] - [12 Interaction]|
