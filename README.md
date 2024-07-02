@@ -57,7 +57,7 @@ Students by the end of the course will be able to ...
 | 12    | Thr, Jun 27 |  |  |
 | -     | Week 6      | - | - |
 | 13    | Tue, Jul  2 | - | - |
-| 14    | Thr, Jul  4 | Holiday July 4th | - |
+| 14    | Thr, Jul  4 | Holiday July 4th no class | - |
 | -     | Week 7      | - | - |
 | 15    | Tue, Jul  9 | Final Presentation | Show your work |
 | 16    | Thr, Jul 11 | Final Assessment   | Final Data Visualization |
