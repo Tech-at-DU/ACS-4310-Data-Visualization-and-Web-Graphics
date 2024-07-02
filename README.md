@@ -56,7 +56,7 @@ Students by the end of the course will be able to ...
 | 11    | Tue, Jun 25 | Maps | [17 D3 maps] - [18 D3 maps Part 2] |
 | 12    | Thr, Jun 27 |  |  |
 | -     | Week 6      | - | - |
-| 13    | Tue, Jul  2 | No class | - |
+| 13    | Tue, Jul  2 | - | - |
 | 14    | Thr, Jul  4 | Holiday July 4th | - |
 | -     | Week 7      | - | - |
 | 15    | Tue, Jul  9 | Final Presentation | Show your work |
