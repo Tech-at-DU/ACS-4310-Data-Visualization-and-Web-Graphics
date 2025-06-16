@@ -31,36 +31,33 @@ Students by the end of the course will be able to ...
 
 ## Schedule
 
-**Course Dates:** May 20, 2024 to July 10, 2024
+**Course Dates:** August 25, 2025 to October 10, 2025
 
-**Class Times:** Tuesday and Thursday at 9:30 AM - 12:15 PM
+**Class Times:** Tuesday and Thursday at 1:00 PM - 3:45 PM
 
 | Class | Date        | Topics | Assignments |
 |:-----:|:------------|:-------|:------------|
 | -     | Week 1      | First Data Visualization | What kind of stories can you tell with data?  |
-|  1    | Tue, May 21 | Working with data | [Titanic data challenges] |
-|  2    | Thr, May 23 | - | [Titanic data challenges] |
+|  1    | Tue, Aug 26 | Working with data | [Titanic data challenges] |
+|  2    | Thr, May 28 | - | [Titanic data challenges] |
 | -     | Week 2      | - | Turning data into images [D3 Tutorials] |
-|  3    | Tue, May 28 | Holiday - Memorial day Learn D3 | [01 Intro to d3] - [02 Working with SVG] |
-|  4    | Thr, May 30 | Loading Data - [Exploring Data] | [03 Loading Data] - [04 Scales] |
+|  3    | Tue, Sep  2 | Holiday - Memorial day Learn D3 | [01 Intro to d3] - [02 Working with SVG] |
+|  4    | Thr, Sep  4 | Loading Data - [Exploring Data] | [03 Loading Data] - [04 Scales] |
 | -     | Week 3      | Second Visualization | Using D3 |
-|  5    | Tue, Jun  4 | Using groups | [05 Groups] - [06 Challenges] |
-|  6    | Thr, Jun  6 | Pathes and Axis | [07 Paths] - [08 Axis] |
+|  5    | Tue, Sep  9 | Using groups | [05 Groups] - [06 Challenges] |
+|  6    | Thr, Sep 11 | Pathes and Axis | [07 Paths] - [08 Axis] |
 | -     | Week 4      | - | Applying D3 to your dataset |
-|  7    | Tue, Jun 11 | Drawing bars and scatterplots | [09 Bars] - [10 Scatterplots and color scales] |
-|  8    | Thr, Jun 13 | Areas and Interactions | [11 Areas] - [12 Interaction]|
+|  7    | Tue, Sep 16 | Drawing bars and scatterplots | [09 Bars] - [10 Scatterplots and color scales] |
+|  8    | Thr, Sep 18 | Areas and Interactions | [11 Areas] - [12 Interaction]|
 | -     | Week 5      | Third visualization | - |
-|  9    | Tue, Jun 18 | Pie Charts | [13 Pie Charts] - [14 Pack] |
-| 10    | Thr, Jun 20 | Hierarchy | [15 Hierarchy] - [16 D3 React] |
+|  9    | Tue, Sep 23 | Pie Charts | [13 Pie Charts] - [14 Pack] |
+| 10    | Thr, Sep 25 | Hierarchy | [15 Hierarchy] - [16 D3 React] |
 | -     | Week 6      | - | - |
-| 11    | Tue, Jun 25 | Maps | [17 D3 maps] - [18 D3 maps Part 2] |
-| 12    | Thr, Jun 27 |  |  |
-| -     | Week 6      | - | - |
-| 13    | Tue, Jul  2 | No class | - |
-| 14    | Thr, Jul  4 | Holiday July 4th | - |
+| 11    | Tue, Sep 30 | Maps | [17 D3 maps] - [18 D3 maps Part 2] |
+| 12    | Thr, Oct  2 | - | - |
 | -     | Week 7      | - | - |
-| 15    | Tue, Jul  9 | Final Presentation | Show your work |
-| 16    | Thr, Jul 11 | Final Assessment   | Final Data Visualization |
+| 13    | Tue, Oct  7 | Final Presentation | Show your work |
+| 14    | Thr, Oct  9 | Final Assessment   | Final Data Visualization |
 
 <!--  -->
 [Exploring Data]: ./lessons/lesson-kaggle.md
