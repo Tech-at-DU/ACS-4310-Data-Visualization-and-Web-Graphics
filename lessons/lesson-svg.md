@@ -1,25 +1,5 @@
 
-# FEW 2.5 - SVG
-
-<!-- Put a link to the slides so that students can find them -->
-
-➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-8.html ':ignore')
-
-<!-- > -->
-
-## Minute-by-Minute
-
-| **Elapsed** | **Time**  | **Activity**              |
-| ----------- | --------- | ------------------------- |
-| 0:00        | 0:05      | Objectives                |
-| 0:05        | 0:15      | Overview                  |
-| 0:20        | 0:30      | In Class Activity I       |
-| 0:50        | 0:10      | BREAK                     |
-| 1:00        | 0:45      | In Class Activity II      |
-| 1:45        | 0:05      | Wrap up review objectives |
-| TOTAL       | 1:50      | -                         |
-
-<!-- > -->
+# ACS 4310 - SVG
 
 ## Overview
 
@@ -102,29 +82,11 @@ Here's some guidelines to consider when working with SVGs:
 
 <!-- > -->
 
-<!-- .slide: data-background="#087CB8" -->
-## [**10m**] BREAK
+## After this lesson
 
-<!-- > -->
-
-## Lab
-
-<!-- > -->
-
-## Wrap Up
-
-- Continue working on your current tutorial
-- Complete reading
-- Complete challenges
-
-<!-- > -->
-
-## After Class
-
-- Start working on your [Final Visualization 3](Assignments/Data-Visualization-3.md), due 3/4 9:30am
-
-<!-- > -->
+SVG is one more tool in the kit for your [three visualizations](../Assignments/assignment-2.md) — D3 builds most of its output as SVG under the hood, so this is worth understanding even if you never hand-write SVG directly.
 
 ## Additional Resources
 
-1. Links to additional readings and videos
+- [MDN: SVG](https://developer.mozilla.org/en-US/docs/Web/SVG)
+- [lesson-09](./lesson-09.md) - D3, which generates SVG for you

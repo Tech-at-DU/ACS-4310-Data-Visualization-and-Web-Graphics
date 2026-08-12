@@ -1,50 +1,53 @@
-# FEW 2.5 Assignment 3 - Real time visualization
+# Assignment 3 (Optional Bonus) - Real-Time Audio Visualizer
 
-Real Time data: Audio Visualizer. 
+This assignment is **optional**. It's not required to pass the course, but it's a fun, well-supported project if real-time/generative visuals interest you — and it can stand in as one of your three required visualizations from [Assignment 2](assignment-2.md) if you'd rather build this than a third dataset-driven chart.
 
-## Learning Objectives 
+## Goal
 
-1. Use canvas to display data
-1. Draw data in real time
-1. Use normalization
+Build an audio visualizer with JavaScript: draw live audio data onto a `<canvas>` element.
 
-## Goals 
+The Web Audio analyzer provides an array of 1024 8-bit integers, one per frequency band, each 0–255 representing how loud the audio is in that band at that instant. Your job is to turn that array into something drawn on canvas.
 
-Your Goal create an audio visualizer with JavaScript. You'll be drawing audio data onto canvas with JavaScript. The audio analyzer provides an array of 1024 8 bit integers. Your job is to turn these into something that can be drawn on canvas. The values represent the magnitude of a audio at one of 1024 frequency bands. 
+## Learning Objectives
 
-Frequncy band is represented as the index in the array for each value. At each frquency band you will also have a value of 0 to 255. 
+- Use canvas to display data
+- Draw data in real time
+- Normalize values from one range into another
 
-On canvas you will be displaying pixels. You can draw them at an x and y coordinate, and you can set the color. You can draw shapes like lines, circles and rectangles. These might have a location positioned at an x and y, and might have a length, width, and height.
+## Getting started
 
-**Challenge 1** follow the tutorial and notes from lesson. Get the base visualizer working. Use the sample code here: 
+Follow the tutorial and notes in [lesson-07](../lessons/lesson-07.md) and [lesson-061](../lessons/lesson-061.md) (canvas + circle math). Sample starter code:
 
-https://github.com/Make-School-Labs/FEW-2-5-Data-Visualization-Real-Ttime-Data
+https://github.com/Tech-at-DU/ACS-4310-real-time-visualization
 
-**Challenge 2** modify the HTML and CSS that presents the visualizer. Design the page. 
+## Challenges
 
-**Challenge 3** modify the drawing code of the visualizer. With this challenge your goal is to make a drawing of frequencies something unique and different from what is in the original tutorial. 
+**Challenge 1** — Follow the tutorial and get the base visualizer working.
 
-This challenge is open ended you can appy yourself to any area that interests you and meets your ability level. By the end of the assignment you should have a audio visualizer that looks different from the examples. Be sure to change at least the following things: 
+**Challenge 2** — Design the page: modify the HTML and CSS around the visualizer.
 
-- color of the lines or fills
-- geometry of the lines and fills
-- line width
+**Challenge 3** — Make the drawing itself your own. Change at least:
 
-### Submission and Due Date 
+- the color of the lines or fills
+- the geometry of the lines and fills
+- the line width
 
-- Due Feb. 17 
-- Submit your GitHub Project on GradeScope. 
+This part is open-ended — take it in whatever direction interests you and matches your ability level. By the end you should have a visualizer that looks nothing like the tutorial's example.
+
+## Submission
+
+Submit your GitHub repo link to GradeScope.
 
 ## Evaluate your progress
 
-| Expectation | Doe not meet | Meets | Exceeds |
+| Expectation | Does not meet | Meets | Exceeds |
 |:-------------|:------------------|:----------------|:-----------------|
-| **Completion** | Visualizer doesn't work or looks like the original tutorial | Visualizer works and has a unique appearance | Paterns displayed are fun and interesting, people comment when they see it. |
-| **Code quality** | The code is sloppy and unorganized or throws errors and warnings | Code is well organized and works without errors | Shows no linter errors or warnings |
+| **Completion** | Visualizer doesn't work, or looks identical to the tutorial | Visualizer works and has a unique appearance | Patterns displayed are fun and interesting enough that people comment when they see it |
+| **Code quality** | Sloppy, unorganized, throws errors or warnings | Well organized, works without errors | No linter errors or warnings |
 
-Learning Objectives 
+Learning Objectives
 
-| Expectation | Doe not meet | Meets | Exceeds |
+| Expectation | Does not meet | Meets | Exceeds |
 |:-------------|:------------------|:----------------|:-----------------|
-| **Canvas** | Can't explain canvas | Can explain canvas | Can explain canvas and several of it's commonly used methods. |
-| **requestAnimationFrame** | Can't explain requestAnimationFrame() | Can explain requestAnimationFrame() | Could apply requestAnimationFrame to another project where appropriate. |
+| **Canvas** | Can't explain canvas | Can explain canvas | Can explain canvas and several of its commonly used methods |
+| **requestAnimationFrame** | Can't explain `requestAnimationFrame()` | Can explain `requestAnimationFrame()` | Could apply `requestAnimationFrame` to another project where appropriate |

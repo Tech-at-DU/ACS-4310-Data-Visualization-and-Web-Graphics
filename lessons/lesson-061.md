@@ -1,30 +1,9 @@
 
-# FEW 2.5 - Canvas Part 2, Circle Math
-
-<!-- Put a link to the slides so that students can find them -->
-
-➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-6.html ':ignore')
-
-<!-- > -->
-
-## Minute-by-Minute
-
-| **Elapsed** | **Time**  | **Activity**              |
-| ----------- | --------- | ------------------------- |
-| 0:00        | 0:05      | Objectives                |
-| 0:05        | 0:15      | Overview                  |
-| 0:20        | 0:30      | In Class Activity I       |
-| 0:50        | 0:10      | BREAK                     |
-| 1:00        | 0:45      | In Class Activity II      |
-| 1:45        | 0:05      | Wrap up review objectives |
-| TOTAL       | 1:50      | -                         |
-
-
-<!-- > -->
+# ACS 4310 - Canvas Part 2, Circle Math
 
 ## Overview
 
-Today we'll learn how to draw circles and calculate coords in circles.
+Today we'll learn how to draw circles and calculate coordinates on circles.
 
 ### Why?
 
@@ -40,17 +19,6 @@ Plus they're cool!
 	- `Math.PI`
 	- `Math.sin(radians)` -1 to +1
 	- `Math.cos(radians)` -1 to +1
-
-<!-- > -->
-
-## Initial Exercise (15 min)
-
-- Funny comic
-- Prime the Pump (e.g. think and jot, think pair share, etc)
-- Productivity Tip/Tool
-- Review of current event (e.g. tech news relevant to your track/topic)
-- Quiz on homework or topic(s) of past class
-- Concept Test
 
 <!-- > -->
 
@@ -106,29 +74,11 @@ Just add the offset to the x and y. In this case the center of the clock face is
 
 <!-- > -->
 
-## Playing with Circles
+## Where this is used
 
-Check out the [Example code](../lesson-06.html) linked here and see how you can manipulate the circles!
-
-<!-- > -->
-
-<!-- .slide: data-background="#087CB8" -->
-## [**10m**] BREAK
-
-<!-- > -->
-
-## Lab
-
-<!-- > -->
-
-## After class
-
-- Continue working on [Visualization 2](Assignments/Data-Visualization-2.md), due 2/12 11:59pm
-
-<!-- > -->
+This is the math behind arranging the frequency bars radially in the [Real-Time Audio Visualizer](../Assignments/assignment-3.md) bonus project (see [lesson-07](./lesson-07.md)). It also comes up any time you need to lay elements out in a circle or ring — radial bar charts, pie/donut labels, clock-style dashboards.
 
 ## Additional Resources
 
-- [Example code](../lesson-06.html)
+- [lesson-06](./lesson-06.md) - Canvas basics
 - [Sine/Cosine](https://en.wikipedia.org/wiki/Sine)
-

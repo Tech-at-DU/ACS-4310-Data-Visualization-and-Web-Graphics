@@ -1,11 +1,5 @@
 
-# ACS 4310 - D3
-
-<!-- Put a link to the slides so that students can find them -->
-
-<!-- ➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-11.html ':ignore') -->
-
-<!-- > -->
+# ACS 4310 - D3 Maps
 
 ## Overview
 
@@ -96,22 +90,9 @@ Be sure to follow up with the links at the bottom of the post, as these have val
 
 <!-- > -->
 
-<!-- .slide: data-background="#087CB8" -->
-## [**10m**] BREAK
+## After this lesson
 
-<!-- > -->
-
-## Lab
-
-Work on your final project/presentations
-
-<!-- > -->
-
-## After Class
-
-- Continue working on your [Final Visualization 3](Assignments/Data-Visualization-3.md), due 3/4 9:30am **Before Class!**
-
-<!-- > -->
+Apply this to one of your [three visualizations](../Assignments/assignment-2.md) if a map is a good fit for your dataset. See [lesson-14](./lesson-14.md) if you want to keep going with more map/D3 troubleshooting resources.
 
 ## Additional Resources
 

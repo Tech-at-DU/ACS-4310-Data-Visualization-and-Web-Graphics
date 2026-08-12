@@ -325,7 +325,7 @@ Time to apply map, filter, and reduce to the Titanic data. Let's start with this
 
 Continue working on the Assignment 1. Think about refactoring your solutions to take advantage of map filter and reduce.
 
-## After Class
+## After this lesson
 
 Continue working on assignment 1. You should be finishing up challenges 1 and starting on challenges 2. 
 

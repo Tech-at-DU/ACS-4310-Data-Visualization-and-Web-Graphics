@@ -1,26 +1,5 @@
 
-# FEW 2.5 - Graphing charting libraries
-
-<!-- Put a link to the slides so that students can find them -->
-
-➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-7.html ':ignore')
-
-<!-- > -->
-
-## Minute-by-Minute
-
-| **Elapsed** | **Time**  | **Activity**              |
-| ----------- | --------- | ------------------------- |
-| 0:00        | 0:05      | Overview and Learning Outcomes                |
-| 0:05        | 0:10      | CDNs                  |
-| 0:15        | 1:00      | ChartJS       |
-| 1:15        | 0:10      | BREAK                     |
-| 1:25        | 1:15      | Lab      |
-| 2:40        | 0:05      | Wrap up and review homework |
-| TOTAL       | 2:45      | -                         |
-
-
-<!-- > -->
+# ACS 4310 - Graphing charting libraries
 
 ## Overview
 
@@ -102,12 +81,6 @@ Look at the types of charts available to us in ChartJS, and then **discuss what 
 
 <!-- v -->
 
-## Examples
-
-Read the notes in these [examples](../lesson-07.html).
-
-<!-- v -->
-
 ## ChartJS Activity
 
 You need to make graphs with ChartJS! You supply an array of values and some other options and the library draws the chart.
@@ -161,17 +134,14 @@ Width, height and DOM elements are easy to come up with. Labels and colors may t
 
 <!-- > -->
 
-## After Class
+## After this lesson
 
-- Finish [Visualization 2](Assignments/Data-Visualization-2.md), due TONIGHT, 11:59pm
-
-<!-- > -->
+ChartJS or Chartist can be a fast way to build one of your [three visualizations](../Assignments/assignment-2.md) if you'd rather lean on a library than hand-roll charts or learn D3 for a particular chart type.
 
 ## Additional Resources
 
 - [Chart JS Docs](https://www.chartjs.org/docs/latest/)
 - [Chartist Docs](https://gionkunz.github.io/chartist-js/api-documentation.html)
-- [examples](../lesson-07.html)
 - [Line](https://www.chartjs.org/docs/latest/charts/line.html)
 - [Bar](https://www.chartjs.org/docs/latest/charts/bar.html)
 - [Radar](https://www.chartjs.org/docs/latest/charts/radar.html)

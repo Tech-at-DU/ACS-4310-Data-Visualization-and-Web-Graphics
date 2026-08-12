@@ -305,7 +305,7 @@ For the same Titanic dataset, create a bar graph that shows the number of passen
 
 <!-- > -->
 
-## After Class
+## After this lesson
 
 Continue working on the current assignment. 
 

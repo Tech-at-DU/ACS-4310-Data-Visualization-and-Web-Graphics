@@ -1,11 +1,5 @@
 
-# FEW 2.5 - Animation and Interaction
-
-<!-- Put a link to the slides so that students can find them -->
-
-➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-3.html ':ignore')
-
-<!-- > -->
+# ACS 4310 - Animation and Interaction
 
 ## Overview
 
@@ -140,33 +134,8 @@ Take the bar graph you made in the last activity and have the colors animate onc
 
 <!-- > -->
 
-<!-- .slide: data-background="#087CB8" -->
-## [**10m**] BREAK
+## Practice
 
-<!-- > -->
+Get more practice with buttons and interaction with the [buttons and interaction tutorial](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Buttons-and-Interaction).
 
-## Lab
-
-The goal of this lab is to get more practice with buttons and interactions. To do this, you will work on the [buttons and interaction tutorial](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Buttons-and-Interaction) for the lab session.
-
-<!-- > -->
-
-## After Class
-
-- Finish the [buttons and interaction tutorial](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Buttons-and-Interaction)
-- Finish [Visualization 1](Assignments/Data-Visualization-1.md) by 11:59pm tonight
-
-<!-- > -->
-
-## Minute-by-Minute
-
-| **Elapsed** | **Time**  | **Activity**              |
-| ----------- | --------- | ------------------------- |
-| 0:00        | 0:05      | Overview + Learning Outcomes                |
-| 0:05        | 0:30      | Buttons                  |
-| 0:35        | 0:20      | Colors       |
-| 0:55        | 0:20      | Motion       |
-| 1:15        | 0:10      | BREAK                     |
-| 1:25        | 1:15      | Lab                       |
-| 2:40        | 0:05      | Wrap up + Homework Overview |
-| TOTAL       | 2:45      | -                         |
+Apply what you've learned here — buttons, color, and motion — to one of your [three visualizations](../Assignments/assignment-2.md).

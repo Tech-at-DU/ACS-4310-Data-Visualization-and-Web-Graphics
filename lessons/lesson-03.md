@@ -219,11 +219,9 @@ Using the Titanic dataset, you will be practicing the following techniques using
 
 <!-- > -->
 
-## After Class
+## After this lesson
 
-Complete the Challenges from lab: [Challenges](https://github.com/MakeSchool-Tutorials/FEW-2-5-Data-Visualization-Working-with-Data/)
-
-- Complete the challenges above and submit your solutions to gradescope.
+Complete the [Titanic Data Challenges](https://github.com/Tech-at-DU/titanic-data-challenges) — see [Assignment 1](../Assignments/assignment-1.md) for details and the submission rubric.
 
 Video Lessons: 
 - https://youtu.be/hRhXWI2IpI0
