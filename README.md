@@ -45,6 +45,8 @@ Work through these milestones roughly in order. Each one builds on the last, but
 | 6. Visualization 3 Sep 29, Oct 1 | Third dataset/visualization — push further (maps, hierarchy, real-time data) | [lesson-13] · [lesson-14] |
 | 7. Final assessment Oct 6, 8 | Practical, interview-style visualization challenge | See [Course Requirements] |
 
+D3 Tutorial: https://github.com/Tech-at-DU/d3-tutorial
+
 Optional / bonus material along the way:
 
 - [lesson-041] - buttons, interaction, and animating a visualization
