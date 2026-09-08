@@ -37,13 +37,13 @@ Work through these milestones roughly in order. Each one builds on the last, but
 
 | Milestone | Goal | Resources |
 |:----------|:-----|:----------|
-| 1. Working with data | Extract and derive values from a dataset in JavaScript | [Titanic data challenges] · [lesson-01] · [lesson-02] |
-| 2. Making data visible | Turn extracted values into HTML/CSS/Canvas/SVG on screen | [lesson-03] · [lesson-04] · [lesson-05] · [lesson-svg] |
-| 3. Learn D3 | Work through the D3 tutorial series at your own pace | [D3 Tutorials] · [lesson-09] · [lesson-11] |
-| 4. Visualization 1 | Ask 3 questions of a dataset of your choice, answer them visually | [lesson-kaggle] · [lesson-12] |
-| 5. Visualization 2 | Second dataset/visualization — try a new chart type or technique | [lesson-13] · [lesson-14] |
-| 6. Visualization 3 | Third dataset/visualization — push further (maps, hierarchy, real-time data) | [lesson-13] · [lesson-14] |
-| 7. Final assessment | Practical, interview-style visualization challenge | See [Course Requirements] |
+| 1. Working with data Aug 25, 27 | Extract and derive values from a dataset in JavaScript | [Titanic data challenges] · [lesson-01] · [lesson-02] |
+| 2. Making data visible Sep 1, 3 | Turn extracted values into HTML/CSS/Canvas/SVG on screen | [lesson-03] · [lesson-04] · [lesson-05] · [lesson-svg] |
+| 3. Learn D3 Sep 8, 10 | Work through the D3 tutorial series at your own pace | [D3 Tutorials] · [lesson-09] · [lesson-11] |
+| 4. Visualization 1 Sep 15, 17 | Ask 3 questions of a dataset of your choice, answer them visually | [lesson-kaggle] · [lesson-12] |
+| 5. Visualization 2 Sep 22, 24 | Second dataset/visualization — try a new chart type or technique | [lesson-13] · [lesson-14] |
+| 6. Visualization 3 Sep 29, Oct 1 | Third dataset/visualization — push further (maps, hierarchy, real-time data) | [lesson-13] · [lesson-14] |
+| 7. Final assessment Oct 6, 8 | Practical, interview-style visualization challenge | See [Course Requirements] |
 
 Optional / bonus material along the way:
 
