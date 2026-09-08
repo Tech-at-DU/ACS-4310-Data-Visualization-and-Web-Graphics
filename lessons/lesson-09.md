@@ -1,12 +1,6 @@
 
 # ACS 4310 - D3 Intro
 
-<!-- Put a link to the slides so that students can find them -->
-
-<!-- ➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-9.html ':ignore') -->
-
-<!-- > -->
-
 ## Overview
 
 D3 is a library that has been around for a long time. It's more of a toolkit for making visualizations with JavaScript. It's the first name that comes when conversation turns to making data visualizations with JS.
@@ -55,30 +49,58 @@ D3 is complex. With that complexity comes a lot of flexibility. Expect a steep l
 
 ## D3 Tutorial 
 
-Followe the tutorial linked below. This tutorial covers some of the core concepts and work flows of D3. 
+Follow the tutorial linked below. This tutorial covers some of the core concepts and work flows of D3. 
 
 https://github.com/Tech-at-DU/d3-tutorial
 
 <!-- > -->
 
-## After class
+## Choosing a Dataset
 
-- Finish https://github.com/Tech-at-DU/d3-tutorial
+You'll need your own dataset soon — for [Visualization 1](../Assignments/assignment-2.md) — so start thinking about it now, while you're still working through the D3 tutorial. Having a real dataset in hand makes the tutorial's examples click faster too, since you can try things against your own data as you go.
+
+### What makes a good first dataset?
+
+- **It's tabular** (or close to it) — a list of records where each record has the same fields, like the Titanic passenger list from [lesson-03](./lesson-03.md). Deeply nested or inconsistent data is harder to work with; save that for once you're more comfortable.
+- **It has a mix of field types** — at least one categorical field (a category, a country, a gender) and one or two numeric fields (a price, an age, a rating). Categorical fields make good axes, groups, or colors; numeric fields make good lengths, positions, or sizes.
+- **It answers a question you actually care about.** You'll be staring at this data for a while — pick something you're curious about, not just the first result you find.
+- **It's documented.** Good datasets on Kaggle describe what each column means. If you can't tell what a column represents, you can't visualize it honestly.
+
+### File size — how much can a browser handle?
+
+Your data has to be downloaded and parsed in the browser before you can draw anything with it, so size matters more here than it would on a backend.
+
+Rough guidelines:
+
+- **Under 100KB** — no problem, loads instantly.
+- **100KB – 1MB** — still fine for a `fetch()` + parse on page load. This is the sweet spot for a class project.
+- **1MB – 5MB** — workable, but you'll notice the load/parse time, especially on a slow connection or an older machine. Better to trim it down first (see below) than ship the whole thing.
+- **5MB+** — don't load this directly in the browser. Preprocess it down to what you actually need and load that smaller file instead.
+
+**Aim for 1MB or smaller.** When you filter datasets on Kaggle, use its file-size filter to rule out anything bigger before you even open it.
+
+### File formats
+
+- **CSV** — smaller on disk, flat (one row per record, no nesting), easy to eyeball in a spreadsheet before you write any code. D3 loads it with `d3.csv()`.
+- **JSON** — larger on disk but maps directly onto JS objects/arrays and can express nested structure. D3 loads it with `d3.json()`; with `fetch` it's just `.then(r => r.json())` — no separate parsing step.
+- **GeoJSON / TopoJSON** — if you're building a map you'll need one of these for the shapes, on top of whatever data file drives the colors/values. See [lesson-13](./lesson-13.md).
+
+See [lesson-03: CSV vs JSON](./lesson-03.md#csv-vs-json) for the full tradeoff between the two.
+
+### Working with a big dataset: pull a smaller slice
+
+Found a dataset you love, but it's 20MB and covers 50 years? Don't load all of it — cut it down to what your visualization actually needs, and load only that:
+
+- **Filter rows** — one year instead of fifty, one country instead of every country, one category instead of all of them.
+- **Drop columns you won't use** — if the dataset has 40 columns and you're visualizing 3 of them, don't ship the other 37.
+- **Sample** — if you just need "enough data to look real," take every Nth row, or a random sample of a few thousand rows instead of a few million.
+- **Aggregate first** — if your chart shows totals or averages *by category*, you don't need every raw row. Group and summarize once, save that smaller result, and load that instead of the raw records.
+
+You don't have to do this trimming in the browser. Write a small script (Node, Python, even a spreadsheet) that reads the big file, filters/aggregates it, and writes out a small JSON or CSV file — that smaller file is what your visualization actually loads.
 
 <!-- > -->
-<!-- 
-## Minute-by-Minute
 
-| **Elapsed** | **Time**  | **Activity**              |
-| ----------- | --------- | ------------------------- |
-| 0:00        | 0:05      | Overview and Learning Outcomese                |
-| 0:05        | 0:05      | D3 Intro                  |
-| 0:10        | 0:10      | Explore D3       |
-| 0:20        | 0:30      | Getting Started                     |
-| 0:50        | 0:10      | Loading Data      |
-| 1:00        | 0:30      | SVG      |
-| 1:30        | 0:10      | BREAK      |
-| 1:40        | 1:00      | Lab      |
-| 2:40        | 0:05      | Wrap up review objectives |
-| TOTAL       | 2:45      | -                         |
- -->
+## After this lesson
+
+- Finish the [D3 tutorial](https://github.com/Tech-at-DU/d3-tutorial)
+- Move on to [lesson-11](./lesson-11.md) (D3 Scales), and keep narrowing down the dataset you'll use for Visualization 1

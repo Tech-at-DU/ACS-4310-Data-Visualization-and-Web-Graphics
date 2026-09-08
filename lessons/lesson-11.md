@@ -12,7 +12,7 @@ Scales are how D3 maps values from your data (a domain) onto values you can draw
 
 ## Continue the D3 Tutorial
 
-Work through the [scales section](https://github.com/Tech-at-DU/d3-tutorial) of the D3 tutorial if you haven't already. Keep your own project dataset in mind as you go — you'll use scales in almost every chart you build.
+Work through the [scales section](https://github.com/Tech-at-DU/d3-tutorial) of the D3 tutorial if you haven't already. Keep your own project dataset in mind as you go — you'll use scales in almost every chart you build. If you haven't settled on a dataset yet, see [lesson-09: Choosing a Dataset](./lesson-09.md#choosing-a-dataset).
 
 ## Additional Resources
 

@@ -10,11 +10,11 @@ Explore the datasets, click "Datasets" in the right column. Find some datasets t
 
 ## What should you look for? 
 
-You can make a visualization from any dataset. Some datasets will be easier to work with than others. Here are few things to look for: 
+You can make a visualization from any dataset, but some are much easier to work with than others. See [lesson-09: Choosing a Dataset](./lesson-09.md#choosing-a-dataset) for the full breakdown on size limits, file formats, and how to slice a big dataset down to a usable size — the short version:
 
-- **Size** - Best to choose a dataset that is a smaller size. You can planning to make a web page, the data you display needs to be loaded into that page. Larger files make your site slower. You can extract a smaller set from a larger set but that will take more effort! Also, larger datasets will take longer for your browser code to process! Best to choose something that is less than a few megabytes. 
-- **File Format** - D3 can load several formats. The two most common that you'll find on Kaggle are json and CSV. Look for these to make your workflow easiest. 
-- **Filter your search** - Kaggle has a Filter option, its a button on the right of the search box. Use this to filter for datasets that are JSON, CSV, and have a max file size of 4 megabytes. 
+- **Size** - aim for 1MB or smaller.
+- **File Format** - JSON or CSV are the easiest to work with in D3/the browser.
+- **Filter your search** - Kaggle has a Filter option next to the search box. Use it to filter for JSON/CSV and a max file size before you even start browsing results.
 
 ## Browse the data on Kaggle
 
