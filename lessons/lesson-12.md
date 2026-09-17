@@ -1,10 +1,6 @@
 
 # ACS 4310 - Project Kickoff: Build Visualization 1
 
-<!-- Put a link to the slides so that students can find them -->
-
-<!-- ➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-10.html ':ignore') -->
-
 ## Lab
 
 By the end of today you should have: your three questions written down, the fields from your dataset that answer them identified, real data loaded and shaped in code, and a blank SVG sized with a margin convention. That's the skeleton every chart in [Assignment 2](../Assignments/assignment-2.md) is built on.
