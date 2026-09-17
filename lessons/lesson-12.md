@@ -1,91 +1,203 @@
 
-# ACS 4310 - D3 Final Project
+# ACS 4310 - Project Kickoff: Build Visualization 1
 
 <!-- Put a link to the slides so that students can find them -->
 
 <!-- ➡️ [**Slides**](https://make-school-courses.github.io/FEW-2.5-Data-Visualization-and-Web-Graphics/Slides/Lesson-10.html ':ignore') -->
 
-
 ## Lab
 
-Todays goal is to start your final project. It's important for you to identify a dataset you will use for the project, identify the values you will display and in what axis, color, shape etc. and to get started coding. 
+By the end of today you should have: your three questions written down, the fields from your dataset that answer them identified, real data loaded and shaped in code, and a blank SVG sized with a margin convention. That's the skeleton every chart in [Assignment 2](../Assignments/assignment-2.md) is built on.
 
 <!-- > -->
 
 ## Overview
 
-- Look at data visualization types 
-  - What type of data works best for each type?
-- Look at data
-  - Look for the value and how you will display them?
-- Look at the examples and find a starting point for your project!
+- Lock in the three questions your first visualization will answer
+- Identify which fields in your dataset those questions need
+- Extract and arrange (sort/filter/aggregate) just that subset
+- Set up size, margins, scales, and axes — the skeleton of every D3 chart
 
 <!-- > -->
 
 ## Why you should know this
 
-D3 is the data visualization library it does most everything. Besides working with D3 you will also need to work with your chosen dataset sorting, filtering, and aggregating data. Besides being job skills solving these challenges will make you better at your craft. 
+Picking a chart type is the easy part — [data-to-viz.com](https://www.data-to-viz.com) and [datavizproject.com](https://datavizproject.com) do that for you. The harder, more valuable skill is going from "here's a chart type" to "here's working code against my real data." That means shaping data into the exact structure a chart needs, and setting up the size/margin/scale/axis scaffolding every D3 chart shares. Get this skeleton right once and you'll reuse it for all three of your visualizations.
 
 <!-- > -->
 
 ## Learning Objectives
 
-1. Identify data visualization types 
-1. Identify values and connect them to visuals
-1. Form a strategy to complete the final 
+1. State three questions a visualization will answer, and name the dataset fields each question needs
+1. Extract and arrange (sort/filter/aggregate) a subset of a dataset with code
+1. Set up an SVG with the margin convention (width, height, margins)
+1. Define scales (domain → range) and render axes from real data
 
 <!-- > -->
 
-## Visualization Types 
+## Warm-up: Your three questions (5 min, solo)
 
-Quick study this: https://www.data-to-viz.com
+Assignment 2 asks you to ask three questions of each dataset. Today you're only building **Visualization 1** — so write down, in one line each:
 
-Question: How many values can you display in chart/graph/visualization?
+1. Question 1:
+1. Question 2:
+1. Question 3:
 
-Question: Which charts show ordered data? 
+Keep these next to you. Everything else today serves these three lines.
 
-Question: What's the difference between a histogram and density plot?
+**Example — Titanic passenger dataset:**
 
-Question: What's the difference between line and area charts/graphs?
+1. How many passengers lived and how many died, by gender?
+1. How many passengers lived and died, by passenger class?
+1. Did having a sibling aboard affect your chance of survival?
+
+Notice each one names a comparison (lived vs. died) *and* a category to break it down by (gender, class, siblings). A good question almost always has both parts — if yours only has one, it's not specific enough yet.
 
 <!-- > -->
 
-## Datasets 
+## Turn questions into fields (10 min, pairs)
 
-You need to find a dataset for the final project. Take a look at https://www.kaggle.com
+Trade questions with a partner. For each question, answer:
 
-Look for a dataset you want to work with. When considering a dataset ask yourself what values does it provide? How will display these values? What will you have to do to arrange, sort, or filter the data to display it?
+- Which **field(s)** in your dataset does this question need?
+- Is each field **categorical** (axis groups, color) or **numeric** (position, length, size)?
+- Does answering it require the *raw* rows, or a **derived** value — a count, sum, or average grouped by category?
 
-## D3 Examples
+If you can't point to a field, the question is too vague — rewrite it now, before you write any code.
 
-Take a look at these D3 examples: 
+**Example — Titanic, question 1** ("lived and died, by gender?"):
 
-- https://github.com/soggybag/d3-examples
-- https://github.com/soggybag/FEW-2-5-Data-Visualization-D3
+| | |
+|---|---|
+| Fields needed | `survived`, `sex` |
+| `sex` | categorical → x-axis groups |
+| `survived` | categorical (0/1) → but you'll **derive** a count from it |
+| Raw or derived? | Derived — count of passengers, grouped by `sex` and `survived` |
 
+<!-- > -->
+
+## Extract and arrange your data (20 min, code)
+
+Most datasets aren't shaped the way a chart needs them. Load your data, then write the code that gets you from "raw rows" to "exactly what my chart draws."
+
+Common shapes you'll need:
+
+```js
+// Filter: keep only the rows relevant to your question
+const subset = data.filter(d => d.pclass === "3rd")
+
+// Sort: order matters for bar charts, line charts, rankings
+const sorted = [...data].sort((a, b) => b.age - a.age)
+
+// Group + aggregate: turn many rows into one summary value per category
+const grouped = d3.groups(data, d => d.sex)
+const summarized = grouped.map(([key, rows]) => ({
+  sex: key,
+  survived: d3.sum(rows, d => d.survived === "1" ? 1 : 0)
+}))
+// -> [{ sex: "male", survived: 109 }, { sex: "female", survived: 233 }]
+```
+
+That last shape is exactly what answers Titanic question 1 — survival count, grouped by gender.
+
+**Checkpoint:** `console.log` the exact array your chart will consume. If you can't describe its shape in one sentence ("an array of objects with `category` and `total`"), keep working before moving on.
+
+<!-- > -->
+
+## Set up size and margins (10 min, code)
+
+Every D3 chart starts the same way. Use the margin convention so axes and labels have room outside the plot area:
+
+```js
+const margin = { top: 20, right: 20, bottom: 40, left: 60 }
+const width = 600 - margin.left - margin.right
+const height = 400 - margin.top - margin.bottom
+
+const svg = d3.select("#chart")
+  .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", `translate(${margin.left}, ${margin.top})`)
+```
+
+Everything you draw next goes inside that inner `g` — position `0,0` is the top-left of your *plot area*, not the SVG.
+
+<!-- > -->
+
+## Define scales and axes (20 min, code)
+
+Scales map your data's domain onto pixel space. Pick scales based on the field types you identified earlier:
+
+```js
+// Numeric (derived) field → position/length
+const y = d3.scaleLinear()
+  .domain([0, d3.max(summarized, d => d.survived)])
+  .range([height, 0])
+
+// Categorical field → grouped position
+const x = d3.scaleBand()
+  .domain(summarized.map(d => d.sex))
+  .range([0, width])
+  .padding(0.2)
+
+svg.append("g")
+  .attr("transform", `translate(0, ${height})`)
+  .call(d3.axisBottom(x))
+
+svg.append("g")
+  .call(d3.axisLeft(y))
+```
+
+**Checkpoint:** you should see two axes on screen, drawn from *your* data, before you draw a single bar/line/point.
+
+<!-- > -->
+
+## Lab: put it together
+
+Working from your own dataset and three questions:
+
+1. Extract/arrange the subset for **Question 1** only
+1. Set up size + margins
+1. Define scales from that subset's domain
+1. Render both axes
+
+Don't draw the marks (bars, dots, lines) yet — that's next class. Today's goal is a correctly-scaled, correctly-labeled empty chart.
+
+<!-- > -->
+
+## After this lesson
+
+- Keep this size/margin/scale/axis setup — you'll copy and adapt it for all three visualizations
+- Move on to [lesson-13](./lesson-13.md) if a map fits one of your datasets
+- Otherwise, next class: drawing marks from your scaled data
 
 <!-- > -->
 
 ## Additional Resources
 
-- https://www.d3indepth.com
 - https://www.data-to-viz.com
+- https://datavizproject.com
+- https://d3indepth.com/scales/
+- https://d3indepth.com/axes/
 - https://github.com/soggybag/d3-examples
 - https://github.com/soggybag/FEW-2-5-Data-Visualization-D3
 
 <!-- > -->
 
-<!-- 
+<!--
 ## Minute-by-Minute
 
-| **Elapsed** | **Time**  | **Activity**              |
-| ----------- | --------- | ------------------------- |
-| 0:00        | 0:05      | Overview + Learning Outcomes |
-| 0:05        | 0:10      | Scale and normalization |
-| 0:15        | 0:20      | Get started with scaleOrdinal |
-| 0:35        | 0:55      | Example code |
-| 1:30        | 0:10      | Break |
-| 1:40        | 1:00      | Lab |
-| 2:40        | 0:05      | Wrap up |
-| TOTAL       | 2:45      | - |
- -->
+| **Elapsed** | **Time**  | **Activity**                          |
+| ----------- | --------- | -------------------------------------- |
+| 0:00        | 0:05      | Overview + Learning Outcomes           |
+| 0:05        | 0:05      | Warm-up: write your three questions    |
+| 0:10        | 0:10      | Pairs: turn questions into fields      |
+| 0:20        | 0:20      | Extract and arrange data (code)        |
+| 0:40        | 0:10      | Size and margins (code)                |
+| 0:50        | 0:20      | Scales and axes (code)                 |
+| 1:10        | 0:10      | Break                                  |
+| 1:20        | 1:15      | Lab: build your own skeleton chart     |
+| 2:35        | 0:05      | Wrap up                                |
+| TOTAL       | 2:45      | -                                       |
+-->
