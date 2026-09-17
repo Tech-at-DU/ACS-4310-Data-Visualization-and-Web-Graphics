@@ -129,6 +129,17 @@ Everything you draw next goes inside that inner `g` — position `0,0` is the to
 
 Scales map your data's domain onto pixel space. Pick scales based on the field types you identified earlier:
 
+| Scale | Domain (data) | Use for |
+|---|---|---|
+| `d3.scaleLinear` | continuous number | numeric field → position, length, radius (age, fare, survived count) |
+| `d3.scaleBand` | discrete categories | categorical field → grouped position on an axis (sex, pclass, embarked) |
+| `d3.scaleOrdinal` | discrete categories | categorical field → non-position visual, usually color |
+| `d3.scaleTime` | dates | a date/time field → position on a time axis |
+| `d3.scaleSqrt` / `d3.scalePow` | continuous number | numeric field → **area** encodings (circle radius), so the *area* scales correctly instead of the radius |
+| `d3.scaleLog` | continuous number | numeric field with a huge range/skew (a few outliers dwarf everything else) |
+
+Rule of thumb: categorical field → `scaleBand` (position) or `scaleOrdinal` (color). Numeric field → `scaleLinear`, unless it's a date (`scaleTime`), it's driving a circle's radius (`scaleSqrt`), or it's wildly skewed (`scaleLog`).
+
 ```js
 // Numeric (derived) field → position/length
 const y = d3.scaleLinear()
@@ -162,7 +173,7 @@ Working from your own dataset and three questions:
 1. Define scales from that subset's domain
 1. Render both axes
 
-Don't draw the marks (bars, dots, lines) yet — that's next class. Today's goal is a correctly-scaled, correctly-labeled empty chart.
+Don't draw the marks (bars, dots, lines) yet. Your first goal is a correctly-scaled, correctly-labeled empty chart.
 
 <!-- > -->
 
