@@ -43,7 +43,6 @@ These aren't classroom toy examples — they're charts people check regularly to
 
 - **[The Keeling Curve](https://keelingcurve.ucsd.edu/)** — daily atmospheric CO₂ at Mauna Loa since 1958. The raw data is a jagged, sawtooth line (CO₂ rises and falls with the seasons as plants grow and die back). Overlaid on it is a smoothed trend line that strips out the seasonal wiggle and shows the steady year-over-year rise. Two trend lines, two different stories, same dataset.
 - **[NASA: Global Surface Temperature](https://science.nasa.gov/earth/explore/earth-indicators/global-temperature)** — annual global temperature is noisy (El Niño/La Niña years swing it around); NASA plots a 5-year running average — literally a moving average — on top so the long-term warming trend isn't lost in year-to-year noise.
-- **[FiveThirtyEight/ABC News polling averages](https://projects.fivethirtyeight.com/polls/)** — any single poll is noisy (small sample, house effects). Their trend line is fit across many scattered individual polls to estimate where public opinion actually is and which way it's moving.
 - **[FRED: Unemployment Rate](https://fred.stlouisfed.org/series/UNRATE)** — the St. Louis Fed's own data explorer lets you add a trend line to any economic series (unemployment, CPI, GDP) it hosts — try it on a series you care about.
 
 Notice the pattern: in every case, the raw data alone would either bury the story in noise or mislead you with a single unusual data point. The trend line is what turns "here's some numbers" into "here's what's actually happening."
@@ -65,6 +64,14 @@ function movingAverage(data, windowSize, accessor) {
 
 const smoothed = movingAverage(data, 5, d => d.y)
 ```
+
+**ELI5:** imagine sliding a 5-day-wide window left to right across your data. At each stop, you average whatever's inside the window and that average becomes your new point. Noisy up-and-down days get flattened out because each one is now blended with its neighbors.
+
+**New here — the extra `.map()` arguments:** you've used `.map(d => ...)` with just one argument. `.map()` actually always passes three: `(element, index, wholeArray)`. Here we need all three — `d` is the current point, `i` is its position (so we know how far back the window can reach), and `arr` is the full array (so we can `.slice()` a window out of it). `data.map((d, i, arr) => ...)` — same method, just using more of what it gives you.
+
+**What's `accessor`?** It's just a function you pass in that says "given one data object, give me the number I care about" — e.g. `d => d.y`. `movingAverage` doesn't know or care whether your value is called `y`, `age`, or `fare`; you hand it the accessor and it calls `accessor(d)` wherever it needs that number. You've already been writing accessors like this for scales (`d => d.total`) — same idea, just passed around as a variable instead of written inline.
+
+**What's `d3.mean()`?** A D3 helper that averages an array — `d3.mean(window, accessor)` calls `accessor` on every item in `window` and returns the average of the results. Same job as `window.reduce((sum, d) => sum + accessor(d), 0) / window.length`, just shorter. D3 has matching helpers for `d3.sum`, `d3.max`, `d3.min`, `d3.extent` — all take an array and an accessor.
 
 Bigger window = smoother line, but more lag and more lost detail at the start of the series (there aren't `n` neighbors yet). Try a few window sizes on your own data and see what tells the clearest story.
 
@@ -89,6 +96,14 @@ function linearRegression(data, xAccessor, yAccessor) {
 
 const { slope, intercept } = linearRegression(data, d => d.x, d => d.y)
 ```
+
+**ELI5:** picture nudging a straight ruler around on top of your scatter plot until it's as close as possible to every point at once — not perfect for any one of them, but the best overall fit. That's what `slope` and `intercept` describe: how steep the ruler is, and where it crosses the y-axis. `y = slope * x + intercept` is the same `y = mx + b` you saw in algebra class.
+
+**Two `xAccessor`/`yAccessor` this time:** same idea as `accessor` in the moving average — a function that pulls one number out of a data object — but now we need one for x *and* one for y, since regression compares both.
+
+**What's `** 2`?** JavaScript's exponent operator — `x ** 2` means "x squared" (`x * x`). It shows up here because least-squares math squares the distances before summing them (so points above and below the line don't cancel each other out).
+
+**What's `const { slope, intercept } = ...`?** Destructuring — `linearRegression` returns one object, `{ slope, intercept }`, and this line unpacks it straight into two separate variables instead of you writing `result.slope` and `result.intercept` everywhere. Same trick works on arrays with `[ ]`, which is what `const [x0, x1] = d3.extent(...)` is doing just below.
 
 Once you have `slope`/`intercept`, you only need **two points** — the line's value at the start and end of your x domain — to draw it:
 
