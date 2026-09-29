@@ -92,7 +92,7 @@ Be sure to follow up with the links at the bottom of the post, as these have val
 
 ## After this lesson
 
-Apply this to one of your [three visualizations](../Assignments/assignment-2.md) if a map is a good fit for your dataset. See [lesson-14](./lesson-14.md) if you want to keep going with more map/D3 troubleshooting resources.
+Apply this to one of your [three visualizations](../Assignments/assignment-2.md) if a map is a good fit for your dataset. If you get stuck, [D3 in Depth](https://www.d3indepth.com) and the resources below cover most map/projection problems. Otherwise move on to [lesson-14](./lesson-14.md) (Trend Lines).
 
 ## Additional Resources
 
