@@ -156,7 +156,7 @@ Using a numeric field from one of your own datasets (age, price, count over time
 
 ## After this lesson
 
-Apply a trend line to whichever of your [three visualizations](../Assignments/assignment-2.md) has a noisy numeric series — it's one of the fastest ways to move a chart from "meets" to "exceeds" on the Story row of the rubric.
+Apply a trend line to whichever of your [three visualizations](../Assignments/assignment-2.md) has a noisy numeric series — it's one of the fastest ways to move a chart from "meets" to "exceeds" on the Story row of the rubric. Then move on to [lesson-15](./lesson-15.md) for a few more small, optional upgrades (tooltips, formatting, transitions, legends) to pick from.
 
 ## Additional Resources
 
