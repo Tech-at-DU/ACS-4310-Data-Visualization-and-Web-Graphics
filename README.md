@@ -43,7 +43,7 @@ Work through these milestones roughly in order. Each one builds on the last, but
 | 4. Visualization 1 Sep 15, 17 | Ask 3 questions of a dataset of your choice, answer them visually | [lesson-kaggle] · [lesson-12] |
 | 5. Visualization 2 Sep 22, 24 | Second dataset/visualization — try a new chart type or technique | [lesson-13] · [lesson-14] |
 | 6. Visualization 3 Sep 29, Oct 1 | Third dataset/visualization — push further (maps, trend lines, hierarchy, real-time data) | [lesson-14] · [lesson-15] |
-| 7. Final assessment Oct 6, 8 | Practical, interview-style visualization challenge | See [Course Requirements] |
+| 7. Wrap-up & final assessment Oct 6, 8 | Review your 3 visualizations against the rubric, reflect on what they reveal, get peer feedback, then take the practical final assessment | [lesson-16] · See [Course Requirements] |
 
 D3 Tutorial: https://github.com/Tech-at-DU/d3-tutorial
 
@@ -79,5 +79,6 @@ See the [Course Requirements page](course-requirements.md) for the full list of 
 [lesson-13]: ./lessons/lesson-13.md
 [lesson-14]: ./lessons/lesson-14.md
 [lesson-15]: ./lessons/lesson-15.md
+[lesson-16]: ./lessons/lesson-16.md
 [lesson-kaggle]: ./lessons/lesson-kaggle.md
 [lesson-svg]: ./lessons/lesson-svg.md

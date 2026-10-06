@@ -154,7 +154,7 @@ Pick **one** option above and add it to whichever visualization you're actively 
 
 ## After this lesson
 
-Keep working on your [three visualizations](../Assignments/assignment-2.md) — the [final assessment](../course-requirements.md) is next. Come back to the options you didn't pick whenever a chart could use them.
+Keep working on your [three visualizations](../Assignments/assignment-2.md) — [lesson-16](./lesson-16.md) (wrap-up and review) is next, ahead of the final assessment. Come back to the options you didn't pick whenever a chart could use them.
 
 ## Additional Resources
 
