@@ -15,3 +15,5 @@
 - Global Alcoholism rate(2019)
 - Global Drug Rate(2019)
 
+
+See [assessment.md](assessment.md) for the final assessment challenges.
