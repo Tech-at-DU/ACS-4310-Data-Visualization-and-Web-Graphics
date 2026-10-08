@@ -76,7 +76,7 @@ Examples of data visualizations:
 
 The final assessment will be similar to a practical interview question. You will create a visualization using a dataset provided, with the goal of answering the questions provided.
 
-**Final assessment: [What Makes a Country Miserable?](assessment/misery/assessment.md)**
+**Final assessment: [What Makes a Country Miserable?](assessment/misery/)**
 
 ## Resources
 

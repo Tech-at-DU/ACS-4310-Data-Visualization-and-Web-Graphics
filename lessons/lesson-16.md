@@ -32,7 +32,7 @@ Pull up your three visualizations and go through this checklist for **each one**
 - [ ] Does it run with **no console errors**?
 - [ ] Is it submitted (repo link, or clearly separated folder) and posted to GradeScope?
 
-Re-read the [Assignment 2 rubric](../Assignments/assignment-2.md#evaluating-your-work) row by row. For each visualization, which column are you actually in — *Does not meet*, *Meets*, or *Exceeds*? Be honest; this is the same rubric your final assessment will be judged against.
+Re-read the [Assignment 2 rubric](../Assignments/assignment-2.md#evaluating-your-work) row by row. For each visualization, which column are you actually in — *Does not meet*, *Meets*, or *Exceeds*? Be honest. (The final assessment has its own grading levels — see the [Grading section](../assessment/misery/readme.md#grading).)
 
 <!-- > -->
 
